@@ -9893,7 +9893,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C43251"
 			(at 223.52 86.36 0)
 			(effects
 				(font
@@ -9902,7 +9902,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4021TCE"
 			(at 223.52 86.36 0)
 			(effects
 				(font
@@ -10020,7 +10020,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C43251"
 			(at 223.52 92.71 0)
 			(effects
 				(font
@@ -10029,7 +10029,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4021TCE"
 			(at 223.52 92.71 0)
 			(effects
 				(font
@@ -10493,7 +10493,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25793"
 			(at 304.8 62.23 0)
 			(effects
 				(font
@@ -10502,7 +10502,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4993TCE"
 			(at 304.8 62.23 0)
 			(effects
 				(font
@@ -10620,7 +10620,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25793"
 			(at 304.8 68.58 0)
 			(effects
 				(font
@@ -10629,7 +10629,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4993TCE"
 			(at 304.8 68.58 0)
 			(effects
 				(font
@@ -12098,7 +12098,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25531"
+		(property "LCSC" "C25744"
 			(at 487.68 58.42 0)
 			(effects
 				(font
@@ -12107,7 +12107,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGJ0103TCE"
+		(property "MPN" "0402WGF1002TCE"
 			(at 487.68 58.42 0)
 			(effects
 				(font
@@ -13113,7 +13113,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25531"
+		(property "LCSC" "C25744"
 			(at 50.8 254 0)
 			(effects
 				(font
@@ -13122,7 +13122,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGJ0103TCE"
+		(property "MPN" "0402WGF1002TCE"
 			(at 50.8 254 0)
 			(effects
 				(font
@@ -13367,7 +13367,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25531"
+		(property "LCSC" "C25744"
 			(at 50.8 266.7 0)
 			(effects
 				(font
@@ -13376,7 +13376,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGJ0103TCE"
+		(property "MPN" "0402WGF1002TCE"
 			(at 50.8 266.7 0)
 			(effects
 				(font
@@ -13494,7 +13494,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25531"
+		(property "LCSC" "C25744"
 			(at 50.8 273.05 0)
 			(effects
 				(font
@@ -13503,7 +13503,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGJ0103TCE"
+		(property "MPN" "0402WGF1002TCE"
 			(at 50.8 273.05 0)
 			(effects
 				(font
@@ -13621,7 +13621,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25531"
+		(property "LCSC" "C25744"
 			(at 50.8 279.4 0)
 			(effects
 				(font
@@ -13630,7 +13630,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGJ0103TCE"
+		(property "MPN" "0402WGF1002TCE"
 			(at 50.8 279.4 0)
 			(effects
 				(font

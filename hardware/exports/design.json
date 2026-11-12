@@ -1244,8 +1244,8 @@
     "1": "DSI_REXT",
     "2": "GND"
    },
-   "lcsc": "",
-   "mpn": "",
+   "lcsc": "C43251",
+   "mpn": "0402WGF4021TCE",
    "dnp": false,
    "note": ""
   },
@@ -1260,8 +1260,8 @@
     "1": "CSI_REXT",
     "2": "GND"
    },
-   "lcsc": "",
-   "mpn": "",
+   "lcsc": "C43251",
+   "mpn": "0402WGF4021TCE",
    "dnp": false,
    "note": ""
   },
@@ -1311,8 +1311,8 @@
     "1": "VDD_HP",
     "2": "FB_DCDC"
    },
-   "lcsc": "",
-   "mpn": "",
+   "lcsc": "C25793",
+   "mpn": "0402WGF4993TCE",
    "dnp": false,
    "note": ""
   },
@@ -1327,8 +1327,8 @@
     "1": "FB_DCDC",
     "2": "GND"
    },
-   "lcsc": "",
-   "mpn": "",
+   "lcsc": "C25793",
+   "mpn": "0402WGF4993TCE",
    "dnp": false,
    "note": ""
   },
@@ -1495,8 +1495,8 @@
     "1": "VDDO_FLASH",
     "2": "FLASH_CS"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -1527,8 +1527,8 @@
     "1": "3V3",
     "2": "CHIP_PU"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": "RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
   },
@@ -1559,8 +1559,8 @@
     "1": "3V3",
     "2": "RMII_TXD1_BOOT"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": "GPIO35 = strap BOOT, aussi RMII TXD1"
   },
@@ -1611,8 +1611,8 @@
     "1": "VDDO_4",
     "2": "BTN_NAV"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": "GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)"
   },
@@ -1645,8 +1645,8 @@
     "1": "3V3",
     "2": "BTN_MODE"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -2076,8 +2076,8 @@
     "1": "TC_IR",
     "2": "GND"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": "entree IR inutilisee"
   },
@@ -2092,8 +2092,8 @@
     "1": "TC_RESETN",
     "2": "GND"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": "pont en reset tant que le P4 ne pilote pas"
   },
@@ -2573,8 +2573,8 @@
     "1": "ETH_ISET",
     "2": "GND"
    },
-   "lcsc": "",
-   "mpn": "",
+   "lcsc": "C25914",
+   "mpn": "0402WGF6191TCE",
    "dnp": false,
    "note": ""
   },
@@ -2621,8 +2621,8 @@
     "1": "3V3",
     "2": "PHY_RST"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -2998,8 +2998,8 @@
     "1": "VDDO_4",
     "2": "SD_CMD"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -3014,8 +3014,8 @@
     "1": "VDDO_4",
     "2": "SD_D0"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -3030,8 +3030,8 @@
     "1": "VDDO_4",
     "2": "SD_D1"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -3046,8 +3046,8 @@
     "1": "VDDO_4",
     "2": "SD_D2"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -3062,8 +3062,8 @@
     "1": "VDDO_4",
     "2": "SD_D3"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": ""
   },
@@ -3078,8 +3078,8 @@
     "1": "3V3",
     "2": "SD_CD"
    },
-   "lcsc": "C25531",
-   "mpn": "0402WGJ0103TCE",
+   "lcsc": "C25744",
+   "mpn": "0402WGF1002TCE",
    "dnp": false,
    "note": "detection de carte, GPIO7 (domaine 3,3 V)"
   },

@@ -135,17 +135,17 @@ Circuit repris du projet ouvert **Antmicro hdmi-mipi-bridge** (Apache-2.0), adap
 | LED de debug | Aucune | GPIO6 | Optionnel |
 | Écran, boutons, I²C, pont HDMI, PHY | — | **Brochage identique** | Aucun |
 
-## 5. BOM : ce qui reste à trancher (livrable 5)
+## 5. BOM : ce qui restait à trancher (traité au [livrable 5](05-bom-chiffree.md))
 
 | Pièce | Statut |
 |---|---|
 | TC358743XBG (U8) | Pas chez LCSC : achat broker, à fournir à JLCPCB |
-| 4,02 kΩ 1 % (R13, R14), 499 kΩ 1 % (R15, R16), 6,19 kΩ 1 % (R38) | Référence LCSC à choisir |
+| 4,02 kΩ 1 % (R13, R14), 499 kΩ 1 % (R15, R16), 6,19 kΩ 1 % (R38) | **Résolu** au livrable 5 : C43251, C25793, C25914 ([`docs/05`](05-bom-chiffree.md#2-les-trois-composants-de-précision-ligne--à-choisir--résolue)) |
 | Oscillateur 27 MHz (Y2) | C2992365 : seulement 27 en stock ; alternatives C160453, C390805 |
 | Flash GD25Q128ESIGR (U7) | C2928891, 1 091 en stock ; compatibilité de mode QIO à vérifier avec le firmware |
 | Module écran MSP1541 | Hors assemblage JLCPCB, à acheter à part |
 
-Toutes les autres lignes portent un code LCSC **vérifié en stock le 2026-11-12**.
+Toutes les autres lignes portent un code LCSC **vérifié en stock le 2026-11-12**. La 10 kΩ passe de C25531 à C25744 (bibliothèque de base, 20 M en stock).
 
 ## 6. Points à faire relire par un humain avant fabrication
 

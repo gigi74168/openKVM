@@ -115,17 +115,17 @@ R9,100k,power,"Buck 1,2 V (TC358743)",Resistor_SMD:R_0402_1005Metric,C25741,0402
 R10,100k,power,"Buck 1,2 V (TC358743)",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,
 R11,0R,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,VDD_BAT ne doit jamais flotter
 R12,0R,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
-R13,4.02k 1%,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,,,oui,
-R14,4.02k 1%,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,,,oui,
-R15,499k 1%,mcu,DCDC coeur (pilote par le P4),Resistor_SMD:R_0402_1005Metric,,,oui,
-R16,499k 1%,mcu,DCDC coeur (pilote par le P4),Resistor_SMD:R_0402_1005Metric,,,oui,
+R13,4.02k 1%,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,C43251,0402WGF4021TCE,oui,
+R14,4.02k 1%,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,C43251,0402WGF4021TCE,oui,
+R15,499k 1%,mcu,DCDC coeur (pilote par le P4),Resistor_SMD:R_0402_1005Metric,C25793,0402WGF4993TCE,oui,
+R16,499k 1%,mcu,DCDC coeur (pilote par le P4),Resistor_SMD:R_0402_1005Metric,C25793,0402WGF4993TCE,oui,
 R17,0R,mcu,Quartz 40 MHz,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
 R18,0R,mcu,Quartz 40 MHz,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
-R19,10k,mcu,Flash SPI 16 Mo,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
-R20,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,"RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
-R21,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,"GPIO35 = strap BOOT, aussi RMII TXD1"
-R22,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)
-R23,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R19,10k,mcu,Flash SPI 16 Mo,Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
+R20,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,"RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
+R21,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,"GPIO35 = strap BOOT, aussi RMII TXD1"
+R22,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)
+R23,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
 R24,1k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,
 R25,4.7k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
 R26,4.7k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
@@ -134,16 +134,16 @@ R28,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE
 R29,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,HPD pilote par le TC358743 (relecture EDID)
 R30,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,non,option : HPD boucle sur le +5 V (schema Antmicro)
 R31,2k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C4109,0402WGF2001TCE,oui,valeur du schema Antmicro
-R32,10k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,entree IR inutilisee
-R33,10k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,pont en reset tant que le P4 ne pilote pas
+R32,10k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,entree IR inutilisee
+R33,10k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,pont en reset tant que le P4 ne pilote pas
 R34,0R,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
 R35,22R,hdmi,Oscillateur 27 MHz,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
 R36,4.7k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,strap : 1 = RMII
 R37,4.7k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,strap PHY_AD0 = 1 (adresse 1)
-R38,6.19k 1%,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,,,oui,
+R38,6.19k 1%,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25914,0402WGF6191TCE,oui,
 R39,33R,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25105,0402WGF330JTCE,oui,"50 MHz vers GPIO50, au plus pres du PHY"
 R40,4.7k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
-R41,10k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R41,10k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
 R42,470R,eth,RJ45,Resistor_SMD:R_0402_1005Metric,C25117,0402WGF4700TCE,oui,"LED verte = lien, active a l etat bas"
 R43,470R,eth,RJ45,Resistor_SMD:R_0402_1005Metric,C25117,0402WGF4700TCE,oui,"LED jaune = 100M / activite, active a l etat haut"
 R44,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
@@ -152,12 +152,12 @@ R46,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C2
 R47,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
 R48,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
 R49,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
-R50,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
-R51,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
-R52,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
-R53,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
-R54,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
-R55,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,"detection de carte, GPIO7 (domaine 3,3 V)"
+R50,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
+R51,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
+R52,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
+R53,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
+R54,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
+R55,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,"detection de carte, GPIO7 (domaine 3,3 V)"
 R56,100k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,carte eteinte par defaut
 R57,22R,periph,ESD USB,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,USB FS : 22 ohms serie pres du P4
 R58,22R,periph,ESD USB,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
