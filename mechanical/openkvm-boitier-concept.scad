@@ -1,4 +1,4 @@
-// openKVM v1 - boitier CONCEPT (apercu, pas un fichier d'impression final)
+// openKVM v1 SANS ECRAN - boitier CONCEPT (apercu, pas un fichier d'impression final)
 // CERN-OHL-S-2.0. Toutes les cotes sont en mm et seront figees au livrable 7,
 // une fois le PCB route. Repere : origine = coin arriere gauche du PCB,
 // X vers la droite, Y vers l'avant, Z vers le haut.
@@ -11,7 +11,7 @@ paroi = 2.0;
 fond = 1.6;
 entretoise = 2.5;         // sous le PCB (soudures des broches du RJ45)
 capot = 1.6;
-h_interne = 19.2;         // du dessus du PCB au dessous du capot
+h_interne = 14.2;         // du dessus du PCB au dessous du capot : RJ45 (13,4 mm) + 0,8 mm de jeu
 /* [Vue] */
 vue = "assemble";         // [assemble, eclate, coque]
 montrer_carte = true;
@@ -26,8 +26,9 @@ hdmi   = [26.0, 15.8, -0.2,  6.6];   // face arriere
 usb_c  = [39.5,  9.8,  0.0,  3.9];   // face arriere (CIBLE)
 usb_e  = [31.0,  9.8,  0.0,  3.9];   // face gauche (EXT)
 sd     = [19.4, 13.0,  0.0,  2.4];   // face droite
-btn    = [[32.1, 4.4, 0.4, 2.6], [40.6, 4.4, 0.4, 2.6]];   // face droite
-ecran  = [22.5, 23.5, 28.6, 28.6];   // fenetre du capot : centre X, centre Y, L, l
+btn    = [[38.0, 4.4, 0.4, 2.6]];   // face droite : bouton FN unique
+leds   = [29.6, 33.6];               // face avant : X des LED alim (D4) et etat (D3)
+d_led  = 2.0;                        // diametre des trous de LED
 trous  = [[2.5, 23.9], [2.5, 42.5], [40.6, 43.5]];          // vis M2
 
 module arrondi(d, r = 3) {
@@ -49,6 +50,8 @@ module coque() {
     decoupe_x(usb_e, 0);
     decoupe_x(sd, ext[0] - paroi);
     for (b = btn) decoupe_x(b, ext[0] - paroi);
+    // trous des 2 LED, face avant, juste au-dessus du PCB (conduit de lumiere a definir au livrable 7)
+    for (x = leds) translate([o + x, ext[1] - paroi - 0.1, z_pcb + 1.0]) rotate([-90, 0, 0]) cylinder(d = d_led, h = paroi + 0.2, $fn = 24);
     // aerations sous les puces chaudes (P4 et TC358743)
     for (i = [0:5]) translate([o + 18 + i*3.2, o + 14, -0.1]) cube([1.6, 22, fond + 0.2]);
   }
@@ -66,10 +69,12 @@ module couvercle() {
       translate([paroi + 0.15, paroi + 0.15, -2]) difference() {   // levre d'emboitement
         cube([ext[0] - 2*paroi - 0.3, ext[1] - 2*paroi - 0.3, 2]);
         translate([1.2, 1.2, -0.1]) cube([ext[0] - 2*paroi - 2.7, ext[1] - 2*paroi - 2.7, 2.2]);
+        // pas de levre a l'arriere : elle toucherait le dessus du RJ45
+        translate([-0.1, -0.1, -0.1]) cube([ext[0], 1.5, 2.2]);
       }
     }
-    translate([o + ecran[0] - ecran[2]/2, o + ecran[1] - ecran[3]/2, -0.1]) cube([ecran[2], ecran[3], capot + 0.2]);
-    for (i = [0:4]) translate([o + 40.5, o + 6 + i*3.2, -0.1]) cube([3, 1.6, capot + 0.2]);
+    // capot plein (pas d'ecran) : seulement des ouies au-dessus du TC358743 et de l'ESP32-P4
+    for (i = [0:6]) translate([o + 19, o + 15 + i*3.2, -0.1]) cube([15, 1.6, capot + 0.2]);
   }
 }
 
@@ -84,10 +89,9 @@ module carte() {   // volumes simplifies, pour situer les decoupes
       color("#d0d0d0") translate([30.5, 12.4, 0]) cube([14.7, 14, 1.9]);          // microSD
       color("#303030") translate([21.5, 26, 0]) cube([10, 10, 0.9]);            // ESP32-P4
       color("#303030") translate([23, 15.5, 0]) cube([6, 6, 1.2]);              // TC358743
-      for (y = [32.1, 40.6]) color("#f0f0f0") translate([41.2, y - 3.5, 0.2]) cube([4.6, 7, 2.5]);
-      // module ecran MSP1541 (32 x 43,72 mm), pose sous le capot
-      color("#204080") translate([6.5, 0.6, h_interne - 3.6]) cube([32, 43.72, 1.6]);
-      color("#101010") translate([8.2, 9.2, h_interne - 2.0]) cube([28.6, 28.6, 1.6]);
+      color("#f0f0f0") translate([41.2, 38.0 - 3.5, 0.2]) cube([4.6, 7, 2.5]);     // bouton FN
+      color("#30c040") translate([29.6 - 0.8, 43.3, 0]) cube([1.6, 0.8, 0.6]);     // LED alim
+      color("#e0c020") translate([33.6 - 0.8, 43.3, 0]) cube([1.6, 0.8, 0.6]);     // LED etat
     }
   }
 }
@@ -96,7 +100,7 @@ if (vue == "coque") { color("#e9e4d8") coque(); if (montrer_carte) carte(); }
 else if (vue == "eclate") {
   color("#e9e4d8") coque();
   if (montrer_carte) translate([0, 0, 12]) carte();
-  color("#e9e4d8") translate([0, 0, 36]) couvercle();
+  color("#e9e4d8") translate([0, 0, 30]) couvercle();
 } else {
   color("#e9e4d8") coque();
   if (montrer_carte) carte();

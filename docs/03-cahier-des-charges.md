@@ -1,6 +1,6 @@
 # 03 — Cahier des charges et diagramme de blocs
 
-Date : **2026-11-12**. Statut : **proposition, à valider**.
+Date : **2026-11-12**. Statut : **proposition, à valider**. Révision **sans écran** (décision du 2026-11-12, voir [00](00-decision-architecture.md)).
 Références : livrables [00](00-decision-architecture.md), [01](01-recherche-kvm-existants.md), [02](02-choix-soc-capture.md).
 Les numéros entre crochets renvoient aux sources en fin de document.
 Les mentions « estimation » signalent des chiffres **non mesurés**, à confirmer au bring-up (livrable 9).
@@ -13,7 +13,7 @@ Les mentions « estimation » signalent des chiffres **non mesurés**, à confir
 | Capture | TC358743XBG (broker + consignation JLCPCB), CSI-2 2 voies |
 | Réseau | Ethernet 10/100, PHY IP101GRI (RMII) |
 | Assemblage | JLCPCB, série de 5 |
-| Disposition | Celle du Mini : écran sur le dessus, boutons et microSD sur le côté |
+| Disposition | **Sans écran.** Connecteurs comme le Mini ; 1 bouton et la microSD sur le côté ; 2 LED en façade |
 | Audio | Carte son USB (UAC2) émulée, pas d'audio HDMI |
 | Boîtier | Imprimé par toi en FDM, **enveloppe maximale 50 × 50 × 50 mm** |
 | PoE | Non |
@@ -31,9 +31,10 @@ Les mentions « estimation » signalent des chiffres **non mesurés**, à confir
 | F-04 | Stockage virtuel : CD-ROM / clé USB à partir d'une image sur microSD ou d'une URL | Démarrage d'un ISO d'installation Linux sur la cible |
 | F-05 | Bibliothèque d'ISO persistante sur la microSD, envoi reprenable | Un envoi interrompu reprend sans repartir de zéro |
 | F-06 | Carte son USB vers la cible, son renvoyé au navigateur en Opus | Son audible dans le navigateur |
-| F-07 | Écran 240×240 : IP, MAC, état USB/HDMI, nombre de sessions | Lisible à 50 cm |
-| F-08 | 2 boutons latéraux : navigation écran et mode | Actifs bas, anti-rebond logiciel |
-| F-09 | Interface web locale (UI du fork), mot de passe, OIDC en option | Accessible via l'IP affichée |
+| F-07 | **Pas d'écran.** Deux LED : alimentation (câblée sur le 5 V, sans firmware) et état (pilotée par le firmware : démarrage, réseau prêt, session active, erreur) | Les deux visibles en façade ; codes de clignotement définis au livrable 8 |
+| F-07b | L'appareil se trouve sans afficher son IP : nom mDNS (`openkvm.local`, à confirmer au livrable 8) et nom d'hôte DHCP | L'interface web s'ouvre par le nom, sans connaître l'IP |
+| F-08 | 1 bouton latéral « FN » : appui long = réinitialisation réseau, puis usine (durées au livrable 8) | Actif bas, anti-rebond logiciel |
+| F-09 | Interface web locale (UI du fork), mot de passe, OIDC en option | Accessible par le nom mDNS ou l'IP donnée par le routeur |
 | F-10 | Mises à jour OTA signées avec retour arrière automatique | 2 slots OTA de 6 Mo |
 | F-11 | Wake-on-LAN, MQTT / Home Assistant, Tailscale | Repris du fork |
 | F-12 | Port EXT : alimentation + USB FS (console série/JTAG de debug, extensions futures) | Flash du firmware possible par ce port |
@@ -59,18 +60,18 @@ Les mentions « estimation » signalent des chiffres **non mesurés**, à confir
 | USB-C « EXT » | USB-C 16 broches, UFP, Rd 5,1 kΩ | Alimentation + **USB FS** (USB Serial/JTAG du P4, GPIO24/25) | VBUS, D+/D−, CC1/CC2 |
 | RJ45 | Embase avec magnétiques intégrées, 2 LED | 10/100BASE-TX | 2 paires + LED link/activité |
 | microSD | Support push-push, accessible sur le côté | SD 4 bits, slot SDMMC 0 (UHS-I) | CLK, CMD, D0..D3, détection carte |
-| Écran | IPS 1,54" 240×240, ST7789, nappe FPC | SPI 4 fils sans MISO | MOSI, SCLK, CS, DC, RST, BL |
-| Boutons | 2 boutons tactiles latéraux + BOOT/RESET internes (accessibles au trombone) | GPIO | — |
+| LED | 2 LED 0603 en bord avant : alimentation (verte) et état (jaune) | 5 V direct ; GPIO6 | — |
+| Boutons | 1 bouton latéral FN (GPIO23) + BOOT interne (GPIO35). Pas de bouton RESET : reset par débranchement ou par les pastilles de debug | GPIO | — |
 | Debug | Pastilles de test UART0 (GPIO37/38), 3V3, GND, EN, BOOT | — | — |
 
 ### 2.4 Mécanique (détails au livrable 7)
 
 | ID | Exigence |
 |---|---|
-| M-01 | Enveloppe extérieure ≤ **50 × 50 × 50 mm**. Objectif : **≈ 48 × 48 × 25 mm** |
+| M-01 | Enveloppe extérieure ≤ **50 × 50 × 50 mm**. Objectif : **≈ 50 × 50 × 22 mm** (le concept actuel fait 49,6 × 49,6 × 21,5 mm) |
 | M-02 | PCB carré, cible **≤ 44 × 44 mm**, 4 couches, épaisseur 1,6 mm |
-| M-03 | Écran sur la face supérieure, centré |
-| M-04 | Boutons et microSD sur une face latérale |
+| M-03 | Capot plein (pas d'écran), ouïes d'aération au-dessus du TC358743 et du P4 |
+| M-04 | Bouton FN et microSD sur une face latérale ; 2 LED visibles en face avant |
 | M-05 | HDMI, RJ45 et USB-C sur les faces arrière et latérales (répartition proposée au §5, à valider) |
 | M-06 | 4 trous de fixation M2 (ou des colonnettes à insert thermique) |
 | M-07 | Boîtier FDM en PETG ou ASA conseillé, à cause de la chaleur du P4 et du TC358743 ; PLA déconseillé (estimation) |
@@ -131,8 +132,8 @@ flowchart LR
   P4 <-->|RMII + MDIO| PHY[IP101GRI<br/>10/100]
   PHY <--> RJ45[RJ45 + magnétiques]
   P4 <-->|SDMMC slot 0, 4 bits| SD[microSD]
-  P4 -->|SPI| LCD[IPS 240×240<br/>ST7789]
-  BTN[2 boutons + BOOT/RESET] --> P4
+  P4 -->|GPIO6| LEDS[LED d'état<br/>+ LED d'alimentation sur le 5 V]
+  BTN[Bouton FN + BOOT interne] --> P4
 ```
 
 Version texte, si le Mermaid ne s'affiche pas :
@@ -140,8 +141,8 @@ Version texte, si le Mermaid ne s'affiche pas :
 ```
  HDMI ─ESD─► TC358743 ══CSI-2 x2══► ┌──────────────────┐ ◄═RMII═► IP101 ─► RJ45
                  ▲ 27 MHz  ◄─I²C───► │  ESP32-P4NRW32X  │ ◄─SDMMC0─► microSD
- USB-C CIBLE ═HS═══════════════════► │  (32 Mo PSRAM)   │ ─SPI─► écran 240×240
- USB-C EXT  ═FS (Serial/JTAG)══════► └──────────────────┘ ◄─ boutons
+ USB-C CIBLE ═HS═══════════════════► │  (32 Mo PSRAM)   │ ─GPIO─► LED d'état
+ USB-C EXT  ═FS (Serial/JTAG)══════► └──────────────────┘ ◄─ bouton FN
    │VBUS          │VBUS                    ▲ QSPI flash 16 Mo, quartz 40 MHz
    └──► power-mux 5 V ──► buck 3,3 V ──► DCDC cœur P4 / LDO 1,2 V TC358743
 ```
@@ -153,7 +154,7 @@ Version texte, si le Mermaid ne s'affiche pas :
 | Rail | Source | Consommateurs | Remarques |
 |---|---|---|---|
 | 5V_SYS | Power-mux (VBUS CIBLE / VBUS EXT) | Buck 3,3 V, VBUS de la microSD si besoin | Protection : fusible réarmable + TVS à l'entrée (livrable 4) |
-| 3V3 | Buck 5 V → 3,3 V | P4 (VDD_LP, VDD_IO_x, VDD_LDO, VDD_DCDCC, VDD_USBPHY), TC358743 (AVDD33, VDDIO1, VDDIO2, APLL en 3,3 V), IP101, écran, microSD | Le P4 recommande une alimentation unique en 3,3 V [1] |
+| 3V3 | Buck 5 V → 3,3 V | P4 (VDD_LP, VDD_IO_x, VDD_LDO, VDD_DCDCC, VDD_USBPHY), TC358743 (AVDD33, VDDIO1, VDDIO2, APLL en 3,3 V), IP101, microSD | Le P4 recommande une alimentation unique en 3,3 V [1] |
 | VDD_HP (~1,1 V) | DCDC externe **de la liste validée par Espressif** : ETA3485, SY8088, RY3420, BL8028, LP3219 ou TLV62569DBVR [1] | Cœur du P4 | EN_DCDC et FB_DCDC **pilotés par le P4**. Pas de convertisseur avec décharge de sortie [1] |
 | 1V2 | LDO ou petit buck depuis 3,3 V | TC358743 : VDDC1/2, VDDMIPI, AVDD12 | ≈ 0,18 A à 1080p60 d'après le datasheet [2] |
 | VDDO_3 (LDO interne P4) | P4 | Oscillateur 27 MHz du TC358743 | Comme le Mini [3]. Max 50 mA [1] |
@@ -166,10 +167,10 @@ Version texte, si le Mermaid ne s'affiche pas :
 | ESP32-P4 (flash et PSRAM comprises) | ≥ 380 mA @ 3,3 V | ≥ 1,25 W | Minimum de dimensionnement Espressif [1] |
 | TC358743 à 1080p60 | — | 0,54 W | Datasheet [2] |
 | IP101GRI | ~ ? | 0,1-0,3 W | **Non vérifié** (livrable 4) |
-| Écran + rétroéclairage | ~20-40 mA | 0,07-0,13 W | **Non vérifié** |
+| 2 LED (alimentation sur le 5 V, état sur GPIO6) | ~1,9 mA + ~1,9 mA | ~0,02 W | Calcul : (5 − 3,1) / 1 kΩ et (3,3 − 2,4) / 470 Ω |
 | microSD en écriture | jusqu'à ~100 mA (pics) | ~0,3 W | **Non vérifié** |
-| **Total sur 3,3 V** | | **≈ 2,3-2,5 W** | |
-| **Entrée 5 V** (buck à ~85 % de rendement) | **≈ 540-590 mA** | | **Estimation** |
+| **Total sur 3,3 V** | | **≈ 2,2-2,4 W** | Sans écran : 0,07 à 0,13 W de moins |
+| **Entrée 5 V** (buck à ~85 % de rendement) | **≈ 520-570 mA** | | **Estimation** |
 
 ⚠️ **Conclusion** : on risque de **dépasser un peu les 500 mA** d'un port USB 2.0 de la cible quand la microSD écrit.
 Le Mini annonce 5 V / 500 mA. Le P4 consomme probablement moins que les 380 mA de dimensionnement en usage réel.
@@ -179,9 +180,9 @@ Il faudra mesurer au bring-up. Si besoin, on recommandera d'**alimenter par EXT*
 
 | Fonction | GPIO | Origine | Changement vs Mini |
 |---|---|---|---|
-| Écran MOSI / SCLK / BL | 3 / 13 / 4 | Mini [3] | — |
-| Écran DC / RST / CS | 20 / 21 / 22 | Mini | — |
-| Bouton SW2 / SW3 | 47 / 23 | Mini | — |
+| ~~Écran~~ (MOSI, SCLK, BL, DC, RST, CS) | 3, 13, 4, 20, 21, 22 | Mini [3] | **Supprimé** : les 6 GPIO sont libres (non connectés) |
+| Bouton FN | 23 | Mini (SW3) | Seul bouton latéral ; le GPIO47 du second bouton du Mini est libre |
+| LED d'état | 6 | openKVM | Nouveau |
 | TC358743 SDA / SCL | 2 / 5 | Mini | — |
 | TC358743 RESETN / INT | 32 / 33 | Mini | — |
 | TC358743 CSI-2 | Broches MIPI dédiées | Mini | — |
@@ -209,9 +210,10 @@ Les quatre côte à côte font ≈ 49 mm, plus que les ≈ 44 mm de PCB visés. 
 |---|---|
 | Arrière | RJ45 + HDMI + USB-C CIBLE (≈ 40 mm avec les espacements) |
 | Gauche | USB-C EXT (alimentation) |
-| Droite | microSD + 2 boutons (comme le Mini) |
-| Dessus | Écran 240×240 |
-| Dessous | Trous d'accès BOOT / RESET au trombone, aérations |
+| Droite | microSD + bouton FN |
+| Avant | 2 LED : alimentation (verte) et état (jaune) |
+| Dessus | Capot plein, ouïes d'aération |
+| Dessous | Aérations ; le BOOT reste interne (boîtier ouvert) |
 
 Les largeurs exactes viendront des références choisies au livrable 4. Ce sont des ordres de grandeur, pas des cotes.
 

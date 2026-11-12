@@ -6,7 +6,7 @@ Usage : python3 bom_cost.py [--refresh]
   --refresh interroge de nouveau l'API publique de JLCPCB et met l'instantane a jour.
 Sortie : fabrication/openkvm-bom-chiffree.csv + resume sur la sortie standard.
 
-Ce que ce script NE sait PAS chiffrer (voir docs/05) : le TC358743 (broker), le module d'ecran,
+Ce que ce script NE sait PAS chiffrer (voir docs/05) : le TC358743 (broker),
 le PCB nu, le transport, les droits de douane. Ils sont reportes tels quels, jamais inventes.
 """
 import csv
@@ -37,7 +37,7 @@ FEES = {
     'packing': 0.50,           # + 0,00003 x surface en cm2 (negligeable)
 }
 XRAY = [(10, 1.64), (50, 0.82), (200, 0.49), (500, 0.33)]     # (jusqu'a n pieces, USD/piece)
-SMT_JOINTS = 708          # compte sur openkvm.kicad_pcb : 686 plots CMS + 22 trous de blindage de connecteurs CMS
+SMT_JOINTS = 692          # compte sur openkvm.kicad_pcb (version sans ecran) : 672 plots CMS + 20 pattes traversantes de pieces CMS
 MANUAL_JOINTS = 16        # RJ45 HR911105A (seul composant traversant)
 XRAY_PER_BOARD = {'bga_qfn': 3, 'avec_uson': 8}   # U8, U1, U9 | + 5 x TPD4E05U06 (USON sans broches visibles)
 
@@ -121,7 +121,7 @@ def main():
             print(f'  rayons X ({k:9s})   : {v:7.2f} $  -> {v / boards:6.2f} $/carte')
         lo = (parts + base + xr['bga_qfn']) / boards
         hi = (parts + base + xr['avec_uson']) / boards
-        print(f'TOTAL par carte, hors PCB nu / TC358743 / ecran / transport : {lo:.2f} a {hi:.2f} $')
+        print(f'TOTAL par carte, hors PCB nu / TC358743 / transport : {lo:.2f} a {hi:.2f} $')
         if boards == 8:
             with open(OUT, 'w', newline='') as f:
                 w = csv.writer(f)

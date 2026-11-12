@@ -54,7 +54,7 @@ class Svg:
 
 
 def blocs():
-    s = Svg(1500, 800, 'openKVM v1 - diagramme de blocs')
+    s = Svg(1500, 800, 'openKVM v1 (sans ecran) - diagramme de blocs')
     s.box(30, 90, 200, 330, '', kind='ext', dashed=True)
     s.note(64, 116, 'Machine cible', 15)
     s.box(55, 150, 150, 70, 'Sortie HDMI', kind='video')
@@ -68,8 +68,8 @@ def blocs():
     s.box(1180, 100, 130, 70, 'IP101GRI', 'PHY 10/100', 'net')
     s.box(1350, 100, 120, 70, 'J4 RJ45', 'magnetiques', 'net')
     s.box(1180, 210, 290, 62, 'J5 microSD', 'slot SDMMC 0, UHS-I : images ISO', 'io')
-    s.box(1180, 312, 290, 62, 'Ecran IPS 240 x 240', 'ST7789, SPI, connecteur J7', 'io')
-    s.box(1180, 414, 290, 62, 'Boutons + LED debug', '2 lateraux ; RESET et BOOT internes', 'io')
+    s.box(1180, 312, 290, 62, 'LED alim + LED etat', 'verte sur le 5 V ; jaune sur GPIO6', 'io')
+    s.box(1180, 414, 290, 62, 'Bouton FN', '1 lateral ; BOOT interne ; pas d ecran', 'io')
     s.box(1180, 516, 290, 62, 'Flash SPI 16 Mo', 'GD25Q128E : firmware + OTA', 'io')
     s.link([(205, 185), (300, 185)], 'TMDS')
     s.link([(450, 185), (520, 185)])
@@ -97,7 +97,7 @@ def blocs():
     s.link([(885, 640), (885, 560)], 'VDD_HP', lx=930, ly=606)
     s.link([(525, 680), (525, 760), (1125, 760), (1125, 720)], '5V_SYS', lx=825, ly=752)
     s.note(1230, 672, 'Tout le reste est en 3,3 V.')
-    s.note(1230, 692, 'Budget estime : 0,54 a 0,59 A sous 5 V.')
+    s.note(1230, 692, 'Budget estime : 0,52 a 0,57 A sous 5 V.')
     s.save('diagramme-blocs.svg')
 
 
@@ -112,7 +112,7 @@ def alim():
     s.box(1070, 90, 190, 70, 'U2 TLV62569', 'VDD_HP ~1,1 V|EN et FB : P4', 'pwr')
     s.box(1320, 90, 150, 70, 'Coeur P4', 'VDD_HP_0..3', 'soc')
     s.box(800, 215, 300, 90, 'Rail 3V3', 'P4 (E/S, LDO, USB PHY)|TC358743 (AVDD33, VDDIO)|'
-          'IP101GRI, ecran, microSD, oscillateur', 'io')
+          'IP101GRI, microSD, oscillateur', 'io')
     s.box(1160, 215, 310, 90, 'LDO internes du P4', 'VDDO_FLASH 3,3 V  -  VDDO_PSRAM 1,9 V|'
           'VDDO_3 2,5 V : MIPI + AVDD25|VDDO_4 3,3 / 1,8 V : E/S microSD', 'soc')
     s.box(800, 400, 190, 70, 'U6 TLV62569', '1,2 V : 100k / 100k', 'pwr')

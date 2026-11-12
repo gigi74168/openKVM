@@ -38,10 +38,10 @@ C_PARTS = {
 
 SHEETS = [
     ('power', 'Alimentation', 'USB-C, OU ideal 5 V, buck 3,3 V, buck 1,2 V'),
-    ('mcu', 'ESP32-P4', 'SoC, flash, quartz, DCDC coeur, boutons, LED, debug'),
+    ('mcu', 'ESP32-P4', 'SoC, flash, quartz, DCDC coeur, bouton, LED, debug'),
     ('hdmi', 'Capture HDMI', 'Connecteur HDMI, ESD, TC358743, oscillateur 27 MHz'),
     ('eth', 'Ethernet', 'PHY IP101GRI, quartz 25 MHz, RJ45 a magnetiques integres'),
-    ('periph', 'Peripheriques', 'microSD (UHS-I), ecran SPI, ESD USB'),
+    ('periph', 'Peripheriques', 'microSD (UHS-I), ESD USB'),
 ]
 
 
@@ -143,10 +143,10 @@ def build():
     S = 'mcu'
     G = 'ESP32-P4'
     p4 = {
-        1: NC, 2: 'I2C_SDA', 3: 'LCD_MOSI', 4: 'LCD_BL', 5: 'I2C_SCL', 6: 'LED_DBG', 7: 'SD_CD',
-        8: 'SD_PWR_EN_N', 9: '3V3', 10: NC, 11: NC, 12: NC, 13: NC, 14: 'LCD_SCLK', 15: NC, 16: NC,
-        17: NC, 18: NC, 19: NC, 20: NC, 21: '3V3', 22: 'LCD_DC', 23: 'LCD_RST', 24: 'LCD_CS',
-        25: 'BTN_MODE', 26: 'VDD_HP', 27: 'FLASH_CS', 28: 'FLASH_Q', 29: 'FLASH_WP',
+        1: NC, 2: 'I2C_SDA', 3: NC, 4: NC, 5: 'I2C_SCL', 6: 'LED_STAT', 7: 'SD_CD',
+        8: 'SD_PWR_EN_N', 9: '3V3', 10: NC, 11: NC, 12: NC, 13: NC, 14: NC, 15: NC, 16: NC,
+        17: NC, 18: NC, 19: NC, 20: NC, 21: '3V3', 22: NC, 23: NC, 24: NC,
+        25: 'BTN_FN', 26: 'VDD_HP', 27: 'FLASH_CS', 28: 'FLASH_Q', 29: 'FLASH_WP',
         30: 'VDDO_FLASH', 31: 'FLASH_HOLD', 32: 'FLASH_CK', 33: 'FLASH_D', 34: 'DSI_REXT',
         35: NC, 36: NC, 37: NC, 38: NC, 39: NC, 40: NC, 41: 'VDDO_3',
         42: 'CSI_D0_N', 43: 'CSI_D0_P', 44: 'CSI_CLK_P', 45: 'CSI_CLK_N', 46: 'CSI_D1_N',
@@ -157,7 +157,7 @@ def build():
         68: NC, 69: 'UART0_TX', 70: 'UART0_RX', 71: 'VDDO_FLASH', 72: 'VDDO_PSRAM', 73: 'VDDO_3',
         74: 'VDDO_4', 75: '3V3', 76: 'VDD_HP', 77: '3V3', 78: 'FB_DCDC', 79: 'EN_DCDC',
         80: 'SD_D0', 81: 'SD_D1', 82: 'SD_D2', 83: 'SD_D3', 84: 'SD_CLK', 85: 'VDDO_4',
-        86: 'SD_CMD', 87: NC, 88: NC, 89: 'BTN_NAV', 90: NC, 91: 'VDD_HP', 92: 'RMII_TX_EN',
+        86: 'SD_CMD', 87: NC, 88: NC, 89: NC, 90: NC, 91: 'VDD_HP', 92: 'RMII_TX_EN',
         93: 'RMII_REF_CLK', 94: 'PHY_RST', 95: 'RMII_MDIO', 96: '3V3', 97: NC, 98: NC,
         99: 'XTAL_N', 100: 'XTAL_P', 101: '3V3', 102: 'VDD_BAT', 103: 'CHIP_PU', 104: NC, 105: 'GND',
     }
@@ -209,21 +209,23 @@ def build():
     d.R('VDDO_FLASH', 'FLASH_CS', '10k', S, G)
     d.decap('VDDO_FLASH', ['100nF'], S, G)
 
-    G = 'Reset, boot, boutons, LED'
+    G = 'Reset, boot, bouton, LED'
     d.R('3V3', 'CHIP_PU', '10k', S, G, note='RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8')
     d.C('CHIP_PU', '1uF', S, G)
     d.R('3V3', 'RMII_TXD1_BOOT', '10k', S, G, note='GPIO35 = strap BOOT, aussi RMII TXD1')
-    d.part('SW3', 'SW4', 'BOOT', 'openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5', S, G,
+    d.part('SW2', 'SW4', 'BOOT', 'openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5', S, G,
            {1: 'RMII_TXD1_BOOT', 2: 'RMII_TXD1_BOOT', 3: 'GND', 4: 'GND'}, 'C318884', 'TS-1187A-B-A-B')
-    d.part('SW1', 'SWSIDE', 'NAV', 'openkvm:KEY-SMD_TS-1101VS-C-A-A', S, G,
-           {1: 'GND', 2: 'GND', 3: 'BTN_NAV', 4: 'GND'}, 'C318936', 'TS-1101VS-C-A-A')
-    d.R('VDDO_4', 'BTN_NAV', '10k', S, G, note='GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)')
-    d.part('SW2', 'SWSIDE', 'MODE', 'openkvm:KEY-SMD_TS-1101VS-C-A-A', S, G,
-           {1: 'GND', 2: 'GND', 3: 'BTN_MODE', 4: 'GND'}, 'C318936', 'TS-1101VS-C-A-A')
-    d.R('3V3', 'BTN_MODE', '10k', S, G)
-    d.R('LED_DBG', 'LED_DBG_A', '1k', S, G)
-    d.part('D3', 'LED', 'LED verte debug', FP_LED, S, G, {1: 'GND', 2: 'LED_DBG_A'},
-           'C12624', 'KT-0603G', note='1 = cathode, 2 = anode')
+    # Pas d'ecran : un bouton lateral unique et deux LED remplacent l'affichage.
+    d.R('5V_SYS', 'LED_PWR_A', '1k', S, G, note='LED verte (Vf ~3,1 V) sur le 5 V : ~1,9 mA. Sur 3,3 V elle serait presque eteinte')
+    d.part('SW1', 'SWSIDE', 'FN', 'openkvm:KEY-SMD_TS-1101VS-C-A-A', S, G,
+           {1: 'GND', 2: 'GND', 3: 'BTN_FN', 4: 'GND'}, 'C318936', 'TS-1101VS-C-A-A',
+           note='GPIO23 : appui long = reinitialisation reseau / usine (firmware)')
+    d.R('3V3', 'BTN_FN', '10k', S, G)
+    d.R('LED_STAT', 'LED_STAT_A', '470R', S, G, note='LED jaune (Vf 2,4 V) depuis GPIO6 : ~1,9 mA')
+    d.part('D3', 'LED', 'LED jaune etat', FP_LED, S, G, {1: 'GND', 2: 'LED_STAT_A'},
+           'C2287', 'KT-0603Y', note='1 = cathode, 2 = anode ; pilotee par le firmware')
+    d.part('D4', 'LED', 'LED verte alim', FP_LED, S, G, {1: 'GND', 2: 'LED_PWR_A'},
+           'C12624', 'KT-0603G', note='1 = cathode, 2 = anode ; allumee des que le 5 V est present')
     d.R('3V3', 'I2C_SDA', '4.7k', S, G)
     d.R('3V3', 'I2C_SCL', '4.7k', S, G)
     d.part('J8', 'HDR6', 'DEBUG UART', 'Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical',
@@ -356,13 +358,6 @@ def build():
     d.R('3V3', 'SD_PWR_EN_N', '100k', S, G, note='carte eteinte par defaut')
     d.decap('SD_VDD', ['10uF*', '100nF'], S, G)
 
-    G = 'Ecran ST7789 240x240'
-    d.part('J7', 'JST8', 'LCD', 'openkvm:CONN-TH_SM08B-SRSS-TB-LF-SN', S, G,
-           {1: 'GND', 2: '3V3', 3: 'LCD_SCLK', 4: 'LCD_MOSI', 5: 'LCD_RST', 6: 'LCD_DC',
-            7: 'LCD_CS', 8: 'LCD_BL', 9: 'GND', 10: 'GND'},
-           'C160407', 'SM08B-SRSS-TB(LF)(SN)', note='meme ordre que le module MSP1541')
-    d.decap('3V3', ['100nF'], S, G)
-
     G = 'ESD USB'
     d.part('U13', 'TPD4E05U06', 'TPD4E05U06DQAR', esd, S, G,
            {1: 'USB_HS_DP', 2: 'USB_HS_DM', 3: 'GND', 4: 'J1_CC1', 5: 'J1_CC2',
@@ -387,8 +382,6 @@ def symbol_pins(lcsc_lib_pins):
         'SWSIDE': [('3', 'SW', 'L'), ('1', 'MNT', 'L'), ('4', 'SW', 'R'), ('2', 'MNT', 'R')],
         'PMOS': [('1', 'G', 'L'), ('2', 'S', 'R'), ('3', 'D', 'R')],
         'HDR6': [(str(i), str(i), 'L') for i in range(1, 7)],
-        'JST8': [(str(i), n, 'L') for i, n in enumerate(
-            ['GND', 'VCC', 'SCL', 'SDA', 'RES', 'DC', 'CS', 'BLK', 'MNT', 'MNT'], 1)],
         'TPD4E05U06': [('1', 'D1+', 'L'), ('2', 'D1-', 'L'), ('4', 'D2+', 'L'), ('5', 'D2-', 'L'),
                        ('3', 'GND', 'L'), ('10', 'NC', 'R'), ('9', 'NC', 'R'), ('7', 'NC', 'R'),
                        ('6', 'NC', 'R'), ('8', 'GND', 'R')],

@@ -84,7 +84,7 @@ servirait à rien.
 |---|---|---|
 | PHY Ethernet | **IP101GRI** (10/100 RMII), comme le Mini, pilote ESP-IDF intégré | Firmware Mini [2] |
 | Horloge TC358743 | Oscillateur 27 MHz alimenté par le LDO VDD_O3 du P4 | Firmware Mini [2] |
-| Écran | IPS 1,54" 240×240, contrôleur **ST7789**, SPI sans MISO | Firmware Mini [2] |
+| Écran | **Aucun** (décision du 2026-11-12, voir [00](00-decision-architecture.md)). Le Mini, lui, a un IPS 1,54" 240×240 ST7789 | Ta décision ; firmware Mini [2] |
 | Port EXT | USB-C : alimentation + USB FS, **power-mux** avec l'alimentation venant de la cible | Ta réponse + [1] |
 | microSD | Slot SDMMC 0 (IOMUX) à étudier pour accélérer les ISO | Livrable 1, §5 |
 | PoE | **Non** | Ta réponse |
@@ -96,7 +96,7 @@ servirait à rien.
 | ESP32-P4NRW32X | 6,21 $ | ✅ LCSC 2026-11-12 |
 | TC358743XBG | ~3,84 $ + frais broker et port | ❌ agrégateur, à confirmer |
 | Flash 16 Mo | ~2,28 $ (W25Q128JVSIQ, en rupture) | ⚠️ alternative à trouver |
-| **Sous-total** | **≈ 12-13 $** | Hors PHY, écran, connecteurs, passifs, PCB, assemblage |
+| **Sous-total** | **≈ 12-13 $** | Hors PHY, connecteurs, passifs, PCB, assemblage |
 
 Il reste environ 26 $ sous les 39 $ du Mini pour le reste de la carte, le PCB et l'assemblage. C'est jouable, mais
 **l'assemblage de 5 cartes chez JLCPCB (frais fixes, BGA, consignation) va peser lourd**. Chiffrage complet au livrable 5.

@@ -50,7 +50,7 @@ C48,22uF,mcu,DCDC coeur (pilote par le P4),Capacitor_SMD:C_0805_2012Metric,C4578
 C49,22pF,mcu,Quartz 40 MHz,Capacitor_SMD:C_0402_1005Metric,C1555,0402CG220J500NT,oui,CL = 15 pF : valeur a ajuster a la mesure
 C50,22pF,mcu,Quartz 40 MHz,Capacitor_SMD:C_0402_1005Metric,C1555,0402CG220J500NT,oui,
 C51,100nF,mcu,Flash SPI 16 Mo,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
-C52,1uF,mcu,"Reset, boot, boutons, LED",Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C52,1uF,mcu,"Reset, boot, bouton, LED",Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
 C53,100nF,hdmi,Connecteur HDMI,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
 C54,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
 C55,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
@@ -82,10 +82,10 @@ C80,100nF,eth,RJ45,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,"po
 C81,100nF,eth,RJ45,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
 C82,10uF,periph,"microSD (slot SDMMC 0, UHS-I)",Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
 C83,100nF,periph,"microSD (slot SDMMC 0, UHS-I)",Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
-C84,100nF,periph,Ecran ST7789 240x240,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
 D1,SMF5.0A,power,USB-C CIBLE,openkvm:SOD-123FL_L2.7-W1.8-LS3.8-RD,C19077497,SMF5.0A,oui,1 = cathode
 D2,SMF5.0A,power,USB-C EXT,openkvm:SOD-123FL_L2.7-W1.8-LS3.8-RD,C19077497,SMF5.0A,oui,1 = cathode
-D3,LED verte debug,mcu,"Reset, boot, boutons, LED",LED_SMD:LED_0603_1608Metric,C12624,KT-0603G,oui,"1 = cathode, 2 = anode"
+D3,LED jaune etat,mcu,"Reset, boot, bouton, LED",LED_SMD:LED_0603_1608Metric,C2287,KT-0603Y,oui,"1 = cathode, 2 = anode ; pilotee par le firmware"
+D4,LED verte alim,mcu,"Reset, boot, bouton, LED",LED_SMD:LED_0603_1608Metric,C12624,KT-0603G,oui,"1 = cathode, 2 = anode ; allumee des que le 5 V est present"
 FB1,600R@100MHz,hdmi,TC358743XBG,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
 FB2,600R@100MHz,hdmi,TC358743XBG,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
 FB3,600R@100MHz,hdmi,TC358743XBG,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
@@ -97,8 +97,7 @@ J2,USB-C EXT,power,USB-C EXT,openkvm:USB-C_SMD-TYPE-C-31-M-12_1,C165948,TYPE-C-3
 J3,HDMI A,hdmi,Connecteur HDMI,openkvm:HDMI-SMD_19P-P0.50-H-F,C138388,HDMI-001 19PCBTP,oui,
 J4,HR911105A,eth,RJ45,openkvm:RJ45-TH_HR911105A,C12074,HR911105A,oui,"9/10 = LED verte (A/K), 12/11 = LED jaune (A/K)"
 J5,microSD,periph,"microSD (slot SDMMC 0, UHS-I)",openkvm:TF-SMD_TF-01A,C91145,TF-01A,oui,
-J7,LCD,periph,Ecran ST7789 240x240,openkvm:CONN-TH_SM08B-SRSS-TB-LF-SN,C160407,SM08B-SRSS-TB(LF)(SN),oui,meme ordre que le module MSP1541
-J8,DEBUG UART,mcu,"Reset, boot, boutons, LED",Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,,non,non monte : pastilles de test
+J8,DEBUG UART,mcu,"Reset, boot, bouton, LED",Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,,non,non monte : pastilles de test
 L1,2.2uH 2A,power,"Buck 3,3 V",openkvm:IND-SMD_L3.0-W3.0,C43389,SWPA3015S2R2MT,oui,
 L2,2.2uH 2A,power,"Buck 1,2 V (TC358743)",openkvm:IND-SMD_L3.0-W3.0,C43389,SWPA3015S2R2MT,oui,
 L3,2.2uH 2A,mcu,DCDC coeur (pilote par le P4),openkvm:IND-SMD_L3.0-W3.0,C43389,SWPA3015S2R2MT,oui,
@@ -122,13 +121,13 @@ R16,499k 1%,mcu,DCDC coeur (pilote par le P4),Resistor_SMD:R_0402_1005Metric,C25
 R17,0R,mcu,Quartz 40 MHz,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
 R18,0R,mcu,Quartz 40 MHz,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
 R19,10k,mcu,Flash SPI 16 Mo,Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
-R20,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,"RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
-R21,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,"GPIO35 = strap BOOT, aussi RMII TXD1"
-R22,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)
-R23,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
-R24,1k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,
-R25,4.7k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
-R26,4.7k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
+R20,10k,mcu,"Reset, boot, bouton, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,"RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
+R21,10k,mcu,"Reset, boot, bouton, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,"GPIO35 = strap BOOT, aussi RMII TXD1"
+R22,1k,mcu,"Reset, boot, bouton, LED",Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,"LED verte (Vf ~3,1 V) sur le 5 V : ~1,9 mA. Sur 3,3 V elle serait presque eteinte"
+R23,10k,mcu,"Reset, boot, bouton, LED",Resistor_SMD:R_0402_1005Metric,C25744,0402WGF1002TCE,oui,
+R24,470R,mcu,"Reset, boot, bouton, LED",Resistor_SMD:R_0402_1005Metric,C25117,0402WGF4700TCE,oui,"LED jaune (Vf 2,4 V) depuis GPIO6 : ~1,9 mA"
+R25,4.7k,mcu,"Reset, boot, bouton, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
+R26,4.7k,mcu,"Reset, boot, bouton, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
 R27,47k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C25792,0402WGF4702TCE,oui,rappel SCL cote recepteur (spec HDMI)
 R28,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,detection du +5 V de la source
 R29,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,HPD pilote par le TC358743 (relecture EDID)
@@ -161,9 +160,8 @@ R55,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C2
 R56,100k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,carte eteinte par defaut
 R57,22R,periph,ESD USB,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,USB FS : 22 ohms serie pres du P4
 R58,22R,periph,ESD USB,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
-SW1,NAV,mcu,"Reset, boot, boutons, LED",openkvm:KEY-SMD_TS-1101VS-C-A-A,C318936,TS-1101VS-C-A-A,oui,
-SW2,MODE,mcu,"Reset, boot, boutons, LED",openkvm:KEY-SMD_TS-1101VS-C-A-A,C318936,TS-1101VS-C-A-A,oui,
-SW3,BOOT,mcu,"Reset, boot, boutons, LED",openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5,C318884,TS-1187A-B-A-B,oui,
+SW1,FN,mcu,"Reset, boot, bouton, LED",openkvm:KEY-SMD_TS-1101VS-C-A-A,C318936,TS-1101VS-C-A-A,oui,GPIO23 : appui long = reinitialisation reseau / usine (firmware)
+SW2,BOOT,mcu,"Reset, boot, bouton, LED",openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5,C318884,TS-1187A-B-A-B,oui,
 U1,ESP32-P4NRW32X,mcu,ESP32-P4,openkvm:QFN-104_L10.0-W10.0-P0.35-TL-EP7.5,C54540373,ESP32-P4NRW32X,oui,revision de puce >= 3.x obligatoire
 U2,TLV62569DBVR,mcu,DCDC coeur (pilote par le P4),openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR,C141836,TLV62569DBVR,oui,modele valide par Espressif ; pas de variante a decharge de sortie
 U3,LM66100DCKR,power,OU ideal 5 V,openkvm:SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL,C2869734,LM66100DCKR,oui,"CE croisee : la source la plus haute alimente, l autre est bloquee"

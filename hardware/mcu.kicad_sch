@@ -3849,45 +3849,13 @@
 			)
 		)
 	)
-	(global_label "LCD_MOSI"
-		(shape passive)
-		(at 45.72 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5304fbeb-9eff-57ba-b839-d32f2e11bc9d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+	(no_connect
+		(at 45.72 38.1)
+		(uuid "b0d54f23-1733-5093-a77b-04d8b3e7a5e6")
 	)
-	(global_label "LCD_BL"
-		(shape passive)
-		(at 45.72 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b10b5aca-b159-57eb-9cdd-171b728f71fa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+	(no_connect
+		(at 45.72 40.64)
+		(uuid "1af6fb6c-1cf2-5fd2-b895-b59ff9ea2440")
 	)
 	(global_label "I2C_SCL"
 		(shape passive)
@@ -3909,7 +3877,7 @@
 			)
 		)
 	)
-	(global_label "LED_DBG"
+	(global_label "LED_STAT"
 		(shape passive)
 		(at 45.72 45.72 180)
 		(effects
@@ -3918,7 +3886,7 @@
 			)
 			(justify right)
 		)
-		(uuid "cbe3058b-1bd3-51c0-afaa-a9e4de3d77d9")
+		(uuid "22da41c6-809e-5d4b-8fee-ce882b8ff33d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4005,25 +3973,9 @@
 		(at 45.72 63.5)
 		(uuid "39b1c794-2ecf-5a07-af67-0a61aa379e1b")
 	)
-	(global_label "LCD_SCLK"
-		(shape passive)
-		(at 45.72 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a37f47d3-4a89-50c5-9933-08d1e65e4093")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+	(no_connect
+		(at 45.72 66.04)
+		(uuid "f618c898-40e9-57a1-8c9b-9166f4811c8c")
 	)
 	(no_connect
 		(at 45.72 68.58)
@@ -4069,67 +4021,19 @@
 			)
 		)
 	)
-	(global_label "LCD_DC"
-		(shape passive)
-		(at 45.72 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "93720807-a55e-54e7-b582-67208ae19d49")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+	(no_connect
+		(at 45.72 86.36)
+		(uuid "7fd34ef4-0f45-5909-8c7b-affd6a4c1ab1")
 	)
-	(global_label "LCD_RST"
-		(shape passive)
-		(at 45.72 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5045a4c8-20e3-5a34-9206-36d61b44d1dd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+	(no_connect
+		(at 45.72 88.9)
+		(uuid "9527bbd7-cbc6-57e1-9b25-44b8c59f07a2")
 	)
-	(global_label "LCD_CS"
-		(shape passive)
-		(at 45.72 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1bb43796-4daa-58ce-99d9-ec595904f4db")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+	(no_connect
+		(at 45.72 91.44)
+		(uuid "cd669118-5693-5dfb-bddb-b2f35d6e27ec")
 	)
-	(global_label "BTN_MODE"
+	(global_label "BTN_FN"
 		(shape passive)
 		(at 45.72 93.98 180)
 		(effects
@@ -4138,7 +4042,7 @@
 			)
 			(justify right)
 		)
-		(uuid "9dd13b6b-a829-5941-855f-9179a6327fc2")
+		(uuid "96b714e8-35aa-5459-8aed-6cd1e65efeba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -5233,25 +5137,9 @@
 		(at 81.28 119.38)
 		(uuid "8019d20a-6ed1-594f-b885-ac89d9199604")
 	)
-	(global_label "BTN_NAV"
-		(shape passive)
-		(at 81.28 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "70fa1ff9-2b02-527b-aa0f-c086f6ecb85d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
+	(no_connect
+		(at 81.28 121.92)
+		(uuid "91d2082f-9a8a-5124-b597-53fc95577978")
 	)
 	(no_connect
 		(at 81.28 124.46)
@@ -12298,7 +12186,7 @@
 			)
 		)
 	)
-	(text "Reset, boot, boutons, LED"
+	(text "Reset, boot, bouton, LED"
 		(exclude_from_sim no)
 		(at 15.24 210.82 0)
 		(effects
@@ -12308,7 +12196,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f3be51f0-1a37-5635-93de-64e852d1d714")
+		(uuid "1dfe94fd-4f9e-5193-b09d-2f3b853051b2")
 	)
 	(symbol
 		(lib_id "openkvm_sym:SW4")
@@ -12318,8 +12206,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9b32cfc9-8455-53ff-a003-5ca28f2a4e6a")
-		(property "Reference" "SW3"
+		(uuid "1b019734-4875-57d8-b351-848deb4e4842")
+		(property "Reference" "SW2"
 			(at 48.26 219.98 0)
 			(effects
 				(font
@@ -12383,21 +12271,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "516c828e-e7d2-536d-ae53-eb2e631914e7")
+			(uuid "43409c8b-0bb5-54d4-ae1c-2b48c491ae27")
 		)
 		(pin "2"
-			(uuid "676539f9-2efc-5e37-9f00-170407ea330e")
+			(uuid "5b8bf8e8-41b8-5425-8866-e98bbe988b66")
 		)
 		(pin "3"
-			(uuid "10b0b211-b319-55c8-b133-95698cb3fde4")
+			(uuid "57542da2-f9e4-544f-888b-aeb10e18a5f0")
 		)
 		(pin "4"
-			(uuid "093f71ee-1957-5bd2-9de8-407b5b6fda84")
+			(uuid "0eff2131-4acc-5559-8254-2612fc303d86")
 		)
 		(instances
 			(project "openkvm"
 				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -12501,7 +12389,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NAV"
+		(property "Value" "FN"
 			(at 129.54 230.8 0)
 			(effects
 				(font
@@ -12528,7 +12416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "GPIO23 : appui long = reinitialisation reseau / usine (firmware)"
 			(at 137.16 226.06 0)
 			(effects
 				(font
@@ -12576,6 +12464,17 @@
 			)
 		)
 	)
+	(text "GPIO23 : appui long = reinitialisation reseau / usine (firmware)"
+		(exclude_from_sim no)
+		(at 129.54 234 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f10d0adf-cd93-5e4f-bd03-9b9b6c5ddd17")
+	)
 	(global_label "GND"
 		(shape passive)
 		(at 127 226.06 180)
@@ -12616,7 +12515,7 @@
 			)
 		)
 	)
-	(global_label "BTN_NAV"
+	(global_label "BTN_FN"
 		(shape passive)
 		(at 127 223.52 180)
 		(effects
@@ -12625,7 +12524,7 @@
 			)
 			(justify right)
 		)
-		(uuid "f7b98b35-8d71-5ef0-9168-b2033416de27")
+		(uuid "99afc2d8-8416-522b-8627-3b3eafa2d98a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12657,15 +12556,15 @@
 		)
 	)
 	(symbol
-		(lib_id "openkvm_sym:SWSIDE")
-		(at 218.44 226.06 0)
+		(lib_id "openkvm_sym:HDR6")
+		(at 218.44 231.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "1b019734-4875-57d8-b351-848deb4e4842")
-		(property "Reference" "SW2"
+		(dnp yes)
+		(uuid "8e227fca-113c-5765-b71c-63a2d2707352")
+		(property "Reference" "J8"
 			(at 210.82 219.98 0)
 			(effects
 				(font
@@ -12674,181 +12573,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MODE"
-			(at 210.82 230.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "openkvm:KEY-SMD_TS-1101VS-C-A-A"
-			(at 218.44 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 218.44 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C318936"
-			(at 218.44 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TS-1101VS-C-A-A"
-			(at 218.44 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43409c8b-0bb5-54d4-ae1c-2b48c491ae27")
-		)
-		(pin "2"
-			(uuid "5b8bf8e8-41b8-5425-8866-e98bbe988b66")
-		)
-		(pin "3"
-			(uuid "57542da2-f9e4-544f-888b-aeb10e18a5f0")
-		)
-		(pin "4"
-			(uuid "0eff2131-4acc-5559-8254-2612fc303d86")
-		)
-		(instances
-			(project "openkvm"
-				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 208.28 226.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "89fd2555-12bc-56e6-ad5e-fd5a0f087325")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 228.6 226.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "57fb703c-524b-589b-9496-a0a85d0b91c5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "BTN_MODE"
-		(shape passive)
-		(at 208.28 223.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ad8fd5e6-66d0-5d0c-817f-1728acb028e8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 228.6 223.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9a82275a-f9f3-5406-a1f6-ff4d2a02d1a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "openkvm_sym:HDR6")
-		(at 299.72 231.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "8e227fca-113c-5765-b71c-63a2d2707352")
-		(property "Reference" "J8"
-			(at 292.1 219.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(property "Value" "DEBUG UART"
-			(at 292.1 240.96 0)
+			(at 210.82 240.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12857,7 +12583,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 299.72 231.14 0)
+			(at 218.44 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12866,7 +12592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 299.72 231.14 0)
+			(at 218.44 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12875,7 +12601,7 @@
 			)
 		)
 		(property "Description" "non monte : pastilles de test"
-			(at 299.72 231.14 0)
+			(at 218.44 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12884,7 +12610,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 299.72 231.14 0)
+			(at 218.44 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12893,7 +12619,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 299.72 231.14 0)
+			(at 218.44 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12930,25 +12656,25 @@
 	)
 	(text "non monte : pastilles de test"
 		(exclude_from_sim no)
-		(at 292.1 244.16 0)
+		(at 210.82 244.16 0)
 		(effects
 			(font
 				(size 1 1)
 			)
 			(justify left bottom)
 		)
-		(uuid "d90efb8d-84d3-59ed-8b89-5dbbec43e375")
+		(uuid "424fb57a-bc36-58b6-b51d-18dcbd3031a3")
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 289.56 223.52 180)
+		(at 208.28 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3801a455-3655-5e34-b604-e660bee64a30")
+		(uuid "ce5c32eb-8da6-56e1-abe3-2708795238c1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12961,14 +12687,14 @@
 	)
 	(global_label "UART0_TX"
 		(shape passive)
-		(at 289.56 226.06 180)
+		(at 208.28 226.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "41730d87-b845-59b5-9e6f-e9dd06c24931")
+		(uuid "574ac950-f34e-517c-8435-3c3c9bafa8e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12981,14 +12707,14 @@
 	)
 	(global_label "UART0_RX"
 		(shape passive)
-		(at 289.56 228.6 180)
+		(at 208.28 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "87257f68-3124-541e-a034-e7bd46e96d6d")
+		(uuid "84fe63ea-4f44-5a5b-a299-e94711598280")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13001,14 +12727,14 @@
 	)
 	(global_label "CHIP_PU"
 		(shape passive)
-		(at 289.56 231.14 180)
+		(at 208.28 231.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "1a6b45f9-b56c-56c3-af19-66216c8cfc4d")
+		(uuid "d62c93af-62be-5d06-9a13-2bcb7b1aae99")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13021,14 +12747,14 @@
 	)
 	(global_label "RMII_TXD1_BOOT"
 		(shape passive)
-		(at 289.56 233.68 180)
+		(at 208.28 233.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "83a711a1-d053-58ba-b606-a9401da3eebb")
+		(uuid "47f90eb5-0b63-54c4-a2db-9ff5779eb39e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13041,14 +12767,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 289.56 236.22 180)
+		(at 208.28 236.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "df391b5f-70ec-5d76-8a1c-2f3bcd704b57")
+		(uuid "47ce785e-39b3-5bf7-8b65-c1de0d3aabbb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13458,7 +13184,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 51.4 271.15 0)
 			(effects
 				(font
@@ -13485,7 +13211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)"
+		(property "Description" "LED verte (Vf ~3,1 V) sur le 5 V : ~1,9 mA. Sur 3,3 V elle serait presque eteinte"
 			(at 50.8 273.05 0)
 			(effects
 				(font
@@ -13494,7 +13220,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C11702"
 			(at 50.8 273.05 0)
 			(effects
 				(font
@@ -13503,7 +13229,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGF1002TCE"
+		(property "MPN" "0402WGF1001TCE"
 			(at 50.8 273.05 0)
 			(effects
 				(font
@@ -13527,7 +13253,7 @@
 			)
 		)
 	)
-	(global_label "VDDO_4"
+	(global_label "5V_SYS"
 		(shape passive)
 		(at 46.99 273.05 180)
 		(effects
@@ -13536,7 +13262,7 @@
 			)
 			(justify right)
 		)
-		(uuid "9c0ee3f9-2a01-5d1d-b3cb-63463532082f")
+		(uuid "ce69c432-37de-5060-b2d3-09b15faf1c0e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13547,7 +13273,7 @@
 			)
 		)
 	)
-	(global_label "BTN_NAV"
+	(global_label "LED_PWR_A"
 		(shape passive)
 		(at 54.61 273.05 0)
 		(effects
@@ -13556,7 +13282,7 @@
 			)
 			(justify left)
 		)
-		(uuid "0d3ca8c8-0b90-59a7-874b-791250d8948e")
+		(uuid "917ff38c-fc97-59f2-92f8-a271e04765d4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13674,7 +13400,7 @@
 			)
 		)
 	)
-	(global_label "BTN_MODE"
+	(global_label "BTN_FN"
 		(shape passive)
 		(at 54.61 279.4 0)
 		(effects
@@ -13683,7 +13409,7 @@
 			)
 			(justify left)
 		)
-		(uuid "621d5823-c1c9-556b-8709-28ea3a0516c1")
+		(uuid "6627a2c9-b02e-57c7-9bae-85522e4184fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13712,7 +13438,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "470R"
 			(at 51.4 283.85 0)
 			(effects
 				(font
@@ -13739,7 +13465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED jaune (Vf 2,4 V) depuis GPIO6 : ~1,9 mA"
 			(at 50.8 285.75 0)
 			(effects
 				(font
@@ -13748,7 +13474,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C11702"
+		(property "LCSC" "C25117"
 			(at 50.8 285.75 0)
 			(effects
 				(font
@@ -13757,7 +13483,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGF1001TCE"
+		(property "MPN" "0402WGF4700TCE"
 			(at 50.8 285.75 0)
 			(effects
 				(font
@@ -13781,7 +13507,7 @@
 			)
 		)
 	)
-	(global_label "LED_DBG"
+	(global_label "LED_STAT"
 		(shape passive)
 		(at 46.99 285.75 180)
 		(effects
@@ -13790,7 +13516,7 @@
 			)
 			(justify right)
 		)
-		(uuid "06977733-ad2d-538a-9aa6-526df9a175aa")
+		(uuid "760d84f5-19c0-5482-ac60-822373c43b45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13801,7 +13527,7 @@
 			)
 		)
 	)
-	(global_label "LED_DBG_A"
+	(global_label "LED_STAT_A"
 		(shape passive)
 		(at 54.61 285.75 0)
 		(effects
@@ -13810,7 +13536,7 @@
 			)
 			(justify left)
 		)
-		(uuid "9f578775-7764-5aca-8e27-146f4ece03f5")
+		(uuid "74973fb6-6926-544b-97f5-9ed21b5091e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13839,7 +13565,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED verte debug"
+		(property "Value" "LED jaune etat"
 			(at 51.4 290.2 0)
 			(effects
 				(font
@@ -13866,7 +13592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1 = cathode, 2 = anode"
+		(property "Description" "1 = cathode, 2 = anode ; pilotee par le firmware"
 			(at 50.8 292.1 0)
 			(effects
 				(font
@@ -13875,7 +13601,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C12624"
+		(property "LCSC" "C2287"
 			(at 50.8 292.1 0)
 			(effects
 				(font
@@ -13884,7 +13610,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "KT-0603G"
+		(property "MPN" "KT-0603Y"
 			(at 50.8 292.1 0)
 			(effects
 				(font
@@ -13908,7 +13634,7 @@
 			)
 		)
 	)
-	(global_label "LED_DBG_A"
+	(global_label "LED_STAT_A"
 		(shape passive)
 		(at 46.99 292.1 180)
 		(effects
@@ -13917,7 +13643,7 @@
 			)
 			(justify right)
 		)
-		(uuid "87375c2f-9f89-5d9c-9f8d-cb3d4984a6ab")
+		(uuid "132fbe84-e010-5af1-ae50-8e1d19523b93")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13949,15 +13675,15 @@
 		)
 	)
 	(symbol
-		(lib_id "openkvm_sym:R")
+		(lib_id "openkvm_sym:LED")
 		(at 50.8 298.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cb27aa07-4de3-5f87-bb12-25aede0fcee2")
-		(property "Reference" "R25"
+		(uuid "293de72b-9727-51ce-89ef-0bb8dd9c2f2f")
+		(property "Reference" "D4"
 			(at 50.2 296.55 0)
 			(effects
 				(font
@@ -13966,7 +13692,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "LED verte alim"
 			(at 51.4 296.55 0)
 			(effects
 				(font
@@ -13975,7 +13701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 50.8 298.45 0)
 			(effects
 				(font
@@ -13993,7 +13719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1 = cathode, 2 = anode ; allumee des que le 5 V est present"
 			(at 50.8 298.45 0)
 			(effects
 				(font
@@ -14002,7 +13728,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
+		(property "LCSC" "C12624"
 			(at 50.8 298.45 0)
 			(effects
 				(font
@@ -14011,7 +13737,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402WGF4701TCE"
+		(property "MPN" "KT-0603G"
 			(at 50.8 298.45 0)
 			(effects
 				(font
@@ -14021,21 +13747,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "fdff2480-2f50-54cb-aba2-cf23f44f9914")
+			(uuid "b88dc450-ab3e-5c83-af85-c31ffa49dc20")
 		)
 		(pin "2"
-			(uuid "9b4985bd-e4ce-5607-934f-903695256287")
+			(uuid "6875433f-fd24-5969-b390-7819ece8fe53")
 		)
 		(instances
 			(project "openkvm"
 				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
-					(reference "R25")
+					(reference "D4")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "LED_PWR_A"
 		(shape passive)
 		(at 46.99 298.45 180)
 		(effects
@@ -14044,7 +13770,7 @@
 			)
 			(justify right)
 		)
-		(uuid "0d66b41b-aadb-52bc-b324-aa12c30092d3")
+		(uuid "2dacc93f-ce86-5c32-a017-bacc229a2f9e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -14055,7 +13781,7 @@
 			)
 		)
 	)
-	(global_label "I2C_SDA"
+	(global_label "GND"
 		(shape passive)
 		(at 54.61 298.45 0)
 		(effects
@@ -14064,7 +13790,7 @@
 			)
 			(justify left)
 		)
-		(uuid "02457c37-d741-5dc9-8f5b-f4226f3b6300")
+		(uuid "cd0682fb-11c0-513a-a72e-1e912b0fd82b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -14083,8 +13809,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a8d350b2-7cde-594f-bc94-b4afe3cb4f76")
-		(property "Reference" "R26"
+		(uuid "cb27aa07-4de3-5f87-bb12-25aede0fcee2")
+		(property "Reference" "R25"
 			(at 50.2 302.9 0)
 			(effects
 				(font
@@ -14148,15 +13874,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb13e667-0143-546a-b203-223600891428")
+			(uuid "fdff2480-2f50-54cb-aba2-cf23f44f9914")
 		)
 		(pin "2"
-			(uuid "2014f43a-2af6-55d6-b526-28acabd039c0")
+			(uuid "9b4985bd-e4ce-5607-934f-903695256287")
 		)
 		(instances
 			(project "openkvm"
 				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
-					(reference "R26")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -14182,7 +13908,7 @@
 			)
 		)
 	)
-	(global_label "I2C_SCL"
+	(global_label "I2C_SDA"
 		(shape passive)
 		(at 54.61 304.8 0)
 		(effects
@@ -14191,7 +13917,134 @@
 			)
 			(justify left)
 		)
-		(uuid "0d4cd799-8900-5819-b445-303691d9a4ee")
+		(uuid "656b5e90-8dca-5e56-8646-a180d1ef6e0d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "openkvm_sym:R")
+		(at 50.8 311.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8d350b2-7cde-594f-bc94-b4afe3cb4f76")
+		(property "Reference" "R26"
+			(at 50.2 309.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 51.4 309.25 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 50.8 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25900"
+			(at 50.8 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF4701TCE"
+			(at 50.8 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb13e667-0143-546a-b203-223600891428")
+		)
+		(pin "2"
+			(uuid "2014f43a-2af6-55d6-b526-28acabd039c0")
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3V3"
+		(shape passive)
+		(at 46.99 311.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b07e1e13-6ee9-5ebb-b63b-0c8158a71341")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape passive)
+		(at 54.61 311.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "87a69052-8665-5b5f-b03d-cc440dfc18ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects

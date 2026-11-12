@@ -93,7 +93,7 @@ Toshiba et de cartes HAT TC358743 open source, à identifier au livrable 2.
 | 4 | Le débit microSD limite les ISO | Étudier le **slot SDMMC 0 (IOMUX, UHS-I possible)** plutôt que le slot 1 du Mini. Débit réel à mesurer. |
 | 5 | Double alimentation | Power-mux idéal (ex. famille TPS2121) ou diodes Schottky : choix au livrable 4. |
 | 6 | Audio par USB, pas par HDMI | On n'a pas à câbler l'I²S du TC358743. Option : prévoir des points de test I²S « au cas où ». |
-| 7 | Garder la compatibilité de brochage avec le Mini | Fork quasi sans modification. Seul `jetkvm_board_config.h` changera. |
+| 7 | Garder la compatibilité de brochage avec le Mini | Vrai pour le pont HDMI, le PHY et le bouton. **Mise à jour du 2026-11-12 : openKVM n'a pas d'écran** ([00](00-decision-architecture.md)) : en plus de `jetkvm_board_config.h`, il faudra retirer le pilote d'écran du fork et ajouter une LED d'état. |
 | 8 | Le marché bas prix est en 100M, le Gigabit coûte plus de 90 $ | Le choix v1 en 100M est cohérent. Différenciation : prix, matériel ouvert (CERN-OHL), boîtier imprimable. |
 | 9 | « JetKVM » est une marque de BuildJet, Inc. [1] | Ne pas utiliser ce nom ni le logo sur notre produit, notre UI ni nos boîtiers : retirer le branding du fork. |
 

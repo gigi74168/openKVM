@@ -1,7 +1,8 @@
 # openKVM
 
-**Un mini KVM-over-IP ouvert, matériel compris.** Tu le branches sur le HDMI et l'USB d'une machine, et tu la pilotes
-depuis un navigateur : écran, clavier, souris, démarrage sur une image ISO, jusque dans le BIOS.
+**Un mini KVM-over-IP ouvert, matériel compris, sans écran.** Tu le branches sur le HDMI et l'USB d'une machine, et tu la
+pilotes depuis un navigateur : image, clavier, souris, démarrage sur une image ISO, jusque dans le BIOS.
+Sur le boîtier : deux LED et un bouton, rien d'autre.
 
 | Carte (pré-placement) | Boîtier (concept) |
 |---|---|
@@ -21,10 +22,11 @@ depuis un navigateur : écran, clavier, souris, démarrage sur une image ISO, ju
 | Réseau | Ethernet 10/100 (IP101GRI) | idem |
 | USB cible | USB 2.0 High Speed : clavier, souris, stockage, audio | idem |
 | microSD | Slot UHS-I (ISO plus rapides, à mesurer) | Slot standard |
-| Écran | IPS 240 × 240, ST7789 | idem |
-| Taille | PCB 45 × 45 mm ; boîtier ≈ 49,6 × 49,6 × 26,5 mm imprimé en 3D | 42 × 42 × 23 mm, aluminium |
+| Écran | **Aucun** : LED d'alimentation + LED d'état, appareil trouvé par son nom réseau (mDNS, à venir avec le firmware) | IPS 240 × 240 |
+| Boutons | 1 latéral (réinitialisation) + BOOT interne | 2 latéraux |
+| Taille | PCB 45 × 45 mm ; boîtier ≈ 49,6 × 49,6 × 21,5 mm imprimé en 3D | 42 × 42 × 23 mm, aluminium |
 | Matériel | **Ouvert : CERN-OHL-S-2.0** | Non publié |
-| Firmware | Fork MIT du firmware du Mini (à venir) | MIT |
+| Firmware | Fork MIT du firmware du Mini, pilote d'écran retiré (à venir) | MIT |
 | Prix | Objectif < 39 $ : **hors d'atteinte à 5–8 cartes**, jouable vers 20 cartes (voir [`docs/05`](docs/05-bom-chiffree.md)) | 39 $ ; 33 $ par 3 |
 
 Pas de Gigabit en v1 : ni l'ESP32-P4 ni le RV1106 du JetKVM original ne le permettent.
@@ -44,10 +46,11 @@ L'explication est dans [`docs/00`](docs/00-decision-architecture.md).
 
 - **Arrière** : RJ45, HDMI, USB-C vers la machine cible.
 - **Gauche** : USB-C « EXT » (alimentation, flashage, debug).
-- **Droite** : microSD et deux boutons.
-- **Dessus** : écran 240 × 240, posé sous le capot.
+- **Droite** : microSD et bouton FN.
+- **Avant** : LED d'alimentation (verte) et LED d'état (jaune).
+- **Dessus** : capot plein, ouïes d'aération.
 
-Le fichier [`hardware/openkvm.kicad_pcb`](hardware/openkvm.kicad_pcb) contient le contour, les 182 empreintes et tous
+Le fichier [`hardware/openkvm.kicad_pcb`](hardware/openkvm.kicad_pcb) contient le contour, les 180 composants et tous
 les nets. Les connecteurs et les puces principales sont placés ; **le routage reste à faire**.
 
 ## Le schéma
@@ -61,23 +64,23 @@ Six pages, disponibles en [PDF](hardware/exports/openkvm-schema.pdf) et dans KiC
 | [![Périphériques](docs/images/schema-6-peripheriques.png)](docs/images/schema-6-peripheriques.png) Périphériques | [![Vue d'ensemble](docs/images/schema-1-vue-ensemble.png)](docs/images/schema-1-vue-ensemble.png) Vue d'ensemble |
 
 Le schéma est généré depuis une description texte ([`design.py`](hardware/scripts/design.py)), puis KiCad en
-ré-extrait la netlist pour la comparer à la source : **720 broches, 0 différence**.
+ré-extrait la netlist pour la comparer à la source : **706 broches, 0 différence**.
 
 ## Le boîtier
 
-| Arrière | Côté droit |
+| Arrière | Avant et côté droit |
 |---|---|
-| ![Boîtier arrière](docs/images/boitier-concept-arriere.png) | ![Boîtier droite](docs/images/boitier-concept-droite.png) |
+| ![Boîtier arrière](docs/images/boitier-concept-arriere.png) | ![Boîtier avant](docs/images/boitier-concept-avant.png) |
 
 [`mechanical/openkvm-boitier-concept.scad`](mechanical/openkvm-boitier-concept.scad) est un modèle **paramétrique OpenSCAD**
-qui sert d'aperçu : coque, capot à fenêtre, découpes des connecteurs. Les cotes définitives viendront au livrable 7,
+qui sert d'aperçu : coque, capot plein à ouïes, découpes des connecteurs, deux trous de LED en façade. Les cotes définitives viendront au livrable 7,
 une fois la carte routée. Pour ta propre CAO, la carte avec tous ses composants est dans
 [`mechanical/openkvm-pcb-preplacement.step.zip`](mechanical/openkvm-pcb-preplacement.step.zip) (STEP, 3,3 Mo compressé)
 et en [`GLB`](mechanical/openkvm-pcb-preplacement.glb) pour Blender ou un visualiseur web.
 
 ### Modèles 3D des composants
 
-Chaque composant a un modèle dans [`hardware/lib/openkvm.3dshapes/`](hardware/lib/openkvm.3dshapes/) : 17 en **STEP et VRML**
+Chaque composant a un modèle dans [`hardware/lib/openkvm.3dshapes/`](hardware/lib/openkvm.3dshapes/) : 16 en **STEP et VRML**
 (pièces LCSC, issues d'EasyEDA) et le BGA du TC358743, dessiné ici ([`gen_3d_bga.py`](hardware/scripts/gen_3d_bga.py)).
 Deux sont **approximatifs**, à remplacer par ceux du fabricant pour tes cotes définitives :
 
@@ -138,8 +141,8 @@ Attention : `build.sh` réécrit `openkvm.kicad_pcb`. Une fois ton routage comme
 | 1 | Recherche sur les KVM existants | ✅ [`docs/01`](docs/01-recherche-kvm-existants.md) |
 | 2 | Choix du SoC et de la puce de capture | ✅ [`docs/02`](docs/02-choix-soc-capture.md) |
 | 3 | Cahier des charges et diagramme de blocs | ✅ [`docs/03`](docs/03-cahier-des-charges.md) |
-| 4 | Schéma électronique | 🟡 rév. 0.1, à relire : [`docs/04`](docs/04-schema-electronique.md) |
-| 5 | BOM chiffrée (prix sur 5 pièces) | 🟡 rév. 0.1, à valider : [`docs/05`](docs/05-bom-chiffree.md) |
+| 4 | Schéma électronique | 🟡 rév. 0.2 (sans écran), à relire : [`docs/04`](docs/04-schema-electronique.md) |
+| 5 | BOM chiffrée (prix sur 5 pièces) | 🟡 rév. 0.2 (sans écran), à valider : [`docs/05`](docs/05-bom-chiffree.md) |
 | 6 | Spécifications de layout | ⏳ |
 | 7 | Cotes du boîtier | ⏳ concept disponible |
 | 8 | Firmware (fork du JetKVM Mini) | ⏳ |
@@ -150,7 +153,8 @@ Attention : `build.sh` réécrit `openkvm.kicad_pcb`. Une fois ton routage comme
 - **TC358743 obsolète** : introuvable chez LCSC, à acheter chez un broker (risque de contrefaçon).
 - **HDMI, USB High Speed, MIPI** : signaux rapides, le routage demandera des impédances contrôlées.
 - **BGA au pas de 0,65 mm** et QFN-104 : assemblage délicat, radiographie conseillée.
-- **Consommation** : 0,54 à 0,59 A estimés sous 5 V, au-dessus des 500 mA d'un port USB 2.0.
+- **Consommation** : 0,52 à 0,57 A estimés sous 5 V, au-dessus des 500 mA d'un port USB 2.0.
+- **Pas d'écran** : sans mDNS ou accès au routeur, l'adresse IP de l'appareil ne se devine pas. À traiter dans le firmware.
 - **Aucune certification CE/FCC** : prototypes à usage personnel.
 - **HDCP non géré** : les contenus protégés donneront un écran noir.
 

@@ -31,15 +31,14 @@ PLACE = {
     'J1': (39.5, 5.2, 180),      # USB-C CIBLE, face arriere
     'J2': (5.2, 31.0, 270),      # USB-C EXT, face gauche
     'J5': (38.0, 19.4, 90),      # microSD, face droite
-    'SW1': (43.7, 32.1, 270),    # bouton NAV, face droite
-    'SW2': (43.7, 40.6, 270),    # bouton MODE, face droite
+    'SW1': (43.7, 38.0, 270),    # bouton FN (unique), face droite
     'U8': (26.0, 18.5, 270),     # TC358743 : HDMI vers l'arriere, CSI vers le P4
     'Y2': (20.4, 18.5, 0),
     'U1': (26.5, 31.0, 180),     # ESP32-P4 : CSI et USB vers l'arriere, RMII a gauche
     'U7': (37.0, 33.0, 0),      # flash
     'Y1': (18.8, 32.8, 90),
-    'U2': (35.0, 40.0, 0),       # DCDC coeur
-    'L3': (39.3, 40.0, 0),
+    'U2': (33.5, 39.5, 0),       # DCDC coeur
+    'L3': (37.6, 39.5, 0),
     'U9': (13.6, 25.2, 0),       # PHY
     'Y3': (18.6, 24.6, 90),
     'U5': (4.6, 38.3, 0),        # buck 3V3
@@ -48,8 +47,9 @@ PLACE = {
     'L2': (16.6, 38.3, 0),
     'U3': (6.6, 42.3, 0),
     'U4': (10.2, 42.3, 0),
-    'J7': (27.6, 41.9, 0),       # connecteur ecran
-    'SW3': (18.0, 42.4, 0),      # BOOT
+    'SW2': (23.6, 41.8, 0),      # BOOT (interne)
+    'D4': (29.6, 43.7, 0),       # LED alim, bord avant
+    'D3': (33.6, 43.7, 0),       # LED etat, bord avant
 }
 # Empreintes de la lib standard KiCad sans modele 3D : on leur en rattache un (forme generique, 3,2 x 2,5 mm).
 MODEL_FALLBACK = {'Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm': 'OSC-SMD_4P-L3.2-W2.5-H1.0'}
