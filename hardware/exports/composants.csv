@@ -1,0 +1,183 @@
+Ref,Valeur,Feuille,Bloc,Empreinte,LCSC,MPN,Monte,Note
+C1,100nF,power,USB-C CIBLE,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C2,100nF,power,USB-C EXT,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C3,22uF,power,OU ideal 5 V,Capacitor_SMD:C_0805_2012Metric,C45783,CL21A226MAQNNNE,oui,
+C4,100nF,power,OU ideal 5 V,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C5,22pF,power,"Buck 3,3 V",Capacitor_SMD:C_0402_1005Metric,C1555,0402CG220J500NT,oui,avance de phase
+C6,10uF,power,"Buck 3,3 V",Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C7,22uF,power,"Buck 3,3 V",Capacitor_SMD:C_0805_2012Metric,C45783,CL21A226MAQNNNE,oui,
+C8,22uF,power,"Buck 3,3 V",Capacitor_SMD:C_0805_2012Metric,C45783,CL21A226MAQNNNE,oui,
+C9,100nF,power,"Buck 3,3 V",Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C10,22pF,power,"Buck 1,2 V (TC358743)",Capacitor_SMD:C_0402_1005Metric,C1555,0402CG220J500NT,oui,
+C11,10uF,power,"Buck 1,2 V (TC358743)",Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C12,22uF,power,"Buck 1,2 V (TC358743)",Capacitor_SMD:C_0805_2012Metric,C45783,CL21A226MAQNNNE,oui,
+C13,100nF,power,"Buck 1,2 V (TC358743)",Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C14,10uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C15,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C16,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C17,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C18,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C19,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C20,10uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C21,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C22,10uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C23,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C24,10nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C15195,CL05B103KB5NNNC,oui,
+C25,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C26,4.7uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0603_1608Metric,C19666,CL10A475KO8NNNC,oui,
+C27,10uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C28,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C29,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C30,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C31,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C32,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C33,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C34,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C35,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C36,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C37,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C38,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C39,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C40,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C41,10nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C15195,CL05B103KB5NNNC,oui,
+C42,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C43,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C44,1uF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C45,100nF,mcu,Decouplage P4 (au plus pres des broches),Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C46,22pF,mcu,DCDC coeur (pilote par le P4),Capacitor_SMD:C_0402_1005Metric,C1555,0402CG220J500NT,oui,
+C47,4.7uF,mcu,DCDC coeur (pilote par le P4),Capacitor_SMD:C_0603_1608Metric,C19666,CL10A475KO8NNNC,oui,
+C48,22uF,mcu,DCDC coeur (pilote par le P4),Capacitor_SMD:C_0805_2012Metric,C45783,CL21A226MAQNNNE,oui,
+C49,22pF,mcu,Quartz 40 MHz,Capacitor_SMD:C_0402_1005Metric,C1555,0402CG220J500NT,oui,CL = 15 pF : valeur a ajuster a la mesure
+C50,22pF,mcu,Quartz 40 MHz,Capacitor_SMD:C_0402_1005Metric,C1555,0402CG220J500NT,oui,
+C51,100nF,mcu,Flash SPI 16 Mo,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C52,1uF,mcu,"Reset, boot, boutons, LED",Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C53,100nF,hdmi,Connecteur HDMI,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C54,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C55,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C56,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C57,10nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C15195,CL05B103KB5NNNC,oui,
+C58,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C59,4.7uF,hdmi,TC358743XBG,Capacitor_SMD:C_0603_1608Metric,C19666,CL10A475KO8NNNC,oui,
+C60,10nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C15195,CL05B103KB5NNNC,oui,
+C61,4.7uF,hdmi,TC358743XBG,Capacitor_SMD:C_0603_1608Metric,C19666,CL10A475KO8NNNC,oui,
+C62,10nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C15195,CL05B103KB5NNNC,oui,
+C63,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C64,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C65,4.7uF,hdmi,TC358743XBG,Capacitor_SMD:C_0603_1608Metric,C19666,CL10A475KO8NNNC,oui,
+C66,10nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C15195,CL05B103KB5NNNC,oui,
+C67,4.7uF,hdmi,TC358743XBG,Capacitor_SMD:C_0603_1608Metric,C19666,CL10A475KO8NNNC,oui,
+C68,10nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C15195,CL05B103KB5NNNC,oui,
+C69,1uF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C52923,CL05A105KA5NQNC,oui,
+C70,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C71,100nF,hdmi,TC358743XBG,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C72,100nF,hdmi,Oscillateur 27 MHz,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C73,100nF,eth,PHY IP101GRI,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C74,10uF,eth,PHY IP101GRI,Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C75,100nF,eth,PHY IP101GRI,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C76,10uF,eth,PHY IP101GRI,Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C77,100nF,eth,PHY IP101GRI,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C78,18pF,eth,PHY IP101GRI,Capacitor_SMD:C_0402_1005Metric,C1549,0402CG180J500NT,oui,CL = 12 pF
+C79,18pF,eth,PHY IP101GRI,Capacitor_SMD:C_0402_1005Metric,C1549,0402CG180J500NT,oui,
+C80,100nF,eth,RJ45,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,"point milieu : decouplage seul, pas de tension (IP101G)"
+C81,100nF,eth,RJ45,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C82,10uF,periph,"microSD (slot SDMMC 0, UHS-I)",Capacitor_SMD:C_0603_1608Metric,C19702,CL10A106KP8NNNC,oui,
+C83,100nF,periph,"microSD (slot SDMMC 0, UHS-I)",Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+C84,100nF,periph,Ecran ST7789 240x240,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,oui,
+D1,SMF5.0A,power,USB-C CIBLE,openkvm:SOD-123FL_L2.7-W1.8-LS3.8-RD,C19077497,SMF5.0A,oui,1 = cathode
+D2,SMF5.0A,power,USB-C EXT,openkvm:SOD-123FL_L2.7-W1.8-LS3.8-RD,C19077497,SMF5.0A,oui,1 = cathode
+D3,LED verte debug,mcu,"Reset, boot, boutons, LED",LED_SMD:LED_0603_1608Metric,C12624,KT-0603G,oui,"1 = cathode, 2 = anode"
+FB1,600R@100MHz,hdmi,TC358743XBG,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
+FB2,600R@100MHz,hdmi,TC358743XBG,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
+FB3,600R@100MHz,hdmi,TC358743XBG,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
+FB4,600R@100MHz,hdmi,TC358743XBG,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
+FB5,600R@100MHz,hdmi,Oscillateur 27 MHz,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
+FB6,600R@100MHz,eth,PHY IP101GRI,Inductor_SMD:L_0603_1608Metric,C85833,BLM18KG601SN1D,oui,
+J1,USB-C CIBLE,power,USB-C CIBLE,openkvm:USB-C_SMD-TYPE-C-31-M-12_1,C165948,TYPE-C-31-M-12,oui,
+J2,USB-C EXT,power,USB-C EXT,openkvm:USB-C_SMD-TYPE-C-31-M-12_1,C165948,TYPE-C-31-M-12,oui,
+J3,HDMI A,hdmi,Connecteur HDMI,openkvm:HDMI-SMD_19P-P0.50-H-F,C138388,HDMI-001 19PCBTP,oui,
+J4,HR911105A,eth,RJ45,openkvm:RJ45-TH_HR911105A,C12074,HR911105A,oui,"9/10 = LED verte (A/K), 12/11 = LED jaune (A/K)"
+J5,microSD,periph,"microSD (slot SDMMC 0, UHS-I)",openkvm:TF-SMD_TF-01A,C91145,TF-01A,oui,
+J7,LCD,periph,Ecran ST7789 240x240,openkvm:CONN-TH_SM08B-SRSS-TB-LF-SN,C160407,SM08B-SRSS-TB(LF)(SN),oui,meme ordre que le module MSP1541
+J8,DEBUG UART,mcu,"Reset, boot, boutons, LED",Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,,non,non monte : pastilles de test
+L1,2.2uH 2A,power,"Buck 3,3 V",openkvm:IND-SMD_L3.0-W3.0,C43389,SWPA3015S2R2MT,oui,
+L2,2.2uH 2A,power,"Buck 1,2 V (TC358743)",openkvm:IND-SMD_L3.0-W3.0,C43389,SWPA3015S2R2MT,oui,
+L3,2.2uH 2A,mcu,DCDC coeur (pilote par le P4),openkvm:IND-SMD_L3.0-W3.0,C43389,SWPA3015S2R2MT,oui,
+Q1,AO3401A,periph,"microSD (slot SDMMC 0, UHS-I)",Package_TO_SOT_SMD:SOT-23,C15127,AO3401A,oui,"1 = G, 2 = S, 3 = D ; coupe la carte pour quitter le mode 1,8 V"
+R1,5.1k,power,USB-C CIBLE,Resistor_SMD:R_0402_1005Metric,C25905,0402WGF5101TCE,oui,"Rd : annonce un peripherique (UFP), 5 V par defaut"
+R2,5.1k,power,USB-C CIBLE,Resistor_SMD:R_0402_1005Metric,C25905,0402WGF5101TCE,oui,
+R3,5.1k,power,USB-C EXT,Resistor_SMD:R_0402_1005Metric,C25905,0402WGF5101TCE,oui,"Rd : annonce un peripherique (UFP), 5 V par defaut"
+R4,5.1k,power,USB-C EXT,Resistor_SMD:R_0402_1005Metric,C25905,0402WGF5101TCE,oui,
+R5,100k,power,"Buck 3,3 V",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,
+R6,100k,power,"Buck 3,3 V",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,"Vout = 0,6 x (1 + 100k/22k) = 3,33 V"
+R7,22k,power,"Buck 3,3 V",Resistor_SMD:R_0402_1005Metric,C25768,0402WGF2202TCE,oui,
+R8,100k,power,"Buck 1,2 V (TC358743)",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,"le 1,2 V demarre apres le 3,3 V"
+R9,100k,power,"Buck 1,2 V (TC358743)",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,"Vout = 0,6 x (1 + 100k/100k) = 1,2 V"
+R10,100k,power,"Buck 1,2 V (TC358743)",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,
+R11,0R,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,VDD_BAT ne doit jamais flotter
+R12,0R,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
+R13,4.02k 1%,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,,,oui,
+R14,4.02k 1%,mcu,Decouplage P4 (au plus pres des broches),Resistor_SMD:R_0402_1005Metric,,,oui,
+R15,499k 1%,mcu,DCDC coeur (pilote par le P4),Resistor_SMD:R_0402_1005Metric,,,oui,
+R16,499k 1%,mcu,DCDC coeur (pilote par le P4),Resistor_SMD:R_0402_1005Metric,,,oui,
+R17,0R,mcu,Quartz 40 MHz,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
+R18,0R,mcu,Quartz 40 MHz,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
+R19,10k,mcu,Flash SPI 16 Mo,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R20,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,"RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
+R21,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,"GPIO35 = strap BOOT, aussi RMII TXD1"
+R22,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)
+R23,10k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R24,1k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,
+R25,4.7k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
+R26,4.7k,mcu,"Reset, boot, boutons, LED",Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
+R27,47k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C25792,0402WGF4702TCE,oui,rappel SCL cote recepteur (spec HDMI)
+R28,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,detection du +5 V de la source
+R29,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,oui,HPD pilote par le TC358743 (relecture EDID)
+R30,1k,hdmi,Connecteur HDMI,Resistor_SMD:R_0402_1005Metric,C11702,0402WGF1001TCE,non,option : HPD boucle sur le +5 V (schema Antmicro)
+R31,2k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C4109,0402WGF2001TCE,oui,valeur du schema Antmicro
+R32,10k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,entree IR inutilisee
+R33,10k,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,pont en reset tant que le P4 ne pilote pas
+R34,0R,hdmi,TC358743XBG,Resistor_SMD:R_0402_1005Metric,C17168,0402WGF0000TCE,oui,
+R35,22R,hdmi,Oscillateur 27 MHz,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+R36,4.7k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,strap : 1 = RMII
+R37,4.7k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,strap PHY_AD0 = 1 (adresse 1)
+R38,6.19k 1%,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,,,oui,
+R39,33R,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25105,0402WGF330JTCE,oui,"50 MHz vers GPIO50, au plus pres du PHY"
+R40,4.7k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25900,0402WGF4701TCE,oui,
+R41,10k,eth,PHY IP101GRI,Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R42,470R,eth,RJ45,Resistor_SMD:R_0402_1005Metric,C25117,0402WGF4700TCE,oui,"LED verte = lien, active a l etat bas"
+R43,470R,eth,RJ45,Resistor_SMD:R_0402_1005Metric,C25117,0402WGF4700TCE,oui,"LED jaune = 100M / activite, active a l etat haut"
+R44,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+R45,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+R46,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+R47,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+R48,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+R49,22R,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+R50,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R51,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R52,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R53,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R54,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,
+R55,10k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25531,0402WGJ0103TCE,oui,"detection de carte, GPIO7 (domaine 3,3 V)"
+R56,100k,periph,"microSD (slot SDMMC 0, UHS-I)",Resistor_SMD:R_0402_1005Metric,C25741,0402WGF1003TCE,oui,carte eteinte par defaut
+R57,22R,periph,ESD USB,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,USB FS : 22 ohms serie pres du P4
+R58,22R,periph,ESD USB,Resistor_SMD:R_0402_1005Metric,C25092,0402WGF220JTCE,oui,
+SW1,NAV,mcu,"Reset, boot, boutons, LED",openkvm:KEY-SMD_TS-1101VS-C-A-A,C318936,TS-1101VS-C-A-A,oui,
+SW2,MODE,mcu,"Reset, boot, boutons, LED",openkvm:KEY-SMD_TS-1101VS-C-A-A,C318936,TS-1101VS-C-A-A,oui,
+SW3,BOOT,mcu,"Reset, boot, boutons, LED",openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5,C318884,TS-1187A-B-A-B,oui,
+U1,ESP32-P4NRW32X,mcu,ESP32-P4,openkvm:QFN-104_L10.0-W10.0-P0.35-TL-EP7.5,C54540373,ESP32-P4NRW32X,oui,revision de puce >= 3.x obligatoire
+U2,TLV62569DBVR,mcu,DCDC coeur (pilote par le P4),openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR,C141836,TLV62569DBVR,oui,modele valide par Espressif ; pas de variante a decharge de sortie
+U3,LM66100DCKR,power,OU ideal 5 V,openkvm:SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL,C2869734,LM66100DCKR,oui,"CE croisee : la source la plus haute alimente, l autre est bloquee"
+U4,LM66100DCKR,power,OU ideal 5 V,openkvm:SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL,C2869734,LM66100DCKR,oui,
+U5,TLV62569DBVR,power,"Buck 3,3 V",openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR,C141836,TLV62569DBVR,oui,
+U6,TLV62569DBVR,power,"Buck 1,2 V (TC358743)",openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR,C141836,TLV62569DBVR,oui,
+U7,GD25Q128ESIGR,mcu,Flash SPI 16 Mo,openkvm:SOP-8_L5.3-W5.3-P1.27-LS8.0-BL,C2928891,GD25Q128ESIGR,oui,
+U8,TC358743XBG,hdmi,TC358743XBG,openkvm:BGA-64_8x8_6.0x6.0mm,,TC358743XBG,oui,"OBSOLETE : achat broker, piece fournie a JLCPCB (consignation)"
+U9,IP101GRI,eth,PHY IP101GRI,openkvm:QFN-32_L4.0-W4.0-P0.40-BL-EP2.7,C703537,IP101GRI,oui,"adresse PHY = 1, mode RMII, quartz 25 MHz"
+U10,TPD4E05U06DQAR,hdmi,Connecteur HDMI,openkvm:USON-10_L2.5-W1.0-P0.50-BL,C138714,TPD4E05U06DQAR,oui,"0,5 pF ; broches 6-7 et 9-10 = traversee des paires"
+U11,TPD4E05U06DQAR,hdmi,Connecteur HDMI,openkvm:USON-10_L2.5-W1.0-P0.50-BL,C138714,TPD4E05U06DQAR,oui,
+U12,TPD4E05U06DQAR,hdmi,Connecteur HDMI,openkvm:USON-10_L2.5-W1.0-P0.50-BL,C138714,TPD4E05U06DQAR,oui,
+U13,TPD4E05U06DQAR,periph,ESD USB,openkvm:USON-10_L2.5-W1.0-P0.50-BL,C138714,TPD4E05U06DQAR,oui,USB HS : capacite <= 1 pF exigee
+U14,TPD4E05U06DQAR,periph,ESD USB,openkvm:USON-10_L2.5-W1.0-P0.50-BL,C138714,TPD4E05U06DQAR,oui,
+Y1,40MHz 10ppm,mcu,Quartz 40 MHz,openkvm:OSC-SMD_4P-L3.2-W2.5-BL_SIT8008BI,C9010,X322540MPB4SI,oui,
+Y2,27MHz 3V3 HCMOS,hdmi,Oscillateur 27 MHz,Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm,C2992365,CO32H4-27.000-33JDTSNL,oui,"1 = EN, 2 = GND, 3 = OUT, 4 = VDD : a verifier sur la fiche"
+Y3,25MHz 10ppm,eth,PHY IP101GRI,openkvm:CRYSTAL-SMD_4P-L3.2-W2.5-BL,C9006,X322525MOB4SI,oui,

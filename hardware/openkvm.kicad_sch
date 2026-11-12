@@ -1,0 +1,316 @@
+(kicad_sch
+	(version 20250114)
+	(generator "openkvm_gen")
+	(generator_version "9.0")
+	(uuid "b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235")
+	(paper "A4")
+	(title_block
+		(title "openKVM v1 - vue d ensemble")
+		(date "2026-11-12")
+		(rev "0.1")
+		(company "openKVM - CERN-OHL-S-2.0")
+		(comment 1 "Schema preliminaire : revue humaine obligatoire avant fabrication")
+		(comment 2 "Genere par hardware/scripts/gen_kicad.py depuis design.py")
+	)
+	(lib_symbols)
+	(text "openKVM v1 - KVM-over-IP ESP32-P4"
+		(exclude_from_sim no)
+		(at 20.32 22.86 0)
+		(effects
+			(font
+				(size 4 4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c32d24dc-289b-5ca8-9281-8a6d2f44f900")
+	)
+	(text "Schema preliminaire rev 0.1 - revue humaine obligatoire avant fabrication."
+		(exclude_from_sim no)
+		(at 20.32 30.48 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "46c17ba4-14a2-5c16-bea5-5089d7513239")
+	)
+	(text "Chaque net est porte par une etiquette globale : memes noms = meme connexion."
+		(exclude_from_sim no)
+		(at 20.32 35.56 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "2af70f0e-2b04-5785-8b0f-b1011a8d8df0")
+	)
+	(text "USB-C, OU ideal 5 V, buck 3,3 V, buck 1,2 V"
+		(exclude_from_sim no)
+		(at 27.94 63.5 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5f5a0c7-7977-5dfa-a9a0-5c22c0cb47e1")
+	)
+	(text "SoC, flash, quartz, DCDC coeur, boutons, LED, debug"
+		(exclude_from_sim no)
+		(at 104.14 63.5 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "2fc88a98-0248-52c9-96bf-85079399eaf9")
+	)
+	(text "Connecteur HDMI, ESD, TC358743, oscillateur 27 MHz"
+		(exclude_from_sim no)
+		(at 180.34 63.5 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ca1eec1-404b-53c4-8ccf-aa426a82968f")
+	)
+	(text "PHY IP101GRI, quartz 25 MHz, RJ45 a magnetiques integres"
+		(exclude_from_sim no)
+		(at 27.94 109.22 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "12ad5d08-6ecf-5368-8df8-a6f650f6468d")
+	)
+	(text "microSD (UHS-I), ecran SPI, ESD USB"
+		(exclude_from_sim no)
+		(at 104.14 109.22 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "565ffa7d-f0dc-5e7a-af02-655e6fff090e")
+	)
+	(sheet
+		(at 25.4 50.8)
+		(size 60.96 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "aa7ac235-58ac-5b5b-955e-e23e0d844f73")
+		(property "Sheetname" "Alimentation"
+			(at 25.4 50 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 25.4 77.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 50.8)
+		(size 60.96 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "630d9a5b-5183-52a4-8aa1-2952e0ed2674")
+		(property "Sheetname" "ESP32-P4"
+			(at 101.6 50 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 101.6 77.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 50.8)
+		(size 60.96 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2e81e6b9-2002-5edd-945d-414998e66100")
+		(property "Sheetname" "Capture HDMI"
+			(at 177.8 50 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "hdmi.kicad_sch"
+			(at 177.8 77.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 96.52)
+		(size 60.96 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ac3f1d0e-7847-53b1-9c2a-3a21006f7827")
+		(property "Sheetname" "Ethernet"
+			(at 25.4 95.72 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "eth.kicad_sch"
+			(at 25.4 122.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 96.52)
+		(size 60.96 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e89e678d-2443-56b8-adee-02dcc382fc57")
+		(property "Sheetname" "Peripheriques"
+			(at 101.6 95.72 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "periph.kicad_sch"
+			(at 101.6 122.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
