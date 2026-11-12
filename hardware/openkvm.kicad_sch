@@ -58,7 +58,7 @@
 		)
 		(uuid "e5f5a0c7-7977-5dfa-a9a0-5c22c0cb47e1")
 	)
-	(text "SoC, flash, quartz, DCDC coeur, boutons, LED, debug"
+	(text "SoC, flash, quartz, DCDC coeur, bouton, LED, debug"
 		(exclude_from_sim no)
 		(at 104.14 63.5 0)
 		(effects
@@ -67,7 +67,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2fc88a98-0248-52c9-96bf-85079399eaf9")
+		(uuid "410e5130-4a9c-5a29-b5aa-fa013b3aebc1")
 	)
 	(text "Connecteur HDMI, ESD, TC358743, oscillateur 27 MHz"
 		(exclude_from_sim no)
@@ -91,7 +91,7 @@
 		)
 		(uuid "12ad5d08-6ecf-5368-8df8-a6f650f6468d")
 	)
-	(text "microSD (UHS-I), ecran SPI, ESD USB"
+	(text "microSD (UHS-I), ESD USB"
 		(exclude_from_sim no)
 		(at 104.14 109.22 0)
 		(effects
@@ -100,7 +100,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "565ffa7d-f0dc-5e7a-af02-655e6fff090e")
+		(uuid "b912a4de-4bf7-518e-8548-72a96d9bcd8f")
 	)
 	(sheet
 		(at 25.4 50.8)

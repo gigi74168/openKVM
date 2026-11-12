@@ -1,6 +1,6 @@
 # 04 — Schéma électronique
 
-Date : **2026-11-12**. Révision du schéma : **0.1**. Statut : **préliminaire, à faire relire avant toute fabrication**.
+Date : **2026-11-12**. Révision du schéma : **0.2 (sans écran)**. Statut : **préliminaire, à faire relire avant toute fabrication**.
 Outil : **KiCad 9** (gratuit, fichiers texte, exporte tout ce que JLCPCB demande).
 
 > ⚠️ Ce schéma n'a **jamais été fabriqué ni testé**. Il est construit à partir de schémas de référence publics
@@ -17,12 +17,12 @@ Outil : **KiCad 9** (gratuit, fichiers texte, exporte tout ce que JLCPCB demande
 | [`hardware/exports/openkvm-schema.pdf`](../hardware/exports/openkvm-schema.pdf) | Le schéma en PDF (6 pages) |
 | [`hardware/openkvm.kicad_pcb`](../hardware/openkvm.kicad_pcb) | Carte 45 × 45 mm, 4 couches : contour, empreintes, **tous les nets chargés**, pré-placement. **Non routée.** |
 | [`hardware/fabrication/openkvm-bom-jlcpcb.csv`](../hardware/fabrication/openkvm-bom-jlcpcb.csv) | BOM au format JLCPCB (`Comment, Designator, Footprint, LCSC Part #`) |
-| [`hardware/exports/netlist.csv`](../hardware/exports/netlist.csv) | Netlist logique : 137 nets, broche par broche |
-| [`hardware/exports/composants.csv`](../hardware/exports/composants.csv) | Liste des 182 composants avec bloc, empreinte, référence LCSC et note |
+| [`hardware/exports/netlist.csv`](../hardware/exports/netlist.csv) | Netlist logique : 131 nets, broche par broche |
+| [`hardware/exports/composants.csv`](../hardware/exports/composants.csv) | Liste des 180 composants avec bloc, empreinte, référence LCSC et note |
 | `hardware/lib/` | Symboles, empreintes et modèles 3D (pièces LCSC + empreinte BGA du TC358743) |
 | `hardware/scripts/` | `design.py` (source de vérité), générateurs et vérification |
 
-**Chiffres** : 182 composants, 137 nets, 47 lignes de BOM, 720 broches.
+**Chiffres** : 180 composants, 131 nets, 46 lignes de BOM, 706 broches.
 
 ### Comment c'est fabriqué
 Le schéma est **généré** depuis [`hardware/scripts/design.py`](../hardware/scripts/design.py), qui décrit chaque composant et chaque
@@ -36,13 +36,13 @@ cd hardware && ./build.sh     # régénère schéma, PCB pré-placé, BOM et PDF
 ### Vérifications faites par outil
 | Vérification | Résultat |
 |---|---|
-| KiCad relit le schéma, extrait sa netlist, comparaison broche par broche avec `design.py` (`verify_netlist.py`) | **720 broches, 0 différence** |
+| KiCad relit le schéma, extrait sa netlist, comparaison broche par broche avec `design.py` (`verify_netlist.py`) | **706 broches, 0 différence** |
 | Chaque numéro de broche de symbole existe sur l'empreinte | OK pour les 18 pièces LCSC |
 | Parité schéma / PCB (`kicad-cli pcb drc --schematic-parity`) | OK ; seuls les 3 trous de fixation sont « en plus », c'est normal |
 | Courts-circuits entre pastilles sur le pré-placement | 0 |
 
 Le DRC signale encore 16 écarts d'isolement **internes** aux empreintes à pas fin (ESP32-P4, USB-C) avec les règles
-par défaut de KiCad, et 2 chevauchements de zones de garde. Ils se règlent avec les règles de conception du livrable 6.
+par défaut de KiCad, et plus aucun chevauchement de zones de garde. Ils se règlent avec les règles de conception du livrable 6.
 
 ## 2. Aperçu du pré-placement
 
@@ -57,8 +57,8 @@ dans le fichier `.kicad_pcb` : c'est à toi de les placer pendant le layout.
 |---|---|
 | Arrière | RJ45 J4 (x = 9), HDMI J3 (x = 26, dépasse de ~1,3 mm), USB-C CIBLE J1 (x = 39,5) |
 | Gauche | USB-C EXT J2 (y = 31) |
-| Droite | microSD J5 (y = 19,4), boutons SW1 (y = 32,1) et SW2 (y = 40,6) |
-| Bas | Connecteur écran J7, bouton BOOT SW3 |
+| Droite | microSD J5 (y = 19,4), bouton FN SW1 (y = 38) |
+| Avant | LED d'alimentation D4 (x = 29,6) et LED d'état D3 (x = 33,6), à 1,3 mm du bord ; bouton BOOT SW2 (interne) |
 
 ## 3. Notes de conception par bloc
 
@@ -104,17 +104,21 @@ Circuit repris du projet ouvert **Antmicro hdmi-mipi-bridge** (Apache-2.0), adap
 - **HR911105A** : magnétiques et terminaison « Bob Smith » intégrées. LED verte = lien, LED jaune = 100 M / activité.
 - GPIO35 est à la fois `RMII_TXD1` et le **strap BOOT** du P4, comme sur la carte d'évaluation Espressif : rappel 10 kΩ au 3,3 V.
 
-### 3.5 Écran
-- Connecteur JST-SH 8 broches (J7), même ordre que le module **MSP1541** (1,54", ST7789, 240 × 240) :
-  `GND, VCC, SCL, SDA, RES, DC, CS, BLK`. Le module se pose sous le capot, relié par une nappe de 8 fils.
-- Rétroéclairage commandé directement par GPIO4 (le module a son propre transistor). **À vérifier sur ton module.**
+### 3.5 Pas d'écran
+- Le connecteur d'écran J7 et ses 6 signaux (`MOSI, SCLK, CS, DC, RST, BL`) sont **supprimés**.
+  Les GPIO 3, 4, 13, 20, 21 et 22 du P4 sont laissés non connectés, ainsi que le GPIO47 (ancien second bouton).
+- Ils restent disponibles pour une future extension, mais aucune pastille n'est prévue : à ajouter au routage si tu en veux.
 
-### 3.6 Boutons, LED
-- **SW1 (NAV, GPIO47)** et **SW2 (MODE, GPIO23)** : poussoirs latéraux, actifs à l'état bas, rappels 10 kΩ.
-  Le rappel de SW1 va sur `VDDO_4`, car GPIO47 est dans le domaine d'alimentation de la microSD.
-- **SW3 (BOOT, GPIO35)** : interne, pour la récupération (le maintenir en branchant l'alimentation).
+### 3.6 Bouton, LED
+- **SW1 (FN, GPIO23)** : seul poussoir latéral, actif à l'état bas, rappel 10 kΩ au 3,3 V.
+  Rôle prévu : appui long = réinitialisation réseau, puis usine (firmware, livrable 8).
+- **SW2 (BOOT, GPIO35)** : interne, pour la récupération (le maintenir en branchant l'alimentation).
 - **Pas de bouton RESET** : débrancher suffit, et `CHIP_PU` est sur le connecteur de debug.
-- **LED de debug** verte sur GPIO6, 1 kΩ.
+- **D4, LED d'alimentation** verte (KT-0603G) : câblée sur `5V_SYS` par 1 kΩ, soit environ 1,9 mA. Elle s'allume sans firmware.
+  Elle est sur le 5 V et pas sur le 3,3 V parce que cette LED verte a une tension directe d'environ 3,1 V.
+- **D3, LED d'état** jaune (KT-0603Y, tension directe donnée à 2,4 V) : sur GPIO6 par 470 Ω, soit environ 1,9 mA.
+- La révision 0.1 pilotait une LED verte de 3,1 V depuis un GPIO en 3,3 V avec 1 kΩ : elle aurait été **presque éteinte**. Corrigé ici.
+- Luminosité des deux LED **non mesurée** : les résistances sont à ajuster au prototype.
 
 ### 3.7 UART, JTAG, programmation
 - Flashage normal : **USB-C EXT** (USB Serial/JTAG intégré au P4, passage en mode téléchargement automatique).
@@ -128,12 +132,15 @@ Circuit repris du projet ouvert **Antmicro hdmi-mipi-bridge** (Apache-2.0), adap
 
 ## 4. Écarts par rapport au JetKVM Mini
 
-| Sujet | Mini (d'après son firmware) | openKVM v0.1 | Impact firmware |
+| Sujet | Mini (d'après son firmware) | openKVM rév. 0.2 | Impact firmware |
 |---|---|---|---|
 | microSD | Slot SDMMC 1 | Slot 0, UHS-I, coupure d'alimentation (GPIO8), détection (GPIO7) | Initialisation SD à adapter |
 | Oscillateur 27 MHz | Alimenté par `VDDO_3` | Alimenté par le 3,3 V | Aucun |
-| LED de debug | Aucune | GPIO6 | Optionnel |
-| Écran, boutons, I²C, pont HDMI, PHY | — | **Brochage identique** | Aucun |
+| **Écran** | IPS 240 × 240 ST7789 (GPIO 3, 4, 13, 20, 21, 22) | **Aucun** | Pilote d'écran et interface LVGL à retirer |
+| Boutons latéraux | 2 (GPIO47 et GPIO23) | 1 seul, FN sur GPIO23 | Rôles à redéfinir |
+| LED | Aucune | État sur GPIO6 ; alimentation câblée sur le 5 V | Pilote de LED à écrire |
+| Découverte | IP affichée à l'écran | mDNS et nom d'hôte DHCP | À ajouter si absent du fork |
+| I²C, pont HDMI, PHY | — | **Brochage identique** | Aucun |
 
 ## 5. BOM : ce qui restait à trancher (traité au [livrable 5](05-bom-chiffree.md))
 
@@ -143,7 +150,7 @@ Circuit repris du projet ouvert **Antmicro hdmi-mipi-bridge** (Apache-2.0), adap
 | 4,02 kΩ 1 % (R13, R14), 499 kΩ 1 % (R15, R16), 6,19 kΩ 1 % (R38) | **Résolu** au livrable 5 : C43251, C25793, C25914 ([`docs/05`](05-bom-chiffree.md#2-les-trois-composants-de-précision-ligne--à-choisir--résolue)) |
 | Oscillateur 27 MHz (Y2) | C2992365 : seulement 27 en stock ; alternatives C160453, C390805 |
 | Flash GD25Q128ESIGR (U7) | C2928891, 1 091 en stock ; compatibilité de mode QIO à vérifier avec le firmware |
-| Module écran MSP1541 | Hors assemblage JLCPCB, à acheter à part |
+| LED d'état jaune (D3) | C2287 (KT-0603Y), 64 642 en stock le 2026-11-12 |
 
 Toutes les autres lignes portent un code LCSC **vérifié en stock le 2026-11-12**. La 10 kΩ passe de C25531 à C25744 (bibliothèque de base, 20 M en stock).
 
@@ -158,7 +165,9 @@ Toutes les autres lignes portent un code LCSC **vérifié en stock le 2026-11-12
 7. **UHS-I** : prise en charge par l'ESP-IDF à valider ; sinon la carte fonctionne en 3,3 V « high speed ».
 8. **Empreinte BGA 0,65 mm** et **QFN-104** : vérifier les ouvertures de pâte et les capacités de JLCPCB.
 9. **Pas de fusible** ni de limitation de courant en entrée.
-10. **Budget de courant** (0,54 à 0,59 A estimés sous 5 V) : supérieur aux 500 mA d'un port USB 2.0.
+10. **Budget de courant** (0,52 à 0,57 A estimés sous 5 V, sans écran) : encore supérieur aux 500 mA d'un port USB 2.0.
+11. **GPIO laissés en l'air** (3, 4, 13, 20, 21, 22, 47) : vérifier que le firmware les configure sans les laisser flotter en entrée.
+12. **Visibilité des LED** par les trous de la face avant : LED à émission vers le haut, à valider sur un boîtier imprimé (guide de lumière possible).
 
 ## Sources
 
@@ -168,8 +177,8 @@ Toutes les autres lignes portent un code LCSC **vérifié en stock le 2026-11-12
 4. GitHub `jetkvm/mini` (MIT) — brochage : `docs/hardware-variants.md`, `components/jetkvm_board_config`, `components/jetkvm_hdmi_bridge/tc358743_regs.h` — https://github.com/jetkvm/mini
 5. IC Plus — *IP101G Data Sheet* — https://datasheet.lcsc.com/datasheet/pdf/14f15850d1faf0804f05f4a04b553bc6.pdf?productCode=C703537
 6. HanRun — *HR911105A* — https://datasheet.lcsc.com/datasheet/pdf/0ad5e0c00dfc47fb8e582f15f877f290.pdf?productCode=C12074
-7. LCDWiki — *1.54inch IPS Module MSP1541 User Manual* — https://www.lcdwiki.com/res/MSP1541/1.54inch_4-line-SPI_IPS_Module_MSP1541_User_Manual_EN.pdf
+7. JLCPCB — fiches des LED KT-0603G (C12624, tension directe 3,1 V) et KT-0603Y (C2287, 2,4 V max), API JLCPCB lue le 2026-11-12 — https://www.lcsc.com/product-detail/C12624.html et https://www.lcsc.com/product-detail/C2287.html
 8. ESP-IDF v6.0.2 — `esp_eth_mac_esp.h` (broches RMII par défaut) — https://github.com/espressif/esp-idf/blob/v6.0.2/components/esp_eth/include/esp_eth_mac_esp.h
-9. LCSC — fiches produit (API, 2026-11-12) : C54540373, C703537, C12074, C165948, C91145, C138388, C141836, C2869734, C138714, C2928891, C9010, C9006, C2992365, C318936, C318884, C160407, C19077497, C15127, C12624, C85833 — https://www.lcsc.com/product-detail/C54540373.html (même schéma d'URL)
+9. LCSC — fiches produit (API, 2026-11-12) : C54540373, C703537, C12074, C165948, C91145, C138388, C141836, C2869734, C138714, C2928891, C9010, C9006, C2992365, C318936, C318884, C19077497, C2287, C15127, C12624, C85833 — https://www.lcsc.com/product-detail/C54540373.html (même schéma d'URL)
 10. JLCPCB — *SWPA3015S2R2MT* (C43389) — https://jlcpcb.com/partdetail/C43389
 11. Symboles et empreintes LCSC convertis avec `easyeda2kicad` — https://github.com/uPesy/easyeda2kicad.py

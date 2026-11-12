@@ -23,6 +23,24 @@ Date : 2026-11-12 — statut : **validée**
   - upload reprenable, en arrière-plan ;
   - mesure du débit SDIO réel du P4 et du débit USB Mass Storage vers la cible.
 
+## Décision complémentaire (2026-11-12) : version sans écran
+
+Le brief initial demandait le même écran IPS 240 × 240 que le Mini. **Cette exigence est abandonnée** à ta demande :
+openKVM v1 n'a **aucun écran**.
+
+| Avant | Maintenant |
+|---|---|
+| Écran IPS 1,54″ ST7789 sur connecteur J7, 6 GPIO | Supprimé, les 6 GPIO sont libres |
+| 2 boutons latéraux (navigation, mode) | 1 bouton latéral « FN » (réinitialisation réseau / usine) |
+| 1 LED de debug | 1 LED d'alimentation + 1 LED d'état |
+| Boîtier ≈ 49,6 × 49,6 × 26,5 mm, capot à fenêtre | ≈ 49,6 × 49,6 × 21,5 mm, capot plein |
+| Module d'écran à acheter et à monter à la main | Plus rien hors assemblage JLCPCB, sauf le TC358743 à fournir |
+
+Conséquences :
+- L'adresse IP ne s'affiche plus. Le firmware (livrable 8) devra annoncer l'appareil par **mDNS** et par nom d'hôte DHCP.
+- Le fork de `jetkvm/mini` devra **retirer le pilote d'écran** et piloter la LED d'état à la place.
+- C'est un écart assumé par rapport au Mini, qui garde son écran. En échange : moins cher, plus bas, plus simple à monter.
+
 ## Sources
 - JetKVM Mini — https://jetkvm.com/blog/introducing-jetkvm-mini
 - jetkvm/mini (MIT, ESP-IDF 6.0.2, IP101, TC358743) — https://github.com/jetkvm/mini

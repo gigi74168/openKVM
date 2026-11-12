@@ -134,252 +134,6 @@
 				)
 			)
 		)
-		(symbol "openkvm_sym:JST8"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "JST8_0_1"
-				(rectangle
-					(start -7.62 15.24)
-					(end 7.62 -12.7)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "JST8_1_1"
-				(pin passive line
-					(at -10.16 12.7 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "RES"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "DC"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "CS"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "BLK"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "MNT"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -10.16 0)
-					(length 2.54)
-					(name "MNT"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "openkvm_sym:PMOS"
 			(pin_names
 				(offset 0.762)
@@ -3611,7 +3365,7 @@
 			)
 		)
 	)
-	(text "Ecran ST7789 240x240"
+	(text "ESD USB"
 		(exclude_from_sim no)
 		(at 198.12 20.32 0)
 		(effects
@@ -3621,18 +3375,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ae5792df-0c82-511d-9eb2-79bb565e73f3")
+		(uuid "e0c9d1db-190a-5d2d-a79d-477e77e69c62")
 	)
 	(symbol
-		(lib_id "openkvm_sym:JST8")
-		(at 238.76 45.72 0)
+		(lib_id "openkvm_sym:TPD4E05U06")
+		(at 238.76 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00fdffbb-7854-544e-b1af-c227ced7a4fc")
-		(property "Reference" "J7"
+		(uuid "8517349d-3713-5bd7-ae16-92ebbf33af2c")
+		(property "Reference" "U13"
 			(at 231.14 29.48 0)
 			(effects
 				(font
@@ -3641,469 +3395,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LCD"
-			(at 231.14 60.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "openkvm:CONN-TH_SM08B-SRSS-TB-LF-SN"
-			(at 238.76 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "meme ordre que le module MSP1541"
-			(at 238.76 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C160407"
-			(at 238.76 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SM08B-SRSS-TB(LF)(SN)"
-			(at 238.76 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c22269af-0826-5c2e-84ac-aada0ab03820")
-		)
-		(pin "2"
-			(uuid "692a9125-4119-5166-9e34-6acd5096f6b3")
-		)
-		(pin "3"
-			(uuid "adea333b-5a3b-5014-a4e5-a2566e8e685a")
-		)
-		(pin "4"
-			(uuid "5a49dcf3-24f6-5c78-8dab-266af27023ea")
-		)
-		(pin "5"
-			(uuid "d35c9ea2-1d27-529a-b863-874fa3b205cd")
-		)
-		(pin "6"
-			(uuid "d463d690-e679-5c1a-a194-1e01113c4ad8")
-		)
-		(pin "7"
-			(uuid "4b3a0aa8-dd3c-5a00-9730-88c213fd988b")
-		)
-		(pin "8"
-			(uuid "50630ac6-c653-5bc5-bd04-816fc7af25d3")
-		)
-		(pin "9"
-			(uuid "52f68a36-0a6f-57d8-9af6-5841aad16ce7")
-		)
-		(pin "10"
-			(uuid "c16dcb73-3c69-53de-8abc-b63c9207e4b7")
-		)
-		(instances
-			(project "openkvm"
-				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/e89e678d-2443-56b8-adee-02dcc382fc57"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(text "meme ordre que le module MSP1541"
-		(exclude_from_sim no)
-		(at 231.14 63.82 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "32e0837c-ed84-5988-a273-f84fdcd52db2")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 228.6 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "718121c2-4b0a-50a1-b0a8-8f2930840e06")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "3V3"
-		(shape passive)
-		(at 228.6 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f6513fde-596c-5cfc-84de-732f060e565a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LCD_SCLK"
-		(shape passive)
-		(at 228.6 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f4977454-c183-581b-915f-d2698d75e6b2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LCD_MOSI"
-		(shape passive)
-		(at 228.6 40.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e8176abc-2f6f-5c05-8db2-dd6af1336767")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LCD_RST"
-		(shape passive)
-		(at 228.6 43.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aa369261-c9e9-5b00-a080-3011b462fe62")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LCD_DC"
-		(shape passive)
-		(at 228.6 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c3ecd08f-9dfa-5b52-9dec-ec0afbf069b0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LCD_CS"
-		(shape passive)
-		(at 228.6 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8561438e-7b29-50f8-9fcc-0c1c8716a8a7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LCD_BL"
-		(shape passive)
-		(at 228.6 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5c09ab62-cfef-5835-912b-f3d6f46aa3e0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 228.6 53.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6ea393cb-768f-507b-b997-15c5b7c98578")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 228.6 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "21c59462-8273-56ac-9214-298b4dfd4b14")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "openkvm_sym:C")
-		(at 233.68 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c6351299-f40e-5661-ab13-6074b4ed7efc")
-		(property "Reference" "C84"
-			(at 233.08 71.76 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF"
-			(at 234.28 71.76 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 233.68 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 233.68 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 233.68 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL05B104KO5NNNC"
-			(at 233.68 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d176203-37a2-58fd-8733-814ee5905894")
-		)
-		(pin "2"
-			(uuid "5dea0858-9a2d-5dfe-b637-cdb0252cf6e7")
-		)
-		(instances
-			(project "openkvm"
-				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/e89e678d-2443-56b8-adee-02dcc382fc57"
-					(reference "C84")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "3V3"
-		(shape passive)
-		(at 229.87 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e6480c5f-39fe-5c2a-bdf7-03ea70a8d191")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 237.49 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fa98ba40-eb72-5b1f-8683-6dcca600a58a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(text "ESD USB"
-		(exclude_from_sim no)
-		(at 15.24 172.72 0)
-		(effects
-			(font
-				(size 2.2 2.2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "51f36cf4-7256-540b-86ac-b7c055fe08c6")
-	)
-	(symbol
-		(lib_id "openkvm_sym:TPD4E05U06")
-		(at 55.88 190.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8517349d-3713-5bd7-ae16-92ebbf33af2c")
-		(property "Reference" "U13"
-			(at 48.26 181.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(property "Value" "TPD4E05U06DQAR"
-			(at 48.26 200.32 0)
+			(at 231.14 47.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4112,7 +3405,7 @@
 			)
 		)
 		(property "Footprint" "openkvm:USON-10_L2.5-W1.0-P0.50-BL"
-			(at 55.88 190.5 0)
+			(at 238.76 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4121,7 +3414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 190.5 0)
+			(at 238.76 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4130,7 +3423,7 @@
 			)
 		)
 		(property "Description" "USB HS : capacite <= 1 pF exigee"
-			(at 55.88 190.5 0)
+			(at 238.76 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4139,7 +3432,7 @@
 			)
 		)
 		(property "LCSC" "C138714"
-			(at 55.88 190.5 0)
+			(at 238.76 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4148,7 +3441,7 @@
 			)
 		)
 		(property "MPN" "TPD4E05U06DQAR"
-			(at 55.88 190.5 0)
+			(at 238.76 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4197,25 +3490,25 @@
 	)
 	(text "USB HS : capacite <= 1 pF exigee"
 		(exclude_from_sim no)
-		(at 48.26 203.52 0)
+		(at 231.14 51.12 0)
 		(effects
 			(font
 				(size 1 1)
 			)
 			(justify left bottom)
 		)
-		(uuid "5af518f2-72d6-5c59-a5ac-74d38b75b3b8")
+		(uuid "e6084385-f6d3-5f05-aa7c-1c8bcdc3b2aa")
 	)
 	(global_label "USB_HS_DP"
 		(shape passive)
-		(at 45.72 185.42 180)
+		(at 228.6 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "509ef6d8-142d-58fe-b89f-f1307c2bbffb")
+		(uuid "6df549ff-1fb3-51a9-9221-59ee873f8da8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4228,14 +3521,14 @@
 	)
 	(global_label "USB_HS_DM"
 		(shape passive)
-		(at 45.72 187.96 180)
+		(at 228.6 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f67b178f-3992-5d90-83bd-ac68ce62855e")
+		(uuid "37a99660-51dc-5c72-920e-17df7b7400c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4248,14 +3541,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 45.72 195.58 180)
+		(at 228.6 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "26214301-fc6c-5c5b-a25d-3c99709eb3a4")
+		(uuid "bc38d59d-2bd0-54ea-abe0-4cae3a29596a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4268,14 +3561,14 @@
 	)
 	(global_label "J1_CC1"
 		(shape passive)
-		(at 45.72 190.5 180)
+		(at 228.6 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "71a3b7c0-7bc7-5430-985d-b0b5d67785c4")
+		(uuid "84502919-4730-5d64-9aec-0dd337e5a591")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4288,14 +3581,14 @@
 	)
 	(global_label "J1_CC2"
 		(shape passive)
-		(at 45.72 193.04 180)
+		(at 228.6 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "80cada5c-2ce5-55c1-ab5a-bdbf0fdaceb2")
+		(uuid "912d3137-ab17-5296-9b23-7f89cdc2840d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4308,14 +3601,14 @@
 	)
 	(global_label "J1_CC2"
 		(shape passive)
-		(at 66.04 193.04 0)
+		(at 248.92 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "c7b02671-05a4-5834-88a9-ab16a57ae5e0")
+		(uuid "b38e31a9-960e-5f2b-9a09-54459d924c76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4328,14 +3621,14 @@
 	)
 	(global_label "J1_CC1"
 		(shape passive)
-		(at 66.04 190.5 0)
+		(at 248.92 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "6c458b99-d6c6-54d7-b62c-810430abe5a3")
+		(uuid "1e14098c-9ef3-5ac6-a765-900ef2d11568")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4348,14 +3641,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 66.04 195.58 0)
+		(at 248.92 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "308dcf66-aa58-50c7-9b69-88cea8bb512b")
+		(uuid "cf8c5790-9f93-52b3-9c90-a74b6b9cf3a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4368,14 +3661,14 @@
 	)
 	(global_label "USB_HS_DM"
 		(shape passive)
-		(at 66.04 187.96 0)
+		(at 248.92 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "a6152e3f-9c36-539d-9e30-12760e615e7c")
+		(uuid "f8ffbf45-dc36-5388-8db1-59ed3a6f4cd8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4388,14 +3681,14 @@
 	)
 	(global_label "USB_HS_DP"
 		(shape passive)
-		(at 66.04 185.42 0)
+		(at 248.92 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "81ef4496-b903-54a9-b9dc-b7ffed9c6b35")
+		(uuid "d063c8ac-196e-54ca-b8be-9950b3c0441e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4408,7 +3701,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:TPD4E05U06")
-		(at 137.16 190.5 0)
+		(at 320.04 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4416,7 +3709,7 @@
 		(dnp no)
 		(uuid "162e1b57-9445-5453-9cb6-d9c9cacc6a5c")
 		(property "Reference" "U14"
-			(at 129.54 181.88 0)
+			(at 312.42 29.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4425,7 +3718,7 @@
 			)
 		)
 		(property "Value" "TPD4E05U06DQAR"
-			(at 129.54 200.32 0)
+			(at 312.42 47.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4434,7 +3727,7 @@
 			)
 		)
 		(property "Footprint" "openkvm:USON-10_L2.5-W1.0-P0.50-BL"
-			(at 137.16 190.5 0)
+			(at 320.04 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4443,7 +3736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 190.5 0)
+			(at 320.04 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4452,7 +3745,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 190.5 0)
+			(at 320.04 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +3754,7 @@
 			)
 		)
 		(property "LCSC" "C138714"
-			(at 137.16 190.5 0)
+			(at 320.04 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4470,7 +3763,7 @@
 			)
 		)
 		(property "MPN" "TPD4E05U06DQAR"
-			(at 137.16 190.5 0)
+			(at 320.04 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,14 +3812,14 @@
 	)
 	(global_label "USB_FS_CONN_DP"
 		(shape passive)
-		(at 127 185.42 180)
+		(at 309.88 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f36d402b-7683-5ffa-91ea-a09718c956d3")
+		(uuid "a37c2724-5604-538c-88f5-658649f16cbd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4539,14 +3832,14 @@
 	)
 	(global_label "USB_FS_CONN_DM"
 		(shape passive)
-		(at 127 187.96 180)
+		(at 309.88 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "4293c07f-8f78-5355-9549-a9922d0c582b")
+		(uuid "5715efdd-b014-59f4-b4df-dc32cd6541bd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4559,14 +3852,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 127 195.58 180)
+		(at 309.88 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "97ae1e82-f5f1-581a-899d-38d33559a5a7")
+		(uuid "0da7a94a-d604-5c07-a04f-441355feaaa5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4579,14 +3872,14 @@
 	)
 	(global_label "J2_CC1"
 		(shape passive)
-		(at 127 190.5 180)
+		(at 309.88 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "6622a0de-d84f-52f6-8953-12a5d716ee42")
+		(uuid "8063170d-f657-517e-a9a3-ed2598e03304")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4599,14 +3892,14 @@
 	)
 	(global_label "J2_CC2"
 		(shape passive)
-		(at 127 193.04 180)
+		(at 309.88 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "0bf6a546-ef02-5667-8548-483394600d0f")
+		(uuid "e016f512-4e37-5511-a920-be44668d124d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4619,14 +3912,14 @@
 	)
 	(global_label "J2_CC2"
 		(shape passive)
-		(at 147.32 193.04 0)
+		(at 330.2 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "940c9393-d283-5b9e-9045-fd099140c863")
+		(uuid "e77f4570-a0bd-5063-a5f2-18e84b9ad117")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4639,14 +3932,14 @@
 	)
 	(global_label "J2_CC1"
 		(shape passive)
-		(at 147.32 190.5 0)
+		(at 330.2 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "f5b4d30a-b45c-51a7-8779-59bd0a6cb201")
+		(uuid "3b7a5223-e5c2-5706-8389-5a229a0d2589")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4659,14 +3952,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 147.32 195.58 0)
+		(at 330.2 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b6aec483-c20a-5d65-87fb-8903ea7c5b65")
+		(uuid "ead741a2-9cb2-5a3c-a424-f5ed5aeafd33")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4679,14 +3972,14 @@
 	)
 	(global_label "USB_FS_CONN_DM"
 		(shape passive)
-		(at 147.32 187.96 0)
+		(at 330.2 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "d9f02626-2a83-5b8e-b230-3ec7f2985fff")
+		(uuid "3f9dbda2-d5df-52ae-a708-bbcda888b168")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4699,14 +3992,14 @@
 	)
 	(global_label "USB_FS_CONN_DP"
 		(shape passive)
-		(at 147.32 185.42 0)
+		(at 330.2 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4eef555d-7fcf-59dc-8f85-fd44d1c7fb37")
+		(uuid "4dbf9382-9dca-5ea4-9cce-1581d4d962e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4719,7 +4012,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 213.36 0)
+		(at 233.68 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4727,7 +4020,7 @@
 		(dnp no)
 		(uuid "e6de69e5-68d4-5855-97b4-e85d55879084")
 		(property "Reference" "R57"
-			(at 50.2 211.46 0)
+			(at 233.08 59.06 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4736,7 +4029,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 51.4 211.46 0)
+			(at 234.28 59.06 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4745,7 +4038,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 213.36 0)
+			(at 233.68 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4754,7 +4047,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 213.36 0)
+			(at 233.68 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4763,7 +4056,7 @@
 			)
 		)
 		(property "Description" "USB FS : 22 ohms serie pres du P4"
-			(at 50.8 213.36 0)
+			(at 233.68 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,7 +4065,7 @@
 			)
 		)
 		(property "LCSC" "C25092"
-			(at 50.8 213.36 0)
+			(at 233.68 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4781,7 +4074,7 @@
 			)
 		)
 		(property "MPN" "0402WGF220JTCE"
-			(at 50.8 213.36 0)
+			(at 233.68 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4806,14 +4099,14 @@
 	)
 	(global_label "USB_FS_DP"
 		(shape passive)
-		(at 46.99 213.36 180)
+		(at 229.87 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "7fe19a9b-73aa-5590-a24f-f2a9307e4664")
+		(uuid "2a32d97c-2ff5-51fe-93e1-f6f7f148f9ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4826,14 +4119,14 @@
 	)
 	(global_label "USB_FS_CONN_DP"
 		(shape passive)
-		(at 54.61 213.36 0)
+		(at 237.49 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "e8ca1582-0c70-54fb-8166-33fd568664e2")
+		(uuid "0167625c-c499-5686-b0ce-dd81075cc491")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4846,7 +4139,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 219.71 0)
+		(at 233.68 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4854,7 +4147,7 @@
 		(dnp no)
 		(uuid "79fc4b30-027f-5ab0-b527-99e178687e6c")
 		(property "Reference" "R58"
-			(at 50.2 217.81 0)
+			(at 233.08 65.41 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4863,7 +4156,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 51.4 217.81 0)
+			(at 234.28 65.41 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4872,7 +4165,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 219.71 0)
+			(at 233.68 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4881,7 +4174,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 219.71 0)
+			(at 233.68 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4890,7 +4183,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 219.71 0)
+			(at 233.68 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,7 +4192,7 @@
 			)
 		)
 		(property "LCSC" "C25092"
-			(at 50.8 219.71 0)
+			(at 233.68 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4908,7 +4201,7 @@
 			)
 		)
 		(property "MPN" "0402WGF220JTCE"
-			(at 50.8 219.71 0)
+			(at 233.68 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,14 +4226,14 @@
 	)
 	(global_label "USB_FS_DM"
 		(shape passive)
-		(at 46.99 219.71 180)
+		(at 229.87 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "94fe6c1c-f557-5e3f-8694-a2bddf39875a")
+		(uuid "09010e1d-18b0-5e9c-82e0-cc34918f450c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -4953,14 +4246,14 @@
 	)
 	(global_label "USB_FS_CONN_DM"
 		(shape passive)
-		(at 54.61 219.71 0)
+		(at 237.49 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "feebb768-fe44-520c-b378-6c6690fe25ad")
+		(uuid "4827128b-e38a-5a4f-9329-cece866a11a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects

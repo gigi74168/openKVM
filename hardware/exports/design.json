@@ -580,10 +580,10 @@
    "pins": {
     "1": "NC",
     "2": "I2C_SDA",
-    "3": "LCD_MOSI",
-    "4": "LCD_BL",
+    "3": "NC",
+    "4": "NC",
     "5": "I2C_SCL",
-    "6": "LED_DBG",
+    "6": "LED_STAT",
     "7": "SD_CD",
     "8": "SD_PWR_EN_N",
     "9": "3V3",
@@ -591,7 +591,7 @@
     "11": "NC",
     "12": "NC",
     "13": "NC",
-    "14": "LCD_SCLK",
+    "14": "NC",
     "15": "NC",
     "16": "NC",
     "17": "NC",
@@ -599,10 +599,10 @@
     "19": "NC",
     "20": "NC",
     "21": "3V3",
-    "22": "LCD_DC",
-    "23": "LCD_RST",
-    "24": "LCD_CS",
-    "25": "BTN_MODE",
+    "22": "NC",
+    "23": "NC",
+    "24": "NC",
+    "25": "BTN_FN",
     "26": "VDD_HP",
     "27": "FLASH_CS",
     "28": "FLASH_Q",
@@ -666,7 +666,7 @@
     "86": "SD_CMD",
     "87": "NC",
     "88": "NC",
-    "89": "BTN_NAV",
+    "89": "NC",
     "90": "NC",
     "91": "VDD_HP",
     "92": "RMII_TX_EN",
@@ -1522,7 +1522,7 @@
    "value": "10k",
    "fp": "Resistor_SMD:R_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "3V3",
     "2": "CHIP_PU"
@@ -1538,7 +1538,7 @@
    "value": "1uF",
    "fp": "Capacitor_SMD:C_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "CHIP_PU",
     "2": "GND"
@@ -1554,7 +1554,7 @@
    "value": "10k",
    "fp": "Resistor_SMD:R_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "3V3",
     "2": "RMII_TXD1_BOOT"
@@ -1565,12 +1565,12 @@
    "note": "GPIO35 = strap BOOT, aussi RMII TXD1"
   },
   {
-   "ref": "SW3",
+   "ref": "SW2",
    "sym": "SW4",
    "value": "BOOT",
    "fp": "openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "RMII_TXD1_BOOT",
     "2": "RMII_TXD1_BOOT",
@@ -1583,56 +1583,38 @@
    "note": ""
   },
   {
-   "ref": "SW1",
-   "sym": "SWSIDE",
-   "value": "NAV",
-   "fp": "openkvm:KEY-SMD_TS-1101VS-C-A-A",
-   "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
-   "pins": {
-    "1": "GND",
-    "2": "GND",
-    "3": "BTN_NAV",
-    "4": "GND"
-   },
-   "lcsc": "C318936",
-   "mpn": "TS-1101VS-C-A-A",
-   "dnp": false,
-   "note": ""
-  },
-  {
    "ref": "R22",
    "sym": "R",
-   "value": "10k",
+   "value": "1k",
    "fp": "Resistor_SMD:R_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
-    "1": "VDDO_4",
-    "2": "BTN_NAV"
+    "1": "5V_SYS",
+    "2": "LED_PWR_A"
    },
-   "lcsc": "C25744",
-   "mpn": "0402WGF1002TCE",
+   "lcsc": "C11702",
+   "mpn": "0402WGF1001TCE",
    "dnp": false,
-   "note": "GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)"
+   "note": "LED verte (Vf ~3,1 V) sur le 5 V : ~1,9 mA. Sur 3,3 V elle serait presque eteinte"
   },
   {
-   "ref": "SW2",
+   "ref": "SW1",
    "sym": "SWSIDE",
-   "value": "MODE",
+   "value": "FN",
    "fp": "openkvm:KEY-SMD_TS-1101VS-C-A-A",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "GND",
     "2": "GND",
-    "3": "BTN_MODE",
+    "3": "BTN_FN",
     "4": "GND"
    },
    "lcsc": "C318936",
    "mpn": "TS-1101VS-C-A-A",
    "dnp": false,
-   "note": ""
+   "note": "GPIO23 : appui long = reinitialisation reseau / usine (firmware)"
   },
   {
    "ref": "R23",
@@ -1640,10 +1622,10 @@
    "value": "10k",
    "fp": "Resistor_SMD:R_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "3V3",
-    "2": "BTN_MODE"
+    "2": "BTN_FN"
    },
    "lcsc": "C25744",
    "mpn": "0402WGF1002TCE",
@@ -1653,34 +1635,50 @@
   {
    "ref": "R24",
    "sym": "R",
-   "value": "1k",
+   "value": "470R",
    "fp": "Resistor_SMD:R_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
-    "1": "LED_DBG",
-    "2": "LED_DBG_A"
+    "1": "LED_STAT",
+    "2": "LED_STAT_A"
    },
-   "lcsc": "C11702",
-   "mpn": "0402WGF1001TCE",
+   "lcsc": "C25117",
+   "mpn": "0402WGF4700TCE",
    "dnp": false,
-   "note": ""
+   "note": "LED jaune (Vf 2,4 V) depuis GPIO6 : ~1,9 mA"
   },
   {
    "ref": "D3",
    "sym": "LED",
-   "value": "LED verte debug",
+   "value": "LED jaune etat",
    "fp": "LED_SMD:LED_0603_1608Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "GND",
-    "2": "LED_DBG_A"
+    "2": "LED_STAT_A"
+   },
+   "lcsc": "C2287",
+   "mpn": "KT-0603Y",
+   "dnp": false,
+   "note": "1 = cathode, 2 = anode ; pilotee par le firmware"
+  },
+  {
+   "ref": "D4",
+   "sym": "LED",
+   "value": "LED verte alim",
+   "fp": "LED_SMD:LED_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, bouton, LED",
+   "pins": {
+    "1": "GND",
+    "2": "LED_PWR_A"
    },
    "lcsc": "C12624",
    "mpn": "KT-0603G",
    "dnp": false,
-   "note": "1 = cathode, 2 = anode"
+   "note": "1 = cathode, 2 = anode ; allumee des que le 5 V est present"
   },
   {
    "ref": "R25",
@@ -1688,7 +1686,7 @@
    "value": "4.7k",
    "fp": "Resistor_SMD:R_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "3V3",
     "2": "I2C_SDA"
@@ -1704,7 +1702,7 @@
    "value": "4.7k",
    "fp": "Resistor_SMD:R_0402_1005Metric",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "3V3",
     "2": "I2C_SCL"
@@ -1720,7 +1718,7 @@
    "value": "DEBUG UART",
    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
    "sheet": "mcu",
-   "group": "Reset, boot, boutons, LED",
+   "group": "Reset, boot, bouton, LED",
    "pins": {
     "1": "3V3",
     "2": "UART0_TX",
@@ -3141,46 +3139,6 @@
    "group": "microSD (slot SDMMC 0, UHS-I)",
    "pins": {
     "1": "SD_VDD",
-    "2": "GND"
-   },
-   "lcsc": "C1525",
-   "mpn": "CL05B104KO5NNNC",
-   "dnp": false,
-   "note": ""
-  },
-  {
-   "ref": "J7",
-   "sym": "JST8",
-   "value": "LCD",
-   "fp": "openkvm:CONN-TH_SM08B-SRSS-TB-LF-SN",
-   "sheet": "periph",
-   "group": "Ecran ST7789 240x240",
-   "pins": {
-    "1": "GND",
-    "2": "3V3",
-    "3": "LCD_SCLK",
-    "4": "LCD_MOSI",
-    "5": "LCD_RST",
-    "6": "LCD_DC",
-    "7": "LCD_CS",
-    "8": "LCD_BL",
-    "9": "GND",
-    "10": "GND"
-   },
-   "lcsc": "C160407",
-   "mpn": "SM08B-SRSS-TB(LF)(SN)",
-   "dnp": false,
-   "note": "meme ordre que le module MSP1541"
-  },
-  {
-   "ref": "C84",
-   "sym": "C",
-   "value": "100nF",
-   "fp": "Capacitor_SMD:C_0402_1005Metric",
-   "sheet": "periph",
-   "group": "Ecran ST7789 240x240",
-   "pins": {
-    "1": "3V3",
     "2": "GND"
    },
    "lcsc": "C1525",
