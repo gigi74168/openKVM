@@ -17,15 +17,16 @@ FP_C = {'0402': 'Capacitor_SMD:C_0402_1005Metric',
 FP_FB = 'Inductor_SMD:L_0603_1608Metric'
 FP_LED = 'LED_SMD:LED_0603_1608Metric'
 
-# Valeur -> (reference fabricant, code LCSC verifie le 2026-11-12). '' = a choisir au livrable 5.
+# Valeur -> (reference fabricant, code LCSC verifie le 2026-11-12). '' = pas de code LCSC.
 R_PARTS = {
     '0R': ('0402WGF0000TCE', 'C17168'), '22R': ('0402WGF220JTCE', 'C25092'),
     '33R': ('0402WGF330JTCE', 'C25105'), '470R': ('0402WGF4700TCE', 'C25117'),
     '1k': ('0402WGF1001TCE', 'C11702'), '2k': ('0402WGF2001TCE', 'C4109'),
     '4.7k': ('0402WGF4701TCE', 'C25900'), '5.1k': ('0402WGF5101TCE', 'C25905'),
-    '10k': ('0402WGJ0103TCE', 'C25531'), '22k': ('0402WGF2202TCE', 'C25768'),
+    '10k': ('0402WGF1002TCE', 'C25744'), '22k': ('0402WGF2202TCE', 'C25768'),
     '47k': ('0402WGF4702TCE', 'C25792'), '100k': ('0402WGF1003TCE', 'C25741'),
-    '4.02k 1%': ('', ''), '6.19k 1%': ('', ''), '499k 1%': ('', ''),
+    '4.02k 1%': ('0402WGF4021TCE', 'C43251'), '6.19k 1%': ('0402WGF6191TCE', 'C25914'),
+    '499k 1%': ('0402WGF4993TCE', 'C25793'),
 }
 C_PARTS = {
     ('18pF', '0402'): ('0402CG180J500NT', 'C1549'), ('22pF', '0402'): ('0402CG220J500NT', 'C1555'),

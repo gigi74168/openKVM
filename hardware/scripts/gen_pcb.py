@@ -51,6 +51,8 @@ PLACE = {
     'J7': (27.6, 41.9, 0),       # connecteur ecran
     'SW3': (18.0, 42.4, 0),      # BOOT
 }
+# Empreintes de la lib standard KiCad sans modele 3D : on leur en rattache un (forme generique, 3,2 x 2,5 mm).
+MODEL_FALLBACK = {'Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm': 'OSC-SMD_4P-L3.2-W2.5-H1.0'}
 HOLES = [(2.5, 23.9), (2.5, 42.5), (40.6, 43.5)]
 
 
@@ -69,6 +71,11 @@ def load(fp):
     if f is None:
         sys.exit(f'empreinte introuvable : {fp}')
     f.SetFPID(pcbnew.LIB_ID(lib, name))
+    if name in MODEL_FALLBACK:      # le modele reference par KiCad n'est pas livre : on le remplace
+        f.Models().clear()
+        m = pcbnew.FP_3DMODEL()
+        m.m_Filename = f'${{KIPRJMOD}}/lib/openkvm.3dshapes/{MODEL_FALLBACK[name]}.wrl'
+        f.Add3DModel(m)
     return f
 
 

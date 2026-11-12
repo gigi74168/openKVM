@@ -717,15 +717,15 @@
 		(uuid "a52daa54-ff79-41c4-97d2-7faf521b51fd")
 	)
 	(embedded_fonts no)
-	(model "${ANT3DMDL}/BGA-64-8x8-0.65mm.step"
+	(model "${KIPRJMOD}/lib/openkvm.3dshapes/BGA-64_8x8_6.0x6.0mm.wrl"
 		(offset
-			(xyz -3 3 0.2)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 90)
+			(xyz 0 0 0)
 		)
 	)
 )
