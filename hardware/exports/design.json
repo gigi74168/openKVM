@@ -1,0 +1,3272 @@
+{
+ "parts": [
+  {
+   "ref": "J1",
+   "sym": "TYPE-C-31-M-12",
+   "value": "USB-C CIBLE",
+   "fp": "openkvm:USB-C_SMD-TYPE-C-31-M-12_1",
+   "sheet": "power",
+   "group": "USB-C CIBLE",
+   "pins": {
+    "A4B9": "VBUS_TGT",
+    "B4A9": "VBUS_TGT",
+    "A1B12": "GND",
+    "B1A12": "GND",
+    "A5": "J1_CC1",
+    "B5": "J1_CC2",
+    "A6": "USB_HS_DP",
+    "B6": "USB_HS_DP",
+    "A7": "USB_HS_DM",
+    "B7": "USB_HS_DM",
+    "A8": "NC",
+    "B8": "NC",
+    "1": "GND",
+    "2": "GND",
+    "3": "GND",
+    "4": "GND"
+   },
+   "lcsc": "C165948",
+   "mpn": "TYPE-C-31-M-12",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R1",
+   "sym": "R",
+   "value": "5.1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "USB-C CIBLE",
+   "pins": {
+    "1": "J1_CC1",
+    "2": "GND"
+   },
+   "lcsc": "C25905",
+   "mpn": "0402WGF5101TCE",
+   "dnp": false,
+   "note": "Rd : annonce un peripherique (UFP), 5 V par defaut"
+  },
+  {
+   "ref": "R2",
+   "sym": "R",
+   "value": "5.1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "USB-C CIBLE",
+   "pins": {
+    "1": "J1_CC2",
+    "2": "GND"
+   },
+   "lcsc": "C25905",
+   "mpn": "0402WGF5101TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "D1",
+   "sym": "TVS",
+   "value": "SMF5.0A",
+   "fp": "openkvm:SOD-123FL_L2.7-W1.8-LS3.8-RD",
+   "sheet": "power",
+   "group": "USB-C CIBLE",
+   "pins": {
+    "1": "VBUS_TGT",
+    "2": "GND"
+   },
+   "lcsc": "C19077497",
+   "mpn": "SMF5.0A",
+   "dnp": false,
+   "note": "1 = cathode"
+  },
+  {
+   "ref": "C1",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "power",
+   "group": "USB-C CIBLE",
+   "pins": {
+    "1": "VBUS_TGT",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "J2",
+   "sym": "TYPE-C-31-M-12",
+   "value": "USB-C EXT",
+   "fp": "openkvm:USB-C_SMD-TYPE-C-31-M-12_1",
+   "sheet": "power",
+   "group": "USB-C EXT",
+   "pins": {
+    "A4B9": "VBUS_EXT",
+    "B4A9": "VBUS_EXT",
+    "A1B12": "GND",
+    "B1A12": "GND",
+    "A5": "J2_CC1",
+    "B5": "J2_CC2",
+    "A6": "USB_FS_CONN_DP",
+    "B6": "USB_FS_CONN_DP",
+    "A7": "USB_FS_CONN_DM",
+    "B7": "USB_FS_CONN_DM",
+    "A8": "NC",
+    "B8": "NC",
+    "1": "GND",
+    "2": "GND",
+    "3": "GND",
+    "4": "GND"
+   },
+   "lcsc": "C165948",
+   "mpn": "TYPE-C-31-M-12",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R3",
+   "sym": "R",
+   "value": "5.1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "USB-C EXT",
+   "pins": {
+    "1": "J2_CC1",
+    "2": "GND"
+   },
+   "lcsc": "C25905",
+   "mpn": "0402WGF5101TCE",
+   "dnp": false,
+   "note": "Rd : annonce un peripherique (UFP), 5 V par defaut"
+  },
+  {
+   "ref": "R4",
+   "sym": "R",
+   "value": "5.1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "USB-C EXT",
+   "pins": {
+    "1": "J2_CC2",
+    "2": "GND"
+   },
+   "lcsc": "C25905",
+   "mpn": "0402WGF5101TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "D2",
+   "sym": "TVS",
+   "value": "SMF5.0A",
+   "fp": "openkvm:SOD-123FL_L2.7-W1.8-LS3.8-RD",
+   "sheet": "power",
+   "group": "USB-C EXT",
+   "pins": {
+    "1": "VBUS_EXT",
+    "2": "GND"
+   },
+   "lcsc": "C19077497",
+   "mpn": "SMF5.0A",
+   "dnp": false,
+   "note": "1 = cathode"
+  },
+  {
+   "ref": "C2",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "power",
+   "group": "USB-C EXT",
+   "pins": {
+    "1": "VBUS_EXT",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U3",
+   "sym": "LM66100DCKR",
+   "value": "LM66100DCKR",
+   "fp": "openkvm:SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL",
+   "sheet": "power",
+   "group": "OU ideal 5 V",
+   "pins": {
+    "1": "VBUS_TGT",
+    "2": "GND",
+    "3": "VBUS_EXT",
+    "4": "NC",
+    "5": "NC",
+    "6": "5V_SYS"
+   },
+   "lcsc": "C2869734",
+   "mpn": "LM66100DCKR",
+   "dnp": false,
+   "note": "CE croisee : la source la plus haute alimente, l autre est bloquee"
+  },
+  {
+   "ref": "U4",
+   "sym": "LM66100DCKR",
+   "value": "LM66100DCKR",
+   "fp": "openkvm:SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL",
+   "sheet": "power",
+   "group": "OU ideal 5 V",
+   "pins": {
+    "1": "VBUS_EXT",
+    "2": "GND",
+    "3": "VBUS_TGT",
+    "4": "NC",
+    "5": "NC",
+    "6": "5V_SYS"
+   },
+   "lcsc": "C2869734",
+   "mpn": "LM66100DCKR",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C3",
+   "sym": "C",
+   "value": "22uF",
+   "fp": "Capacitor_SMD:C_0805_2012Metric",
+   "sheet": "power",
+   "group": "OU ideal 5 V",
+   "pins": {
+    "1": "5V_SYS",
+    "2": "GND"
+   },
+   "lcsc": "C45783",
+   "mpn": "CL21A226MAQNNNE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C4",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "power",
+   "group": "OU ideal 5 V",
+   "pins": {
+    "1": "5V_SYS",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U5",
+   "sym": "TLV62569DBVR",
+   "value": "TLV62569DBVR",
+   "fp": "openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "EN_3V3",
+    "2": "GND",
+    "3": "SW_3V3",
+    "4": "5V_SYS",
+    "5": "FB_3V3"
+   },
+   "lcsc": "C141836",
+   "mpn": "TLV62569DBVR",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R5",
+   "sym": "R",
+   "value": "100k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "5V_SYS",
+    "2": "EN_3V3"
+   },
+   "lcsc": "C25741",
+   "mpn": "0402WGF1003TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "L1",
+   "sym": "L",
+   "value": "2.2uH 2A",
+   "fp": "openkvm:IND-SMD_L3.0-W3.0",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "SW_3V3",
+    "2": "3V3"
+   },
+   "lcsc": "C43389",
+   "mpn": "SWPA3015S2R2MT",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R6",
+   "sym": "R",
+   "value": "100k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "3V3",
+    "2": "FB_3V3"
+   },
+   "lcsc": "C25741",
+   "mpn": "0402WGF1003TCE",
+   "dnp": false,
+   "note": "Vout = 0,6 x (1 + 100k/22k) = 3,33 V"
+  },
+  {
+   "ref": "R7",
+   "sym": "R",
+   "value": "22k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "FB_3V3",
+    "2": "GND"
+   },
+   "lcsc": "C25768",
+   "mpn": "0402WGF2202TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C5",
+   "sym": "C",
+   "value": "22pF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "3V3",
+    "2": "FB_3V3"
+   },
+   "lcsc": "C1555",
+   "mpn": "0402CG220J500NT",
+   "dnp": false,
+   "note": "avance de phase"
+  },
+  {
+   "ref": "C6",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "5V_SYS",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C7",
+   "sym": "C",
+   "value": "22uF",
+   "fp": "Capacitor_SMD:C_0805_2012Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C45783",
+   "mpn": "CL21A226MAQNNNE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C8",
+   "sym": "C",
+   "value": "22uF",
+   "fp": "Capacitor_SMD:C_0805_2012Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C45783",
+   "mpn": "CL21A226MAQNNNE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C9",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 3,3 V",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U6",
+   "sym": "TLV62569DBVR",
+   "value": "TLV62569DBVR",
+   "fp": "openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "EN_1V2",
+    "2": "GND",
+    "3": "SW_1V2",
+    "4": "5V_SYS",
+    "5": "FB_1V2"
+   },
+   "lcsc": "C141836",
+   "mpn": "TLV62569DBVR",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R8",
+   "sym": "R",
+   "value": "100k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "3V3",
+    "2": "EN_1V2"
+   },
+   "lcsc": "C25741",
+   "mpn": "0402WGF1003TCE",
+   "dnp": false,
+   "note": "le 1,2 V demarre apres le 3,3 V"
+  },
+  {
+   "ref": "L2",
+   "sym": "L",
+   "value": "2.2uH 2A",
+   "fp": "openkvm:IND-SMD_L3.0-W3.0",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "SW_1V2",
+    "2": "1V2"
+   },
+   "lcsc": "C43389",
+   "mpn": "SWPA3015S2R2MT",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R9",
+   "sym": "R",
+   "value": "100k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "1V2",
+    "2": "FB_1V2"
+   },
+   "lcsc": "C25741",
+   "mpn": "0402WGF1003TCE",
+   "dnp": false,
+   "note": "Vout = 0,6 x (1 + 100k/100k) = 1,2 V"
+  },
+  {
+   "ref": "R10",
+   "sym": "R",
+   "value": "100k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "FB_1V2",
+    "2": "GND"
+   },
+   "lcsc": "C25741",
+   "mpn": "0402WGF1003TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C10",
+   "sym": "C",
+   "value": "22pF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "1V2",
+    "2": "FB_1V2"
+   },
+   "lcsc": "C1555",
+   "mpn": "0402CG220J500NT",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C11",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "5V_SYS",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C12",
+   "sym": "C",
+   "value": "22uF",
+   "fp": "Capacitor_SMD:C_0805_2012Metric",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "1V2",
+    "2": "GND"
+   },
+   "lcsc": "C45783",
+   "mpn": "CL21A226MAQNNNE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C13",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "power",
+   "group": "Buck 1,2 V (TC358743)",
+   "pins": {
+    "1": "1V2",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U1",
+   "sym": "ESP32-P4NRW32X",
+   "value": "ESP32-P4NRW32X",
+   "fp": "openkvm:QFN-104_L10.0-W10.0-P0.35-TL-EP7.5",
+   "sheet": "mcu",
+   "group": "ESP32-P4",
+   "pins": {
+    "1": "NC",
+    "2": "I2C_SDA",
+    "3": "LCD_MOSI",
+    "4": "LCD_BL",
+    "5": "I2C_SCL",
+    "6": "LED_DBG",
+    "7": "SD_CD",
+    "8": "SD_PWR_EN_N",
+    "9": "3V3",
+    "10": "NC",
+    "11": "NC",
+    "12": "NC",
+    "13": "NC",
+    "14": "LCD_SCLK",
+    "15": "NC",
+    "16": "NC",
+    "17": "NC",
+    "18": "NC",
+    "19": "NC",
+    "20": "NC",
+    "21": "3V3",
+    "22": "LCD_DC",
+    "23": "LCD_RST",
+    "24": "LCD_CS",
+    "25": "BTN_MODE",
+    "26": "VDD_HP",
+    "27": "FLASH_CS",
+    "28": "FLASH_Q",
+    "29": "FLASH_WP",
+    "30": "VDDO_FLASH",
+    "31": "FLASH_HOLD",
+    "32": "FLASH_CK",
+    "33": "FLASH_D",
+    "34": "DSI_REXT",
+    "35": "NC",
+    "36": "NC",
+    "37": "NC",
+    "38": "NC",
+    "39": "NC",
+    "40": "NC",
+    "41": "VDDO_3",
+    "42": "CSI_D0_N",
+    "43": "CSI_D0_P",
+    "44": "CSI_CLK_P",
+    "45": "CSI_CLK_N",
+    "46": "CSI_D1_N",
+    "47": "CSI_D1_P",
+    "48": "CSI_REXT",
+    "49": "USB_HS_DM",
+    "50": "USB_HS_DP",
+    "51": "VDD_USBPHY",
+    "52": "USB_FS_DM",
+    "53": "USB_FS_DP",
+    "54": "VDD_HP",
+    "55": "NC",
+    "56": "NC",
+    "57": "RMII_CRS_DV",
+    "58": "RMII_RXD0",
+    "59": "VDDO_PSRAM",
+    "60": "RMII_RXD1",
+    "61": "RMII_MDC",
+    "62": "3V3",
+    "63": "TC_RESETN",
+    "64": "TC_INT",
+    "65": "RMII_TXD0",
+    "66": "RMII_TXD1_BOOT",
+    "67": "VDDO_PSRAM",
+    "68": "NC",
+    "69": "UART0_TX",
+    "70": "UART0_RX",
+    "71": "VDDO_FLASH",
+    "72": "VDDO_PSRAM",
+    "73": "VDDO_3",
+    "74": "VDDO_4",
+    "75": "3V3",
+    "76": "VDD_HP",
+    "77": "3V3",
+    "78": "FB_DCDC",
+    "79": "EN_DCDC",
+    "80": "SD_D0",
+    "81": "SD_D1",
+    "82": "SD_D2",
+    "83": "SD_D3",
+    "84": "SD_CLK",
+    "85": "VDDO_4",
+    "86": "SD_CMD",
+    "87": "NC",
+    "88": "NC",
+    "89": "BTN_NAV",
+    "90": "NC",
+    "91": "VDD_HP",
+    "92": "RMII_TX_EN",
+    "93": "RMII_REF_CLK",
+    "94": "PHY_RST",
+    "95": "RMII_MDIO",
+    "96": "3V3",
+    "97": "NC",
+    "98": "NC",
+    "99": "XTAL_N",
+    "100": "XTAL_P",
+    "101": "3V3",
+    "102": "VDD_BAT",
+    "103": "CHIP_PU",
+    "104": "NC",
+    "105": "GND"
+   },
+   "lcsc": "C54540373",
+   "mpn": "ESP32-P4NRW32X",
+   "dnp": false,
+   "note": "revision de puce >= 3.x obligatoire"
+  },
+  {
+   "ref": "C14",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C15",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C16",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C17",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C18",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C19",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C20",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C21",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R11",
+   "sym": "R",
+   "value": "0R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "VDD_BAT"
+   },
+   "lcsc": "C17168",
+   "mpn": "0402WGF0000TCE",
+   "dnp": false,
+   "note": "VDD_BAT ne doit jamais flotter"
+  },
+  {
+   "ref": "C22",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_BAT",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C23",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_BAT",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R12",
+   "sym": "R",
+   "value": "0R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "3V3",
+    "2": "VDD_USBPHY"
+   },
+   "lcsc": "C17168",
+   "mpn": "0402WGF0000TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C24",
+   "sym": "C",
+   "value": "10nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_USBPHY",
+    "2": "GND"
+   },
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C25",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_USBPHY",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C26",
+   "sym": "C",
+   "value": "4.7uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_USBPHY",
+    "2": "GND"
+   },
+   "lcsc": "C19666",
+   "mpn": "CL10A475KO8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C27",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C28",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C29",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C30",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C31",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C32",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_FLASH",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C33",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_FLASH",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C34",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_FLASH",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C35",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_PSRAM",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C36",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_PSRAM",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C37",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_PSRAM",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C38",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_PSRAM",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C39",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_PSRAM",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C40",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_3",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C41",
+   "sym": "C",
+   "value": "10nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_3",
+    "2": "GND"
+   },
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C42",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C43",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_3",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C44",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C45",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R13",
+   "sym": "R",
+   "value": "4.02k 1%",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "DSI_REXT",
+    "2": "GND"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R14",
+   "sym": "R",
+   "value": "4.02k 1%",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Decouplage P4 (au plus pres des broches)",
+   "pins": {
+    "1": "CSI_REXT",
+    "2": "GND"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U2",
+   "sym": "TLV62569DBVR",
+   "value": "TLV62569DBVR",
+   "fp": "openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
+   "sheet": "mcu",
+   "group": "DCDC coeur (pilote par le P4)",
+   "pins": {
+    "1": "EN_DCDC",
+    "2": "GND",
+    "3": "SW_HP",
+    "4": "3V3",
+    "5": "FB_DCDC"
+   },
+   "lcsc": "C141836",
+   "mpn": "TLV62569DBVR",
+   "dnp": false,
+   "note": "modele valide par Espressif ; pas de variante a decharge de sortie"
+  },
+  {
+   "ref": "L3",
+   "sym": "L",
+   "value": "2.2uH 2A",
+   "fp": "openkvm:IND-SMD_L3.0-W3.0",
+   "sheet": "mcu",
+   "group": "DCDC coeur (pilote par le P4)",
+   "pins": {
+    "1": "SW_HP",
+    "2": "VDD_HP"
+   },
+   "lcsc": "C43389",
+   "mpn": "SWPA3015S2R2MT",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R15",
+   "sym": "R",
+   "value": "499k 1%",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "DCDC coeur (pilote par le P4)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "FB_DCDC"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R16",
+   "sym": "R",
+   "value": "499k 1%",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "DCDC coeur (pilote par le P4)",
+   "pins": {
+    "1": "FB_DCDC",
+    "2": "GND"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C46",
+   "sym": "C",
+   "value": "22pF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "DCDC coeur (pilote par le P4)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "FB_DCDC"
+   },
+   "lcsc": "C1555",
+   "mpn": "0402CG220J500NT",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C47",
+   "sym": "C",
+   "value": "4.7uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "DCDC coeur (pilote par le P4)",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C19666",
+   "mpn": "CL10A475KO8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C48",
+   "sym": "C",
+   "value": "22uF",
+   "fp": "Capacitor_SMD:C_0805_2012Metric",
+   "sheet": "mcu",
+   "group": "DCDC coeur (pilote par le P4)",
+   "pins": {
+    "1": "VDD_HP",
+    "2": "GND"
+   },
+   "lcsc": "C45783",
+   "mpn": "CL21A226MAQNNNE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "Y1",
+   "sym": "XTAL4",
+   "value": "40MHz 10ppm",
+   "fp": "openkvm:OSC-SMD_4P-L3.2-W2.5-BL_SIT8008BI",
+   "sheet": "mcu",
+   "group": "Quartz 40 MHz",
+   "pins": {
+    "1": "XTAL_A",
+    "2": "GND",
+    "3": "XTAL_B",
+    "4": "GND"
+   },
+   "lcsc": "C9010",
+   "mpn": "X322540MPB4SI",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R17",
+   "sym": "R",
+   "value": "0R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Quartz 40 MHz",
+   "pins": {
+    "1": "XTAL_A",
+    "2": "XTAL_P"
+   },
+   "lcsc": "C17168",
+   "mpn": "0402WGF0000TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R18",
+   "sym": "R",
+   "value": "0R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Quartz 40 MHz",
+   "pins": {
+    "1": "XTAL_B",
+    "2": "XTAL_N"
+   },
+   "lcsc": "C17168",
+   "mpn": "0402WGF0000TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C49",
+   "sym": "C",
+   "value": "22pF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Quartz 40 MHz",
+   "pins": {
+    "1": "XTAL_A",
+    "2": "GND"
+   },
+   "lcsc": "C1555",
+   "mpn": "0402CG220J500NT",
+   "dnp": false,
+   "note": "CL = 15 pF : valeur a ajuster a la mesure"
+  },
+  {
+   "ref": "C50",
+   "sym": "C",
+   "value": "22pF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Quartz 40 MHz",
+   "pins": {
+    "1": "XTAL_B",
+    "2": "GND"
+   },
+   "lcsc": "C1555",
+   "mpn": "0402CG220J500NT",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U7",
+   "sym": "GD25Q128ESIGR",
+   "value": "GD25Q128ESIGR",
+   "fp": "openkvm:SOP-8_L5.3-W5.3-P1.27-LS8.0-BL",
+   "sheet": "mcu",
+   "group": "Flash SPI 16 Mo",
+   "pins": {
+    "1": "FLASH_CS",
+    "2": "FLASH_Q",
+    "3": "FLASH_WP",
+    "4": "GND",
+    "5": "FLASH_D",
+    "6": "FLASH_CK",
+    "7": "FLASH_HOLD",
+    "8": "VDDO_FLASH"
+   },
+   "lcsc": "C2928891",
+   "mpn": "GD25Q128ESIGR",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R19",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Flash SPI 16 Mo",
+   "pins": {
+    "1": "VDDO_FLASH",
+    "2": "FLASH_CS"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C51",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Flash SPI 16 Mo",
+   "pins": {
+    "1": "VDDO_FLASH",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R20",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "3V3",
+    "2": "CHIP_PU"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": "RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
+  },
+  {
+   "ref": "C52",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "CHIP_PU",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R21",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "3V3",
+    "2": "RMII_TXD1_BOOT"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": "GPIO35 = strap BOOT, aussi RMII TXD1"
+  },
+  {
+   "ref": "SW3",
+   "sym": "SW4",
+   "value": "BOOT",
+   "fp": "openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "RMII_TXD1_BOOT",
+    "2": "RMII_TXD1_BOOT",
+    "3": "GND",
+    "4": "GND"
+   },
+   "lcsc": "C318884",
+   "mpn": "TS-1187A-B-A-B",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "SW1",
+   "sym": "SWSIDE",
+   "value": "NAV",
+   "fp": "openkvm:KEY-SMD_TS-1101VS-C-A-A",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "GND",
+    "2": "GND",
+    "3": "BTN_NAV",
+    "4": "GND"
+   },
+   "lcsc": "C318936",
+   "mpn": "TS-1101VS-C-A-A",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R22",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "BTN_NAV"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": "GPIO47 est dans le domaine VDD_IO_5 (VDDO_4)"
+  },
+  {
+   "ref": "SW2",
+   "sym": "SWSIDE",
+   "value": "MODE",
+   "fp": "openkvm:KEY-SMD_TS-1101VS-C-A-A",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "GND",
+    "2": "GND",
+    "3": "BTN_MODE",
+    "4": "GND"
+   },
+   "lcsc": "C318936",
+   "mpn": "TS-1101VS-C-A-A",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R23",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "3V3",
+    "2": "BTN_MODE"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R24",
+   "sym": "R",
+   "value": "1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "LED_DBG",
+    "2": "LED_DBG_A"
+   },
+   "lcsc": "C11702",
+   "mpn": "0402WGF1001TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "D3",
+   "sym": "LED",
+   "value": "LED verte debug",
+   "fp": "LED_SMD:LED_0603_1608Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "GND",
+    "2": "LED_DBG_A"
+   },
+   "lcsc": "C12624",
+   "mpn": "KT-0603G",
+   "dnp": false,
+   "note": "1 = cathode, 2 = anode"
+  },
+  {
+   "ref": "R25",
+   "sym": "R",
+   "value": "4.7k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "3V3",
+    "2": "I2C_SDA"
+   },
+   "lcsc": "C25900",
+   "mpn": "0402WGF4701TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R26",
+   "sym": "R",
+   "value": "4.7k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "3V3",
+    "2": "I2C_SCL"
+   },
+   "lcsc": "C25900",
+   "mpn": "0402WGF4701TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "J8",
+   "sym": "HDR6",
+   "value": "DEBUG UART",
+   "fp": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+   "sheet": "mcu",
+   "group": "Reset, boot, boutons, LED",
+   "pins": {
+    "1": "3V3",
+    "2": "UART0_TX",
+    "3": "UART0_RX",
+    "4": "CHIP_PU",
+    "5": "RMII_TXD1_BOOT",
+    "6": "GND"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": true,
+   "note": "non monte : pastilles de test"
+  },
+  {
+   "ref": "J3",
+   "sym": "HDMI-001",
+   "value": "HDMI A",
+   "fp": "openkvm:HDMI-SMD_19P-P0.50-H-F",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_D2_P",
+    "2": "GND",
+    "3": "HDMI_D2_N",
+    "4": "HDMI_D1_P",
+    "5": "GND",
+    "6": "HDMI_D1_N",
+    "7": "HDMI_D0_P",
+    "8": "GND",
+    "9": "HDMI_D0_N",
+    "10": "HDMI_CK_P",
+    "11": "GND",
+    "12": "HDMI_CK_N",
+    "13": "HDMI_CEC",
+    "14": "NC",
+    "15": "HDMI_SCL",
+    "16": "HDMI_SDA",
+    "17": "GND",
+    "18": "HDMI_5V",
+    "19": "HDMI_HPD",
+    "20": "GND",
+    "21": "GND",
+    "22": "GND",
+    "23": "GND"
+   },
+   "lcsc": "C138388",
+   "mpn": "HDMI-001 19PCBTP",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U10",
+   "sym": "TPD4E05U06",
+   "value": "TPD4E05U06DQAR",
+   "fp": "openkvm:USON-10_L2.5-W1.0-P0.50-BL",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_D2_P",
+    "2": "HDMI_D2_N",
+    "3": "GND",
+    "4": "HDMI_D1_P",
+    "5": "HDMI_D1_N",
+    "6": "HDMI_D1_N",
+    "7": "HDMI_D1_P",
+    "8": "GND",
+    "9": "HDMI_D2_N",
+    "10": "HDMI_D2_P"
+   },
+   "lcsc": "C138714",
+   "mpn": "TPD4E05U06DQAR",
+   "dnp": false,
+   "note": "0,5 pF ; broches 6-7 et 9-10 = traversee des paires"
+  },
+  {
+   "ref": "U11",
+   "sym": "TPD4E05U06",
+   "value": "TPD4E05U06DQAR",
+   "fp": "openkvm:USON-10_L2.5-W1.0-P0.50-BL",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_D0_P",
+    "2": "HDMI_D0_N",
+    "3": "GND",
+    "4": "HDMI_CK_P",
+    "5": "HDMI_CK_N",
+    "6": "HDMI_CK_N",
+    "7": "HDMI_CK_P",
+    "8": "GND",
+    "9": "HDMI_D0_N",
+    "10": "HDMI_D0_P"
+   },
+   "lcsc": "C138714",
+   "mpn": "TPD4E05U06DQAR",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U12",
+   "sym": "TPD4E05U06",
+   "value": "TPD4E05U06DQAR",
+   "fp": "openkvm:USON-10_L2.5-W1.0-P0.50-BL",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_SCL",
+    "2": "HDMI_SDA",
+    "3": "GND",
+    "4": "HDMI_HPD",
+    "5": "HDMI_CEC",
+    "6": "HDMI_CEC",
+    "7": "HDMI_HPD",
+    "8": "GND",
+    "9": "HDMI_SDA",
+    "10": "HDMI_SCL"
+   },
+   "lcsc": "C138714",
+   "mpn": "TPD4E05U06DQAR",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C53",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_5V",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R27",
+   "sym": "R",
+   "value": "47k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_5V",
+    "2": "HDMI_SCL"
+   },
+   "lcsc": "C25792",
+   "mpn": "0402WGF4702TCE",
+   "dnp": false,
+   "note": "rappel SCL cote recepteur (spec HDMI)"
+  },
+  {
+   "ref": "R28",
+   "sym": "R",
+   "value": "1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_5V",
+    "2": "TC_HPDI"
+   },
+   "lcsc": "C11702",
+   "mpn": "0402WGF1001TCE",
+   "dnp": false,
+   "note": "detection du +5 V de la source"
+  },
+  {
+   "ref": "R29",
+   "sym": "R",
+   "value": "1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "TC_HPDO",
+    "2": "HDMI_HPD"
+   },
+   "lcsc": "C11702",
+   "mpn": "0402WGF1001TCE",
+   "dnp": false,
+   "note": "HPD pilote par le TC358743 (relecture EDID)"
+  },
+  {
+   "ref": "R30",
+   "sym": "R",
+   "value": "1k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "Connecteur HDMI",
+   "pins": {
+    "1": "HDMI_5V",
+    "2": "HDMI_HPD"
+   },
+   "lcsc": "C11702",
+   "mpn": "0402WGF1001TCE",
+   "dnp": true,
+   "note": "option : HPD boucle sur le +5 V (schema Antmicro)"
+  },
+  {
+   "ref": "U8",
+   "sym": "TC358743XBG",
+   "value": "TC358743XBG",
+   "fp": "openkvm:BGA-64_8x8_6.0x6.0mm",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "A1": "TC_REXT",
+    "A2": "GND",
+    "A3": "GND",
+    "A4": "TC_BIASDA",
+    "A5": "TC_DAOUT",
+    "A6": "NC",
+    "A7": "NC",
+    "A8": "NC",
+    "B1": "TC_AVDD33",
+    "B2": "TC_AVDD12",
+    "B3": "TC_INT",
+    "B4": "TC_IR",
+    "B5": "TC_AVDD25",
+    "B6": "TC_PCKIN",
+    "B7": "NC",
+    "B8": "NC",
+    "C1": "HDMI_CK_P",
+    "C2": "HDMI_CK_N",
+    "C3": "TC_VDDC",
+    "C4": "GND",
+    "C5": "GND",
+    "C6": "TC_VDDMIPI",
+    "C7": "CSI_CLK_N",
+    "C8": "CSI_CLK_P",
+    "D1": "HDMI_D0_P",
+    "D2": "HDMI_D0_N",
+    "D3": "TC_AVDD12",
+    "D4": "GND",
+    "D5": "GND",
+    "D6": "GND",
+    "D7": "CSI_D1_N",
+    "D8": "CSI_D1_P",
+    "E1": "HDMI_D1_P",
+    "E2": "HDMI_D1_N",
+    "E3": "GND",
+    "E4": "GND",
+    "E5": "GND",
+    "E6": "GND",
+    "E7": "CSI_D0_N",
+    "E8": "CSI_D0_P",
+    "F1": "HDMI_D2_P",
+    "F2": "HDMI_D2_N",
+    "F3": "TC_AVDD33",
+    "F4": "3V3",
+    "F5": "TC_VDDC",
+    "F6": "TC_VDDMIPI",
+    "F7": "NC",
+    "F8": "NC",
+    "G1": "HDMI_CEC",
+    "G2": "TC_VDDC",
+    "G3": "HDMI_SDA",
+    "G4": "I2C_SDA",
+    "G5": "TC_RESETN",
+    "G6": "NC",
+    "G7": "NC",
+    "G8": "NC",
+    "H1": "TC_HPDO",
+    "H2": "TC_HPDI",
+    "H3": "HDMI_SCL",
+    "H4": "I2C_SCL",
+    "H5": "TC_REFCLK",
+    "H6": "NC",
+    "H7": "3V3",
+    "H8": "GND"
+   },
+   "lcsc": "",
+   "mpn": "TC358743XBG",
+   "dnp": false,
+   "note": "OBSOLETE : achat broker, piece fournie a JLCPCB (consignation)"
+  },
+  {
+   "ref": "R31",
+   "sym": "R",
+   "value": "2k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD33",
+    "2": "TC_REXT"
+   },
+   "lcsc": "C4109",
+   "mpn": "0402WGF2001TCE",
+   "dnp": false,
+   "note": "valeur du schema Antmicro"
+  },
+  {
+   "ref": "C54",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_BIASDA",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C55",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_DAOUT",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C56",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_PCKIN",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R32",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_IR",
+    "2": "GND"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": "entree IR inutilisee"
+  },
+  {
+   "ref": "R33",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_RESETN",
+    "2": "GND"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": "pont en reset tant que le P4 ne pilote pas"
+  },
+  {
+   "ref": "R34",
+   "sym": "R",
+   "value": "0R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "3V3",
+    "2": "TC_AVDD33"
+   },
+   "lcsc": "C17168",
+   "mpn": "0402WGF0000TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C57",
+   "sym": "C",
+   "value": "10nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD33",
+    "2": "GND"
+   },
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C58",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD33",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C59",
+   "sym": "C",
+   "value": "4.7uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD33",
+    "2": "GND"
+   },
+   "lcsc": "C19666",
+   "mpn": "CL10A475KO8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "FB1",
+   "sym": "FB",
+   "value": "600R@100MHz",
+   "fp": "Inductor_SMD:L_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "1V2",
+    "2": "TC_AVDD12"
+   },
+   "lcsc": "C85833",
+   "mpn": "BLM18KG601SN1D",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C60",
+   "sym": "C",
+   "value": "10nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD12",
+    "2": "GND"
+   },
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C61",
+   "sym": "C",
+   "value": "4.7uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD12",
+    "2": "GND"
+   },
+   "lcsc": "C19666",
+   "mpn": "CL10A475KO8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "FB2",
+   "sym": "FB",
+   "value": "600R@100MHz",
+   "fp": "Inductor_SMD:L_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "1V2",
+    "2": "TC_VDDC"
+   },
+   "lcsc": "C85833",
+   "mpn": "BLM18KG601SN1D",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C62",
+   "sym": "C",
+   "value": "10nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_VDDC",
+    "2": "GND"
+   },
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C63",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_VDDC",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C64",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_VDDC",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C65",
+   "sym": "C",
+   "value": "4.7uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_VDDC",
+    "2": "GND"
+   },
+   "lcsc": "C19666",
+   "mpn": "CL10A475KO8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "FB3",
+   "sym": "FB",
+   "value": "600R@100MHz",
+   "fp": "Inductor_SMD:L_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "1V2",
+    "2": "TC_VDDMIPI"
+   },
+   "lcsc": "C85833",
+   "mpn": "BLM18KG601SN1D",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C66",
+   "sym": "C",
+   "value": "10nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_VDDMIPI",
+    "2": "GND"
+   },
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C67",
+   "sym": "C",
+   "value": "4.7uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_VDDMIPI",
+    "2": "GND"
+   },
+   "lcsc": "C19666",
+   "mpn": "CL10A475KO8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "FB4",
+   "sym": "FB",
+   "value": "600R@100MHz",
+   "fp": "Inductor_SMD:L_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "VDDO_3",
+    "2": "TC_AVDD25"
+   },
+   "lcsc": "C85833",
+   "mpn": "BLM18KG601SN1D",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C68",
+   "sym": "C",
+   "value": "10nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD25",
+    "2": "GND"
+   },
+   "lcsc": "C15195",
+   "mpn": "CL05B103KB5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C69",
+   "sym": "C",
+   "value": "1uF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "TC_AVDD25",
+    "2": "GND"
+   },
+   "lcsc": "C52923",
+   "mpn": "CL05A105KA5NQNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C70",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C71",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "TC358743XBG",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "Y2",
+   "sym": "OSC4",
+   "value": "27MHz 3V3 HCMOS",
+   "fp": "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm",
+   "sheet": "hdmi",
+   "group": "Oscillateur 27 MHz",
+   "pins": {
+    "1": "OSC27_VDD",
+    "2": "GND",
+    "3": "OSC27_OUT",
+    "4": "OSC27_VDD"
+   },
+   "lcsc": "C2992365",
+   "mpn": "CO32H4-27.000-33JDTSNL",
+   "dnp": false,
+   "note": "1 = EN, 2 = GND, 3 = OUT, 4 = VDD : a verifier sur la fiche"
+  },
+  {
+   "ref": "FB5",
+   "sym": "FB",
+   "value": "600R@100MHz",
+   "fp": "Inductor_SMD:L_0603_1608Metric",
+   "sheet": "hdmi",
+   "group": "Oscillateur 27 MHz",
+   "pins": {
+    "1": "3V3",
+    "2": "OSC27_VDD"
+   },
+   "lcsc": "C85833",
+   "mpn": "BLM18KG601SN1D",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C72",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "Oscillateur 27 MHz",
+   "pins": {
+    "1": "OSC27_VDD",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R35",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "hdmi",
+   "group": "Oscillateur 27 MHz",
+   "pins": {
+    "1": "OSC27_OUT",
+    "2": "TC_REFCLK"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U9",
+   "sym": "IP101GRI",
+   "value": "IP101GRI",
+   "fp": "openkvm:QFN-32_L4.0-W4.0-P0.40-BL-EP2.7",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "NC",
+    "2": "ETH_X1",
+    "3": "ETH_X2",
+    "4": "ETH_RMII_SEL",
+    "5": "RMII_TX_EN",
+    "6": "NC",
+    "7": "NC",
+    "8": "RMII_TXD1_BOOT",
+    "9": "RMII_TXD0",
+    "10": "NC",
+    "11": "ETH_LED0",
+    "12": "ETH_LED3",
+    "13": "3V3",
+    "14": "ETH_CLKO",
+    "15": "NC",
+    "16": "NC",
+    "17": "RMII_RXD1",
+    "18": "RMII_RXD0",
+    "19": "RMII_CRS_DV",
+    "20": "NC",
+    "21": "NC",
+    "22": "RMII_MDC",
+    "23": "RMII_MDIO",
+    "24": "NC",
+    "25": "ETH_ISET",
+    "26": "ETH_RX_N",
+    "27": "ETH_RX_P",
+    "28": "ETH_REGOUT",
+    "29": "ETH_TX_N",
+    "30": "ETH_TX_P",
+    "31": "ETH_AVDD33",
+    "32": "PHY_RST",
+    "33": "GND"
+   },
+   "lcsc": "C703537",
+   "mpn": "IP101GRI",
+   "dnp": false,
+   "note": "adresse PHY = 1, mode RMII, quartz 25 MHz"
+  },
+  {
+   "ref": "R36",
+   "sym": "R",
+   "value": "4.7k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "3V3",
+    "2": "ETH_RMII_SEL"
+   },
+   "lcsc": "C25900",
+   "mpn": "0402WGF4701TCE",
+   "dnp": false,
+   "note": "strap : 1 = RMII"
+  },
+  {
+   "ref": "R37",
+   "sym": "R",
+   "value": "4.7k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "3V3",
+    "2": "ETH_LED0"
+   },
+   "lcsc": "C25900",
+   "mpn": "0402WGF4701TCE",
+   "dnp": false,
+   "note": "strap PHY_AD0 = 1 (adresse 1)"
+  },
+  {
+   "ref": "R38",
+   "sym": "R",
+   "value": "6.19k 1%",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_ISET",
+    "2": "GND"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R39",
+   "sym": "R",
+   "value": "33R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_CLKO",
+    "2": "RMII_REF_CLK"
+   },
+   "lcsc": "C25105",
+   "mpn": "0402WGF330JTCE",
+   "dnp": false,
+   "note": "50 MHz vers GPIO50, au plus pres du PHY"
+  },
+  {
+   "ref": "R40",
+   "sym": "R",
+   "value": "4.7k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "3V3",
+    "2": "RMII_MDIO"
+   },
+   "lcsc": "C25900",
+   "mpn": "0402WGF4701TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R41",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "3V3",
+    "2": "PHY_RST"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C73",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "FB6",
+   "sym": "FB",
+   "value": "600R@100MHz",
+   "fp": "Inductor_SMD:L_0603_1608Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "3V3",
+    "2": "ETH_AVDD33"
+   },
+   "lcsc": "C85833",
+   "mpn": "BLM18KG601SN1D",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C74",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_AVDD33",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C75",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_AVDD33",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C76",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_REGOUT",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C77",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_REGOUT",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "Y3",
+   "sym": "XTAL4",
+   "value": "25MHz 10ppm",
+   "fp": "openkvm:CRYSTAL-SMD_4P-L3.2-W2.5-BL",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_X1",
+    "2": "GND",
+    "3": "ETH_X2",
+    "4": "GND"
+   },
+   "lcsc": "C9006",
+   "mpn": "X322525MOB4SI",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C78",
+   "sym": "C",
+   "value": "18pF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_X1",
+    "2": "GND"
+   },
+   "lcsc": "C1549",
+   "mpn": "0402CG180J500NT",
+   "dnp": false,
+   "note": "CL = 12 pF"
+  },
+  {
+   "ref": "C79",
+   "sym": "C",
+   "value": "18pF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "eth",
+   "group": "PHY IP101GRI",
+   "pins": {
+    "1": "ETH_X2",
+    "2": "GND"
+   },
+   "lcsc": "C1549",
+   "mpn": "0402CG180J500NT",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "J4",
+   "sym": "HR911105A",
+   "value": "HR911105A",
+   "fp": "openkvm:RJ45-TH_HR911105A",
+   "sheet": "eth",
+   "group": "RJ45",
+   "pins": {
+    "1": "ETH_TX_P",
+    "2": "ETH_TX_N",
+    "3": "ETH_RX_P",
+    "4": "ETH_CT_TX",
+    "5": "ETH_CT_RX",
+    "6": "ETH_RX_N",
+    "7": "NC",
+    "8": "GND",
+    "9": "3V3",
+    "10": "ETH_LEDG_K",
+    "11": "GND",
+    "12": "ETH_LEDY_A",
+    "SH1": "GND",
+    "SH2": "GND"
+   },
+   "lcsc": "C12074",
+   "mpn": "HR911105A",
+   "dnp": false,
+   "note": "9/10 = LED verte (A/K), 12/11 = LED jaune (A/K)"
+  },
+  {
+   "ref": "C80",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "eth",
+   "group": "RJ45",
+   "pins": {
+    "1": "ETH_CT_TX",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": "point milieu : decouplage seul, pas de tension (IP101G)"
+  },
+  {
+   "ref": "C81",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "eth",
+   "group": "RJ45",
+   "pins": {
+    "1": "ETH_CT_RX",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R42",
+   "sym": "R",
+   "value": "470R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "RJ45",
+   "pins": {
+    "1": "ETH_LEDG_K",
+    "2": "ETH_LED0"
+   },
+   "lcsc": "C25117",
+   "mpn": "0402WGF4700TCE",
+   "dnp": false,
+   "note": "LED verte = lien, active a l etat bas"
+  },
+  {
+   "ref": "R43",
+   "sym": "R",
+   "value": "470R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "eth",
+   "group": "RJ45",
+   "pins": {
+    "1": "ETH_LED3",
+    "2": "ETH_LEDY_A"
+   },
+   "lcsc": "C25117",
+   "mpn": "0402WGF4700TCE",
+   "dnp": false,
+   "note": "LED jaune = 100M / activite, active a l etat haut"
+  },
+  {
+   "ref": "J5",
+   "sym": "TF-01A",
+   "value": "microSD",
+   "fp": "openkvm:TF-SMD_TF-01A",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_C_D2",
+    "2": "SD_C_D3",
+    "3": "SD_C_CMD",
+    "4": "SD_VDD",
+    "5": "SD_C_CLK",
+    "6": "GND",
+    "7": "SD_C_D0",
+    "8": "SD_C_D1",
+    "9": "SD_CD",
+    "10": "GND",
+    "11": "GND",
+    "12": "GND",
+    "13": "GND"
+   },
+   "lcsc": "C91145",
+   "mpn": "TF-01A",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R44",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_CLK",
+    "2": "SD_C_CLK"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R45",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_CMD",
+    "2": "SD_C_CMD"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R46",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_D0",
+    "2": "SD_C_D0"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R47",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_D1",
+    "2": "SD_C_D1"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R48",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_D2",
+    "2": "SD_C_D2"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R49",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_D3",
+    "2": "SD_C_D3"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R50",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "SD_CMD"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R51",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "SD_D0"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R52",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "SD_D1"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R53",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "SD_D2"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R54",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "VDDO_4",
+    "2": "SD_D3"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R55",
+   "sym": "R",
+   "value": "10k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "3V3",
+    "2": "SD_CD"
+   },
+   "lcsc": "C25531",
+   "mpn": "0402WGJ0103TCE",
+   "dnp": false,
+   "note": "detection de carte, GPIO7 (domaine 3,3 V)"
+  },
+  {
+   "ref": "Q1",
+   "sym": "PMOS",
+   "value": "AO3401A",
+   "fp": "Package_TO_SOT_SMD:SOT-23",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_PWR_EN_N",
+    "2": "3V3",
+    "3": "SD_VDD"
+   },
+   "lcsc": "C15127",
+   "mpn": "AO3401A",
+   "dnp": false,
+   "note": "1 = G, 2 = S, 3 = D ; coupe la carte pour quitter le mode 1,8 V"
+  },
+  {
+   "ref": "R56",
+   "sym": "R",
+   "value": "100k",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "3V3",
+    "2": "SD_PWR_EN_N"
+   },
+   "lcsc": "C25741",
+   "mpn": "0402WGF1003TCE",
+   "dnp": false,
+   "note": "carte eteinte par defaut"
+  },
+  {
+   "ref": "C82",
+   "sym": "C",
+   "value": "10uF",
+   "fp": "Capacitor_SMD:C_0603_1608Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_VDD",
+    "2": "GND"
+   },
+   "lcsc": "C19702",
+   "mpn": "CL10A106KP8NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "C83",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "periph",
+   "group": "microSD (slot SDMMC 0, UHS-I)",
+   "pins": {
+    "1": "SD_VDD",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "J7",
+   "sym": "JST8",
+   "value": "LCD",
+   "fp": "openkvm:CONN-TH_SM08B-SRSS-TB-LF-SN",
+   "sheet": "periph",
+   "group": "Ecran ST7789 240x240",
+   "pins": {
+    "1": "GND",
+    "2": "3V3",
+    "3": "LCD_SCLK",
+    "4": "LCD_MOSI",
+    "5": "LCD_RST",
+    "6": "LCD_DC",
+    "7": "LCD_CS",
+    "8": "LCD_BL",
+    "9": "GND",
+    "10": "GND"
+   },
+   "lcsc": "C160407",
+   "mpn": "SM08B-SRSS-TB(LF)(SN)",
+   "dnp": false,
+   "note": "meme ordre que le module MSP1541"
+  },
+  {
+   "ref": "C84",
+   "sym": "C",
+   "value": "100nF",
+   "fp": "Capacitor_SMD:C_0402_1005Metric",
+   "sheet": "periph",
+   "group": "Ecran ST7789 240x240",
+   "pins": {
+    "1": "3V3",
+    "2": "GND"
+   },
+   "lcsc": "C1525",
+   "mpn": "CL05B104KO5NNNC",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "U13",
+   "sym": "TPD4E05U06",
+   "value": "TPD4E05U06DQAR",
+   "fp": "openkvm:USON-10_L2.5-W1.0-P0.50-BL",
+   "sheet": "periph",
+   "group": "ESD USB",
+   "pins": {
+    "1": "USB_HS_DP",
+    "2": "USB_HS_DM",
+    "3": "GND",
+    "4": "J1_CC1",
+    "5": "J1_CC2",
+    "6": "J1_CC2",
+    "7": "J1_CC1",
+    "8": "GND",
+    "9": "USB_HS_DM",
+    "10": "USB_HS_DP"
+   },
+   "lcsc": "C138714",
+   "mpn": "TPD4E05U06DQAR",
+   "dnp": false,
+   "note": "USB HS : capacite <= 1 pF exigee"
+  },
+  {
+   "ref": "U14",
+   "sym": "TPD4E05U06",
+   "value": "TPD4E05U06DQAR",
+   "fp": "openkvm:USON-10_L2.5-W1.0-P0.50-BL",
+   "sheet": "periph",
+   "group": "ESD USB",
+   "pins": {
+    "1": "USB_FS_CONN_DP",
+    "2": "USB_FS_CONN_DM",
+    "3": "GND",
+    "4": "J2_CC1",
+    "5": "J2_CC2",
+    "6": "J2_CC2",
+    "7": "J2_CC1",
+    "8": "GND",
+    "9": "USB_FS_CONN_DM",
+    "10": "USB_FS_CONN_DP"
+   },
+   "lcsc": "C138714",
+   "mpn": "TPD4E05U06DQAR",
+   "dnp": false,
+   "note": ""
+  },
+  {
+   "ref": "R57",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "ESD USB",
+   "pins": {
+    "1": "USB_FS_DP",
+    "2": "USB_FS_CONN_DP"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": "USB FS : 22 ohms serie pres du P4"
+  },
+  {
+   "ref": "R58",
+   "sym": "R",
+   "value": "22R",
+   "fp": "Resistor_SMD:R_0402_1005Metric",
+   "sheet": "periph",
+   "group": "ESD USB",
+   "pins": {
+    "1": "USB_FS_DM",
+    "2": "USB_FS_CONN_DM"
+   },
+   "lcsc": "C25092",
+   "mpn": "0402WGF220JTCE",
+   "dnp": false,
+   "note": ""
+  }
+ ]
+}
