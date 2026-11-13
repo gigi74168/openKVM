@@ -2888,180 +2888,6 @@
 			)
 		)
 	)
-	(symbol "HDR6"
-		(pin_names
-			(offset 0.762)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "J"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "HDR6_0_1"
-			(rectangle
-				(start -7.62 10.16)
-				(end 7.62 -7.62)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "HDR6_1_1"
-			(pin passive line
-				(at -10.16 7.62 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -10.16 5.08 0)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -10.16 2.54 0)
-				(length 2.54)
-				(name "3"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -10.16 0 0)
-				(length 2.54)
-				(name "4"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "5"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -10.16 -5.08 0)
-				(length 2.54)
-				(name "6"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "HR911105A"
 		(pin_names
 			(offset 0.762)
@@ -4286,6 +4112,155 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "LEDR"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LEDR_0_1"
+			(polyline
+				(pts
+					(xy -1.27 1.27)
+					(xy -1.27 -1.27)
+					(xy 1.27 0)
+					(xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27)
+					(xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.2 1.9)
+					(xy 1.2 2.9)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.2 1.9)
+					(xy 2.2 2.9)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LEDR_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1 1)
@@ -6774,6 +6749,90 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TP"
+		(pin_names
+			(offset 0.762)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TP"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP_0_1"
+			(rectangle
+				(start -7.62 2.54)
+				(end 7.62 -2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP_1_1"
+			(pin passive line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "TP"
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1 1)

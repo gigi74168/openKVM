@@ -3,7 +3,7 @@
 	(generator "openkvm_gen")
 	(generator_version "9.0")
 	(uuid "630d9a5b-5183-52a4-8aa1-2952e0ed2674")
-	(paper "A2")
+	(paper "A1")
 	(title_block
 		(title "openKVM - ESP32-P4")
 		(date "2026-11-12")
@@ -2300,180 +2300,6 @@
 				)
 			)
 		)
-		(symbol "openkvm_sym:HDR6"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "HDR6_0_1"
-				(rectangle
-					(start -7.62 10.16)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "HDR6_1_1"
-				(pin passive line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "openkvm_sym:L"
 			(pin_numbers
 				(hide yes)
@@ -2720,6 +2546,155 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "openkvm_sym:LEDR"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LEDR_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27)
+						(xy -1.27 -1.27)
+						(xy 1.27 0)
+						(xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27)
+						(xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.2 1.9)
+						(xy 1.2 2.9)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.2 1.9)
+						(xy 2.2 2.9)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LEDR_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1 1)
@@ -3258,6 +3233,90 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "openkvm_sym:TP"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TP_0_1"
+				(rectangle
+					(start -7.62 2.54)
+					(end 7.62 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TP_1_1"
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "TP"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1 1)
@@ -12556,15 +12615,15 @@
 		)
 	)
 	(symbol
-		(lib_id "openkvm_sym:HDR6")
-		(at 218.44 231.14 0)
+		(lib_id "openkvm_sym:TP")
+		(at 218.44 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "8e227fca-113c-5765-b71c-63a2d2707352")
-		(property "Reference" "J8"
+		(uuid "2c42c809-5a15-540e-965d-11289119bf6e")
+		(property "Reference" "TP1"
 			(at 210.82 219.98 0)
 			(effects
 				(font
@@ -12573,8 +12632,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DEBUG UART"
-			(at 210.82 240.96 0)
+		(property "Value" "3V3"
+			(at 210.82 228.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12582,8 +12641,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 218.44 231.14 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 218.44 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12592,7 +12651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 231.14 0)
+			(at 218.44 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12600,8 +12659,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "non monte : pastilles de test"
-			(at 218.44 231.14 0)
+		(property "Description" "pastille de test, non montee"
+			(at 218.44 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12610,7 +12669,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 218.44 231.14 0)
+			(at 218.44 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12619,7 +12678,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 218.44 231.14 0)
+			(at 218.44 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12628,42 +12687,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "26ae5c04-a1fd-59d6-9e0a-7dbc4e947b03")
-		)
-		(pin "2"
-			(uuid "b2105226-2eab-54be-b2b8-02359667d81a")
-		)
-		(pin "3"
-			(uuid "9fe98e88-7d1f-5539-88b4-e6f7f81517ba")
-		)
-		(pin "4"
-			(uuid "8f111d8a-6abf-5d58-afbd-da7ed91473c9")
-		)
-		(pin "5"
-			(uuid "f5b1cf2a-2a6d-5ac7-a55a-5f2d9cc8cff2")
-		)
-		(pin "6"
-			(uuid "7e4e05c1-2e68-56aa-bdae-3f1ea1206294")
+			(uuid "864b6aea-1939-5f79-808f-31cfc75aaf98")
 		)
 		(instances
 			(project "openkvm"
 				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
-					(reference "J8")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(text "non monte : pastilles de test"
+	(text "pastille de test, non montee"
 		(exclude_from_sim no)
-		(at 210.82 244.16 0)
+		(at 210.82 231.46 0)
 		(effects
 			(font
 				(size 1 1)
 			)
 			(justify left bottom)
 		)
-		(uuid "424fb57a-bc36-58b6-b51d-18dcbd3031a3")
+		(uuid "1ed5f535-47af-5ddb-a9ad-63c8f73925d4")
 	)
 	(global_label "3V3"
 		(shape passive)
@@ -12685,16 +12729,111 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "openkvm_sym:TP")
+		(at 299.72 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "b6616fa3-9e2d-59bd-a444-d7d31d3dbc5b")
+		(property "Reference" "TP2"
+			(at 292.1 219.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UART0_TX"
+			(at 292.1 228.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 299.72 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "pastille de test, non montee"
+			(at 299.72 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 299.72 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 299.72 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9ccabc0-186d-52bd-a4c2-3d5b1c56608e")
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "pastille de test, non montee"
+		(exclude_from_sim no)
+		(at 292.1 231.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0ef1d09-9e13-550a-a946-a4fccfc58d8c")
+	)
 	(global_label "UART0_TX"
 		(shape passive)
-		(at 208.28 226.06 180)
+		(at 289.56 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "574ac950-f34e-517c-8435-3c3c9bafa8e4")
+		(uuid "30836337-14ba-53e9-8eb2-6d556b2b7859")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12704,17 +12843,112 @@
 				(hide yes)
 			)
 		)
+	)
+	(symbol
+		(lib_id "openkvm_sym:TP")
+		(at 381 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "0413c7b8-af54-5ccd-ad37-049581a2607c")
+		(property "Reference" "TP3"
+			(at 373.38 219.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UART0_RX"
+			(at 373.38 228.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 381 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "pastille de test, non montee"
+			(at 381 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 381 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 381 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2ce4129-0457-5b9e-b2bc-98fdfd366a0e")
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "pastille de test, non montee"
+		(exclude_from_sim no)
+		(at 373.38 231.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "858bd241-67da-5cca-ac52-b480213ed244")
 	)
 	(global_label "UART0_RX"
 		(shape passive)
-		(at 208.28 228.6 180)
+		(at 370.84 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "84fe63ea-4f44-5a5b-a299-e94711598280")
+		(uuid "57edb442-1de9-5c90-bedb-a62f4b598f9f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12724,17 +12958,112 @@
 				(hide yes)
 			)
 		)
+	)
+	(symbol
+		(lib_id "openkvm_sym:TP")
+		(at 462.28 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "f3550b55-df4e-5bf0-aac8-cedd9fb53abb")
+		(property "Reference" "TP4"
+			(at 454.66 219.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CHIP_PU"
+			(at 454.66 228.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 462.28 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 462.28 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "pastille de test, non montee"
+			(at 462.28 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 462.28 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 462.28 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b233282a-4d63-55f7-8b05-9e11f2dba230")
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "pastille de test, non montee"
+		(exclude_from_sim no)
+		(at 454.66 231.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b2a6b9d-27c3-5084-89d3-2215a03377c8")
 	)
 	(global_label "CHIP_PU"
 		(shape passive)
-		(at 208.28 231.14 180)
+		(at 452.12 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "d62c93af-62be-5d06-9a13-2bcb7b1aae99")
+		(uuid "f900111e-fab2-5d91-b4c6-6f6fd9ca2d99")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12744,17 +13073,112 @@
 				(hide yes)
 			)
 		)
+	)
+	(symbol
+		(lib_id "openkvm_sym:TP")
+		(at 543.56 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "7900d138-a891-5b26-995b-b717b01df7c3")
+		(property "Reference" "TP5"
+			(at 535.94 219.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RMII_TXD1_BOOT"
+			(at 535.94 228.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 543.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 543.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "pastille de test, non montee"
+			(at 543.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 543.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 543.56 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54096fd1-a4f5-5f71-9446-51514983c3fb")
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "pastille de test, non montee"
+		(exclude_from_sim no)
+		(at 535.94 231.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "36079439-9caf-557a-a297-c2914026277a")
 	)
 	(global_label "RMII_TXD1_BOOT"
 		(shape passive)
-		(at 208.28 233.68 180)
+		(at 533.4 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "47f90eb5-0b63-54c4-a2db-9ff5779eb39e")
+		(uuid "290f38c5-2e21-5c59-a5b0-aeca75d26834")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12765,16 +13189,111 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "openkvm_sym:TP")
+		(at 624.84 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "99a4b947-fe06-5ed7-9a09-8d6b24455cd6")
+		(property "Reference" "TP6"
+			(at 617.22 219.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 617.22 228.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 624.84 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 624.84 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "pastille de test, non montee"
+			(at 624.84 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 624.84 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 624.84 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "006ee167-1e65-502b-8e85-3b2438caa2c1")
+		)
+		(instances
+			(project "openkvm"
+				(path "/b10aa2b0-c4fe-5fb8-8231-c6cefa5d4235/630d9a5b-5183-52a4-8aa1-2952e0ed2674"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "pastille de test, non montee"
+		(exclude_from_sim no)
+		(at 617.22 231.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "57e0ee67-ae8f-52ba-905a-2cb6e952cd60")
+	)
 	(global_label "GND"
 		(shape passive)
-		(at 208.28 236.22 180)
+		(at 614.68 223.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "47ce785e-39b3-5bf7-8b65-c1de0d3aabbb")
+		(uuid "de887dd2-3ad8-5c40-b11c-763878bd0d3e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12787,7 +13306,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 254 0)
+		(at 50.8 243.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12795,7 +13314,7 @@
 		(dnp no)
 		(uuid "70b1478e-dc65-5bbf-b292-93cbb54ec878")
 		(property "Reference" "R20"
-			(at 50.2 252.1 0)
+			(at 50.2 241.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12804,7 +13323,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 51.4 252.1 0)
+			(at 51.4 241.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12813,7 +13332,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 254 0)
+			(at 50.8 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12822,7 +13341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 254 0)
+			(at 50.8 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12830,8 +13349,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
-			(at 50.8 254 0)
+		(property "Description" "RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur la pastille TP4"
+			(at 50.8 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12840,7 +13359,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 50.8 254 0)
+			(at 50.8 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12849,7 +13368,7 @@
 			)
 		)
 		(property "MPN" "0402WGF1002TCE"
-			(at 50.8 254 0)
+			(at 50.8 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12874,14 +13393,14 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 46.99 254 180)
+		(at 46.99 243.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "77f2121b-769e-5ffd-97cd-27f1d7755947")
+		(uuid "0c01128d-4e3d-527d-b7f0-d44c0563af76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12894,14 +13413,14 @@
 	)
 	(global_label "CHIP_PU"
 		(shape passive)
-		(at 54.61 254 0)
+		(at 54.61 243.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4e9e0a57-96f5-510b-ab3e-852dbcfdea3b")
+		(uuid "9a38d68c-1d67-5554-8ccd-ede3f94ababe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -12914,7 +13433,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:C")
-		(at 50.8 260.35 0)
+		(at 50.8 250.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12922,7 +13441,7 @@
 		(dnp no)
 		(uuid "13696338-c6be-5f69-996a-4926f0dc59c5")
 		(property "Reference" "C52"
-			(at 50.2 258.45 0)
+			(at 50.2 248.29 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12931,7 +13450,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 51.4 258.45 0)
+			(at 51.4 248.29 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12940,7 +13459,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 50.8 260.35 0)
+			(at 50.8 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12949,7 +13468,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 260.35 0)
+			(at 50.8 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12958,7 +13477,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 260.35 0)
+			(at 50.8 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12967,7 +13486,7 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 50.8 260.35 0)
+			(at 50.8 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12976,7 +13495,7 @@
 			)
 		)
 		(property "MPN" "CL05A105KA5NQNC"
-			(at 50.8 260.35 0)
+			(at 50.8 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13001,14 +13520,14 @@
 	)
 	(global_label "CHIP_PU"
 		(shape passive)
-		(at 46.99 260.35 180)
+		(at 46.99 250.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "d3ca8510-8b2b-58d8-9ee6-1a4c31106136")
+		(uuid "9d5bbc44-af48-5604-83b0-eff7c1ae678e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13021,14 +13540,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 54.61 260.35 0)
+		(at 54.61 250.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "da5fe1a5-9e5a-5086-933d-4c47c765379c")
+		(uuid "c5d231ef-ecf6-5eba-8a01-24abd6fa68ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13041,7 +13560,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 266.7 0)
+		(at 50.8 256.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13049,7 +13568,7 @@
 		(dnp no)
 		(uuid "c497cfe1-ff01-5ab6-906a-f7692f6dbc0e")
 		(property "Reference" "R21"
-			(at 50.2 264.8 0)
+			(at 50.2 254.64 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13058,7 +13577,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 51.4 264.8 0)
+			(at 51.4 254.64 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13067,7 +13586,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 266.7 0)
+			(at 50.8 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13076,7 +13595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 266.7 0)
+			(at 50.8 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13085,7 +13604,7 @@
 			)
 		)
 		(property "Description" "GPIO35 = strap BOOT, aussi RMII TXD1"
-			(at 50.8 266.7 0)
+			(at 50.8 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13094,7 +13613,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 50.8 266.7 0)
+			(at 50.8 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13103,7 +13622,7 @@
 			)
 		)
 		(property "MPN" "0402WGF1002TCE"
-			(at 50.8 266.7 0)
+			(at 50.8 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13128,14 +13647,14 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 46.99 266.7 180)
+		(at 46.99 256.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "5cf8329f-b578-5d64-a34f-2aece810eb27")
+		(uuid "7e134881-950b-5c6a-9bed-8c24dc50b442")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13148,14 +13667,14 @@
 	)
 	(global_label "RMII_TXD1_BOOT"
 		(shape passive)
-		(at 54.61 266.7 0)
+		(at 54.61 256.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "553fd136-f0a1-5d21-8d42-ca2110f4a16b")
+		(uuid "3ceb6b57-3ba7-5553-a29f-a4a534e4f99a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13168,7 +13687,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 273.05 0)
+		(at 50.8 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13176,7 +13695,7 @@
 		(dnp no)
 		(uuid "fba49b86-7292-5c2e-81d3-46095e55dce2")
 		(property "Reference" "R22"
-			(at 50.2 271.15 0)
+			(at 50.2 260.99 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13185,7 +13704,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 51.4 271.15 0)
+			(at 51.4 260.99 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13194,7 +13713,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 273.05 0)
+			(at 50.8 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13203,7 +13722,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 273.05 0)
+			(at 50.8 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13212,7 +13731,7 @@
 			)
 		)
 		(property "Description" "LED verte (Vf ~3,1 V) sur le 5 V : ~1,9 mA. Sur 3,3 V elle serait presque eteinte"
-			(at 50.8 273.05 0)
+			(at 50.8 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13221,7 +13740,7 @@
 			)
 		)
 		(property "LCSC" "C11702"
-			(at 50.8 273.05 0)
+			(at 50.8 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13230,7 +13749,7 @@
 			)
 		)
 		(property "MPN" "0402WGF1001TCE"
-			(at 50.8 273.05 0)
+			(at 50.8 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13255,14 +13774,14 @@
 	)
 	(global_label "5V_SYS"
 		(shape passive)
-		(at 46.99 273.05 180)
+		(at 46.99 262.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "ce69c432-37de-5060-b2d3-09b15faf1c0e")
+		(uuid "eb4c942d-d956-5d6e-b451-2cd9851914c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13275,14 +13794,14 @@
 	)
 	(global_label "LED_PWR_A"
 		(shape passive)
-		(at 54.61 273.05 0)
+		(at 54.61 262.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "917ff38c-fc97-59f2-92f8-a271e04765d4")
+		(uuid "db7090fc-62ae-56d9-bf26-1e1f67936745")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13295,7 +13814,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 279.4 0)
+		(at 50.8 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13303,7 +13822,7 @@
 		(dnp no)
 		(uuid "b9a6066d-1ce4-5486-a929-6c93507b714e")
 		(property "Reference" "R23"
-			(at 50.2 277.5 0)
+			(at 50.2 267.34 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13312,7 +13831,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 51.4 277.5 0)
+			(at 51.4 267.34 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13321,7 +13840,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 279.4 0)
+			(at 50.8 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13330,7 +13849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 279.4 0)
+			(at 50.8 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13339,7 +13858,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 279.4 0)
+			(at 50.8 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13348,7 +13867,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 50.8 279.4 0)
+			(at 50.8 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13357,7 +13876,7 @@
 			)
 		)
 		(property "MPN" "0402WGF1002TCE"
-			(at 50.8 279.4 0)
+			(at 50.8 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13382,14 +13901,14 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 46.99 279.4 180)
+		(at 46.99 269.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3c975d16-1b2a-52a4-9f1a-9eb09188882e")
+		(uuid "eceae0ee-8f99-56f7-b313-405d235e2f9e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13402,14 +13921,14 @@
 	)
 	(global_label "BTN_FN"
 		(shape passive)
-		(at 54.61 279.4 0)
+		(at 54.61 269.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "6627a2c9-b02e-57c7-9bae-85522e4184fc")
+		(uuid "4a64214a-c407-522a-bed9-b6913c1f37f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13422,7 +13941,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 285.75 0)
+		(at 50.8 275.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13430,7 +13949,7 @@
 		(dnp no)
 		(uuid "e0a3939d-9018-553c-9b03-2287f3a80e3a")
 		(property "Reference" "R24"
-			(at 50.2 283.85 0)
+			(at 50.2 273.69 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13439,7 +13958,7 @@
 			)
 		)
 		(property "Value" "470R"
-			(at 51.4 283.85 0)
+			(at 51.4 273.69 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13448,7 +13967,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 285.75 0)
+			(at 50.8 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13457,7 +13976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 285.75 0)
+			(at 50.8 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13466,7 +13985,7 @@
 			)
 		)
 		(property "Description" "LED jaune (Vf 2,4 V) depuis GPIO6 : ~1,9 mA"
-			(at 50.8 285.75 0)
+			(at 50.8 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13475,7 +13994,7 @@
 			)
 		)
 		(property "LCSC" "C25117"
-			(at 50.8 285.75 0)
+			(at 50.8 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13484,7 +14003,7 @@
 			)
 		)
 		(property "MPN" "0402WGF4700TCE"
-			(at 50.8 285.75 0)
+			(at 50.8 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13509,14 +14028,14 @@
 	)
 	(global_label "LED_STAT"
 		(shape passive)
-		(at 46.99 285.75 180)
+		(at 46.99 275.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "760d84f5-19c0-5482-ac60-822373c43b45")
+		(uuid "b50936d3-1d6a-57bc-8c91-91e02730d165")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13529,14 +14048,14 @@
 	)
 	(global_label "LED_STAT_A"
 		(shape passive)
-		(at 54.61 285.75 0)
+		(at 54.61 275.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "74973fb6-6926-544b-97f5-9ed21b5091e1")
+		(uuid "498389e3-d1b7-5947-be40-f5972d8f9b88")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13548,8 +14067,8 @@
 		)
 	)
 	(symbol
-		(lib_id "openkvm_sym:LED")
-		(at 50.8 292.1 0)
+		(lib_id "openkvm_sym:LEDR")
+		(at 50.8 281.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13557,7 +14076,7 @@
 		(dnp no)
 		(uuid "e44a48c6-da19-5b55-859e-8050a47563af")
 		(property "Reference" "D3"
-			(at 50.2 290.2 0)
+			(at 50.2 280.04 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13566,7 +14085,7 @@
 			)
 		)
 		(property "Value" "LED jaune etat"
-			(at 51.4 290.2 0)
+			(at 51.4 280.04 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13574,8 +14093,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 50.8 292.1 0)
+		(property "Footprint" "openkvm:LED0603-R-RD"
+			(at 50.8 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13584,7 +14103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 292.1 0)
+			(at 50.8 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13592,8 +14111,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1 = cathode, 2 = anode ; pilotee par le firmware"
-			(at 50.8 292.1 0)
+		(property "Description" "1 = ANODE, 2 = cathode (numerotation JLCPCB) ; pilotee par le firmware"
+			(at 50.8 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13602,7 +14121,7 @@
 			)
 		)
 		(property "LCSC" "C2287"
-			(at 50.8 292.1 0)
+			(at 50.8 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13611,7 +14130,7 @@
 			)
 		)
 		(property "MPN" "KT-0603Y"
-			(at 50.8 292.1 0)
+			(at 50.8 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13636,14 +14155,14 @@
 	)
 	(global_label "LED_STAT_A"
 		(shape passive)
-		(at 46.99 292.1 180)
+		(at 46.99 281.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "132fbe84-e010-5af1-ae50-8e1d19523b93")
+		(uuid "52ef3aab-57fa-5e3d-b7e1-89ae7df19bb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13656,14 +14175,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 54.61 292.1 0)
+		(at 54.61 281.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b36825a6-97a2-522b-892b-15fffb958225")
+		(uuid "ef91704f-9cc2-5198-ac5d-f12c5711c422")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13676,7 +14195,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:LED")
-		(at 50.8 298.45 0)
+		(at 50.8 288.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13684,7 +14203,7 @@
 		(dnp no)
 		(uuid "293de72b-9727-51ce-89ef-0bb8dd9c2f2f")
 		(property "Reference" "D4"
-			(at 50.2 296.55 0)
+			(at 50.2 286.39 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13693,7 +14212,7 @@
 			)
 		)
 		(property "Value" "LED verte alim"
-			(at 51.4 296.55 0)
+			(at 51.4 286.39 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13701,8 +14220,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 50.8 298.45 0)
+		(property "Footprint" "openkvm:LED0603-RD"
+			(at 50.8 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13711,7 +14230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 298.45 0)
+			(at 50.8 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13720,7 +14239,7 @@
 			)
 		)
 		(property "Description" "1 = cathode, 2 = anode ; allumee des que le 5 V est present"
-			(at 50.8 298.45 0)
+			(at 50.8 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13729,7 +14248,7 @@
 			)
 		)
 		(property "LCSC" "C12624"
-			(at 50.8 298.45 0)
+			(at 50.8 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13738,7 +14257,7 @@
 			)
 		)
 		(property "MPN" "KT-0603G"
-			(at 50.8 298.45 0)
+			(at 50.8 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13763,14 +14282,14 @@
 	)
 	(global_label "LED_PWR_A"
 		(shape passive)
-		(at 46.99 298.45 180)
+		(at 46.99 288.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "2dacc93f-ce86-5c32-a017-bacc229a2f9e")
+		(uuid "e98570a7-0d38-59b7-867f-e42273714c2e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13783,14 +14302,14 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 54.61 298.45 0)
+		(at 54.61 288.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "cd0682fb-11c0-513a-a72e-1e912b0fd82b")
+		(uuid "c9fdf1f5-a284-5242-be45-62a81da61d81")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13803,7 +14322,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 304.8 0)
+		(at 50.8 294.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13811,7 +14330,7 @@
 		(dnp no)
 		(uuid "cb27aa07-4de3-5f87-bb12-25aede0fcee2")
 		(property "Reference" "R25"
-			(at 50.2 302.9 0)
+			(at 50.2 292.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13820,7 +14339,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 51.4 302.9 0)
+			(at 51.4 292.74 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13829,7 +14348,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 304.8 0)
+			(at 50.8 294.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13838,7 +14357,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 304.8 0)
+			(at 50.8 294.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13847,7 +14366,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 304.8 0)
+			(at 50.8 294.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13856,7 +14375,7 @@
 			)
 		)
 		(property "LCSC" "C25900"
-			(at 50.8 304.8 0)
+			(at 50.8 294.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13865,7 +14384,7 @@
 			)
 		)
 		(property "MPN" "0402WGF4701TCE"
-			(at 50.8 304.8 0)
+			(at 50.8 294.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13890,14 +14409,14 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 46.99 304.8 180)
+		(at 46.99 294.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "b64c393b-6db0-5add-ac87-732c7d78de47")
+		(uuid "1186b078-5088-5af1-af29-2eb482d80cf8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13910,14 +14429,14 @@
 	)
 	(global_label "I2C_SDA"
 		(shape passive)
-		(at 54.61 304.8 0)
+		(at 54.61 294.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "656b5e90-8dca-5e56-8646-a180d1ef6e0d")
+		(uuid "82b9046a-95b5-5243-9739-f620c4b2871c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -13930,7 +14449,7 @@
 	)
 	(symbol
 		(lib_id "openkvm_sym:R")
-		(at 50.8 311.15 0)
+		(at 50.8 300.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13938,7 +14457,7 @@
 		(dnp no)
 		(uuid "a8d350b2-7cde-594f-bc94-b4afe3cb4f76")
 		(property "Reference" "R26"
-			(at 50.2 309.25 0)
+			(at 50.2 299.09 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13947,7 +14466,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 51.4 309.25 0)
+			(at 51.4 299.09 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13956,7 +14475,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 50.8 311.15 0)
+			(at 50.8 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13965,7 +14484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 311.15 0)
+			(at 50.8 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13974,7 +14493,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 311.15 0)
+			(at 50.8 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13983,7 +14502,7 @@
 			)
 		)
 		(property "LCSC" "C25900"
-			(at 50.8 311.15 0)
+			(at 50.8 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13992,7 +14511,7 @@
 			)
 		)
 		(property "MPN" "0402WGF4701TCE"
-			(at 50.8 311.15 0)
+			(at 50.8 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14017,14 +14536,14 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 46.99 311.15 180)
+		(at 46.99 300.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "b07e1e13-6ee9-5ebb-b63b-0c8158a71341")
+		(uuid "3bc9f589-764b-5e23-905e-425737ca41a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects
@@ -14037,14 +14556,14 @@
 	)
 	(global_label "I2C_SCL"
 		(shape passive)
-		(at 54.61 311.15 0)
+		(at 54.61 300.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "87a69052-8665-5b5f-b03d-cc440dfc18ce")
+		(uuid "bd366b6f-58b4-5f67-b15f-570c2ba3bfcb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 0 0 0)
 			(effects

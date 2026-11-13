@@ -1,0 +1,615 @@
+{
+ "Capacitor_SMD:C_0402_1005Metric|C15195": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.06,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C24",
+   "C41",
+   "C57",
+   "C60",
+   "C62",
+   "C66",
+   "C68"
+  ],
+  "rotation": 0
+ },
+ "Capacitor_SMD:C_0402_1005Metric|C1525": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.06,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C1",
+   "C2",
+   "C4",
+   "C9",
+   "C13",
+   "C15",
+   "C16",
+   "C17",
+   "C18",
+   "C19",
+   "C21",
+   "C23",
+   "C25",
+   "C28",
+   "C29",
+   "C30",
+   "C31",
+   "C34",
+   "C37",
+   "C39",
+   "C42",
+   "C45",
+   "C51",
+   "C53",
+   "C54",
+   "C55",
+   "C56",
+   "C58",
+   "C63",
+   "C64",
+   "C70",
+   "C71",
+   "C72",
+   "C73",
+   "C75",
+   "C77",
+   "C80",
+   "C81",
+   "C83"
+  ],
+  "rotation": 0
+ },
+ "Capacitor_SMD:C_0402_1005Metric|C1549": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.06,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C78",
+   "C79"
+  ],
+  "rotation": 0
+ },
+ "Capacitor_SMD:C_0402_1005Metric|C1555": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.06,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C5",
+   "C10",
+   "C46",
+   "C49",
+   "C50"
+  ],
+  "rotation": 0
+ },
+ "Capacitor_SMD:C_0402_1005Metric|C52923": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.06,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C32",
+   "C33",
+   "C35",
+   "C36",
+   "C38",
+   "C40",
+   "C43",
+   "C44",
+   "C52",
+   "C69"
+  ],
+  "rotation": 0
+ },
+ "Capacitor_SMD:C_0603_1608Metric|C19666": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.075,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C26",
+   "C47",
+   "C59",
+   "C61",
+   "C65",
+   "C67"
+  ],
+  "rotation": 0
+ },
+ "Capacitor_SMD:C_0603_1608Metric|C19702": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.075,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C6",
+   "C11",
+   "C14",
+   "C20",
+   "C22",
+   "C27",
+   "C74",
+   "C76",
+   "C82"
+  ],
+  "rotation": 0
+ },
+ "Capacitor_SMD:C_0805_2012Metric|C45783": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.05,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "C3",
+   "C7",
+   "C8",
+   "C12",
+   "C48"
+  ],
+  "rotation": 0
+ },
+ "Inductor_SMD:L_0603_1608Metric|C85833": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.088,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "FB1",
+   "FB2",
+   "FB3",
+   "FB4",
+   "FB5",
+   "FB6"
+  ],
+  "rotation": 0
+ },
+ "LED_SMD:LED_0603_1608Metric|C12624": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.037,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "D4"
+  ],
+  "rotation": 0
+ },
+ "LED_SMD:LED_0603_1608Metric|C2287": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.037,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "D3"
+  ],
+  "rotation": 180
+ },
+ "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm|C2992365": {
+  "etat": "non verifie",
+  "refs": [
+   "Y2"
+  ],
+  "rotation": null
+ },
+ "Package_TO_SOT_SMD:SOT-23|C15127": {
+  "dx": 0.071,
+  "dy": 0.0,
+  "erreur_mm": 0.283,
+  "etat": "GEOMETRIE DIFFERENTE",
+  "pastilles": 3,
+  "refs": [
+   "Q1"
+  ],
+  "rotation": 180
+ },
+ "Resistor_SMD:R_0402_1005Metric|C11702": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R22",
+   "R28",
+   "R29"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C17168": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R11",
+   "R12",
+   "R17",
+   "R18",
+   "R34"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25092": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R35",
+   "R44",
+   "R45",
+   "R46",
+   "R47",
+   "R48",
+   "R49",
+   "R57",
+   "R58"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25105": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R39"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25117": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R24",
+   "R42",
+   "R43"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25741": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R5",
+   "R6",
+   "R8",
+   "R9",
+   "R10",
+   "R56"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25744": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R19",
+   "R20",
+   "R21",
+   "R23",
+   "R32",
+   "R33",
+   "R41",
+   "R50",
+   "R51",
+   "R52",
+   "R53",
+   "R54",
+   "R55"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25768": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R7"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25792": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R27"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25793": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R15",
+   "R16"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25900": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R25",
+   "R26",
+   "R36",
+   "R37",
+   "R40"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25905": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C25914": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R38"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C4109": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R31"
+  ],
+  "rotation": 0
+ },
+ "Resistor_SMD:R_0402_1005Metric|C43251": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.08,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "R13",
+   "R14"
+  ],
+  "rotation": 0
+ },
+ "openkvm:CRYSTAL-SMD_4P-L3.2-W2.5-BL|C9006": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 4,
+  "refs": [
+   "Y3"
+  ],
+  "rotation": 0
+ },
+ "openkvm:HDMI-SMD_19P-P0.50-H-F|C138388": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 23,
+  "refs": [
+   "J3"
+  ],
+  "rotation": 0
+ },
+ "openkvm:IND-SMD_L3.0-W3.0|C43389": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "L1",
+   "L2",
+   "L3"
+  ],
+  "rotation": 0
+ },
+ "openkvm:KEY-SMD_TS-1101VS-C-A-A|C318936": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 4,
+  "refs": [
+   "SW1"
+  ],
+  "rotation": 0
+ },
+ "openkvm:OSC-SMD_4P-L3.2-W2.5-BL_SIT8008BI|C9010": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 4,
+  "refs": [
+   "Y1"
+  ],
+  "rotation": 0
+ },
+ "openkvm:QFN-104_L10.0-W10.0-P0.35-TL-EP7.5|C54540373": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 105,
+  "refs": [
+   "U1"
+  ],
+  "rotation": 0
+ },
+ "openkvm:QFN-32_L4.0-W4.0-P0.40-BL-EP2.7|C703537": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 33,
+  "refs": [
+   "U9"
+  ],
+  "rotation": 0
+ },
+ "openkvm:RJ45-TH_HR911105A|C12074": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 14,
+  "refs": [
+   "J4"
+  ],
+  "rotation": 0
+ },
+ "openkvm:SC-70-6_L2.0-W1.3-P0.65-LS2.1-BL|C2869734": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 6,
+  "refs": [
+   "U3",
+   "U4"
+  ],
+  "rotation": 0
+ },
+ "openkvm:SOD-123FL_L2.7-W1.8-LS3.8-RD|C19077497": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 2,
+  "refs": [
+   "D1",
+   "D2"
+  ],
+  "rotation": 0
+ },
+ "openkvm:SOP-8_L5.3-W5.3-P1.27-LS8.0-BL|C2928891": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 8,
+  "refs": [
+   "U7"
+  ],
+  "rotation": 0
+ },
+ "openkvm:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR|C141836": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 5,
+  "refs": [
+   "U5",
+   "U6",
+   "U2"
+  ],
+  "rotation": 0
+ },
+ "openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5|C318884": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 4,
+  "refs": [
+   "SW2"
+  ],
+  "rotation": 0
+ },
+ "openkvm:TF-SMD_TF-01A|C91145": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 13,
+  "refs": [
+   "J5"
+  ],
+  "rotation": 0
+ },
+ "openkvm:USB-C_SMD-TYPE-C-31-M-12_1|C165948": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 16,
+  "refs": [
+   "J1",
+   "J2"
+  ],
+  "rotation": 0
+ },
+ "openkvm:USON-10_L2.5-W1.0-P0.50-BL|C138714": {
+  "dx": 0.0,
+  "dy": 0.0,
+  "erreur_mm": 0.0,
+  "etat": "ok",
+  "pastilles": 10,
+  "refs": [
+   "U10",
+   "U11",
+   "U12",
+   "U13",
+   "U14"
+  ],
+  "rotation": 0
+ }
+}

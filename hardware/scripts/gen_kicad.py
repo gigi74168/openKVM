@@ -26,8 +26,8 @@ NS = uuid.UUID('6f70656e-4b56-4d00-8000-000000000001')
 LIB = 'openkvm_sym'
 ALIAS = {'HR911105A': 'HR911105A_C12074'}
 TWO_PIN = {'R': ('1', '2'), 'C': ('1', '2'), 'FB': ('1', '2'), 'L': ('1', '2'),
-           'TVS': ('2', '1'), 'LED': ('2', '1')}   # (broche gauche, broche droite)
-PREFIX = {'R': 'R', 'C': 'C', 'FB': 'FB', 'L': 'L', 'TVS': 'D', 'LED': 'D'}
+           'TVS': ('2', '1'), 'LED': ('2', '1'), 'LEDR': ('1', '2')}   # (broche gauche, broche droite)
+PREFIX = {'R': 'R', 'C': 'C', 'FB': 'FB', 'L': 'L', 'TVS': 'D', 'LED': 'D', 'LEDR': 'D'}
 P = 2.54
 LBL = 30.48          # place reservee a une etiquette
 CELL_W, CELL_H = 68.58, 6.35
@@ -113,7 +113,7 @@ def two_pin_symbol(name):
         g = [poly([(-1.27, 1.27), (-1.27, -1.27), (1.27, 0), (-1.27, 1.27)]),
              poly([(1.27, 1.27), (1.27, -1.27)])]
         lead = 2.54
-        if name == 'LED':
+        if name in ('LED', 'LEDR'):
             g += [poly([(0.2, 1.9), (1.2, 2.9)]), poly([(1.2, 1.9), (2.2, 2.9)])]
     body = [A('symbol'), f'{name}_0_1'] + g
     pins = [A('symbol'), f'{name}_1_1', pin(left, '~', -3.81, 0, 0, lead), pin(right, '~', 3.81, 0, 180, lead)]
