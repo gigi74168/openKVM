@@ -15,7 +15,7 @@ import pcbnew
 HERE = os.path.dirname(os.path.abspath(__file__))
 HW = os.path.dirname(HERE)
 BUILD = os.path.join(HW, 'build')
-SRC = os.path.join(HW, 'openkvm-place.kicad_pcb')
+SRC = os.path.join(BUILD, 'openkvm-place.kicad_pcb')
 PRE = os.path.join(BUILD, 'openkvm-pre.kicad_pcb')
 DSN = os.path.join(BUILD, 'openkvm.dsn')
 SES = os.path.join(BUILD, 'openkvm.ses')
@@ -29,7 +29,7 @@ RULES = dict(min_clearance=0.09, min_track=0.09, min_via=0.4, min_drill=0.3, min
 # classe : (isolement, largeur de piste, diametre de via, percage)
 CLASSES = {
     'Default': (0.09, 0.10, 0.40, 0.30),
-    'Rapide': (0.09, 0.15, 0.40, 0.30),      # HDMI, CSI-2, USB, Ethernet : ~50 ohms en piste simple
+    'Rapide': (0.09, 0.13, 0.40, 0.30),      # HDMI, CSI-2, USB, Ethernet : ~50 ohms en piste simple (0,15 ne sort pas du BGA)
     'Puissance': (0.09, 0.20, 0.40, 0.30),
 }
 POWER = ['3V3', '5V_SYS', 'VBUS_TGT', 'VBUS_EXT', '1V2', 'VDD_HP', 'SW_3V3', 'SW_1V2', 'SW_HP', 'SD_VDD',
@@ -171,8 +171,12 @@ def autoroute(passes='60'):
     if os.path.exists(SES):
         os.remove(SES)
     env = dict(os.environ, JAVA_TOOL_OPTIONS='')
-    subprocess.run([java, '-Djava.awt.headless=true', '-jar', jar, '--gui.enabled=false', '-de', DSN, '-do', SES,
-                    '-mp', passes], check=False, env=env)
+    # Pas de statistiques d'usage envoyees ; pas de retrecissement automatique des pistes (il descend sous
+    # le minimum JLCPCB) ; pas d'etape "fanout" (elle impose 2,5 mm de piste avant chaque via).
+    opts = ['--gui.enabled=false', '--usage_and_diagnostic_data.disable_analytics=true',
+            '--router.automatic_neckdown=false', '--router.fanout.enabled=false',
+            f'--router.autorouter.max_passes={passes}'] + sys.argv[3:]
+    subprocess.run([java, '-Djava.awt.headless=true', '-jar', jar, *opts, '-de', DSN, '-do', SES], check=False, env=env)
     print('SES', os.path.exists(SES))
 
 
@@ -185,6 +189,14 @@ def finish():
     add_zone(board, pcbnew.B_Cu, 'GND', clearance=0.2, inset=0.0)
     pcbnew.ZONE_FILLER(board).Fill(board.Zones())
     pcbnew.SaveBoard(OUT, board)
+    # Les regles et classes de nets vivent dans le .kicad_pro : on les recopie dans celui du projet.
+    import json
+    pre = json.load(open(PRE.replace('.kicad_pcb', '.kicad_pro')))
+    pro_path = OUT.replace('.kicad_pcb', '.kicad_pro')
+    pro = json.load(open(pro_path))
+    pro['board'] = pre['board']
+    pro['net_settings'] = pre['net_settings']
+    json.dump(pro, open(pro_path, 'w'), indent=2)
     tracks = [t for t in board.GetTracks()]
     print(f'{OUT} : {sum(1 for t in tracks if t.Type() == pcbnew.PCB_TRACE_T)} segments, '
           f'{sum(1 for t in tracks if t.Type() == pcbnew.PCB_VIA_T)} vias')

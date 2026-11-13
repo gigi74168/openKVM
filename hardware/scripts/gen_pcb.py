@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cree hardware/openkvm-place.kicad_pcb : contour, empreintes, nets et placement complet.
+"""Cree hardware/build/openkvm-place.kicad_pcb : contour, empreintes, nets et placement complet.
 
 Les connecteurs et les puces sont poses a la main (PLACE). Tout le reste est place
 automatiquement par place.py, sur les deux faces. Le routage est fait ensuite par route.py.
@@ -25,7 +25,7 @@ HW = os.path.dirname(HERE)
 NS = uuid.UUID('6f70656e-4b56-4d00-8000-000000000001')
 KICAD_FP = '/usr/share/kicad/footprints'
 BOARD_W, BOARD_H = 45.0, 45.0
-OUT = os.path.join(HW, 'openkvm-place.kicad_pcb')
+OUT = os.path.join(HW, 'build', 'openkvm-place.kicad_pcb')
 
 # ref -> (x, y, rotation en degres), face superieure. Origine = coin arriere gauche, y vers l'avant.
 PLACE = {
@@ -257,6 +257,7 @@ def build():
 
 def main():
     board, nnets, pl = build()
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     pcbnew.SaveBoard(OUT, board)
     nb = sum(1 for v in pl.where.values() if v[0] == 'B')
     print(f'{OUT} : {len(board.GetFootprints())} empreintes, {nnets} nets, {nb} composants dessous')
