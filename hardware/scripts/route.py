@@ -36,7 +36,9 @@ CLASSES = {
     'Rapide': (0.10, 0.13, 0.40, 0.20),      # HDMI, CSI-2, USB, Ethernet : ~50 ohms en piste simple (0,15 ne sort pas du BGA)
     'Puissance': (0.10, 0.20, 0.40, 0.20),
 }
-POWER = ['3V3', '5V_SYS', 'VBUS_TGT', 'VBUS_EXT', '1V2', 'VDD_HP', 'SW_3V3', 'SW_1V2', 'SW_HP', 'SD_VDD',
+BGA_FINE = ['TC_AVDD12', 'TC_AVDD25', 'TC_VDDC']
+BGA_POWER = BGA_FINE + ['TC_AVDD33', 'TC_VDDMIPI', '3V3', 'GND']
+POWER = ['3V3', 'TC_AVDD33', 'TC_VDDMIPI', '5V_SYS', 'VBUS_TGT', 'VBUS_EXT', '1V2', 'VDD_HP', 'SW_3V3', 'SW_1V2', 'SW_HP', 'SD_VDD',
          'VDDO_3', 'VDDO_4', 'VDDO_FLASH', 'VDDO_PSRAM', 'VDD_USBPHY', 'ETH_AVDD33', 'OSC27_VDD', 'HDMI_5V',
          'VDD_BAT', 'ETH_REGOUT']
 FAST = ['HDMI_D0_P', 'HDMI_D0_N', 'HDMI_D1_P', 'HDMI_D1_N', 'HDMI_D2_P', 'HDMI_D2_N', 'HDMI_CK_P', 'HDMI_CK_N',
@@ -62,12 +64,7 @@ def apply_rules(board):
     bds.m_HoleToHoleMin = mm(RULES['hole_to_hole'])
     bds.SetBoardThickness(mm(1.6))
     ns = bds.m_NetSettings
-    fine = set()
-    u8 = board.FindFootprintByReference('U8')
-    for pad in u8.Pads():
-        n = pad.GetNetname()
-        if n and not n.startswith('unconnected') and n != 'GND':
-            fine.add(n)
+    fine = set(BGA_FINE)        # nets d'alimentation qui passent entre deux billes du BGA : piste fine
     for name, (cl, w, vd, dr) in CLASSES.items():
         nc = ns.GetDefaultNetclass() if name == 'Default' else pcbnew.NETCLASS(name)
         nc.SetClearance(mm(cl))
@@ -137,8 +134,11 @@ def bga_fanout(board, ref='U8', pitch=0.65):
     done = set()
     for pad in f.Pads():
         dx, dy = pcbnew.ToMM(pad.GetPosition().x - c.x), pcbnew.ToMM(pad.GetPosition().y - c.y)
-        if max(abs(dx), abs(dy)) > 1.5 * pitch + 0.05 or pad.GetNetname().startswith('unconnected'):
-            continue      # anneaux exterieurs : ils sortent en surface
+        ring = max(abs(dx), abs(dy))
+        if pad.GetNetname().startswith('unconnected') or ring > 2.5 * pitch + 0.05:
+            continue      # anneau exterieur : il sort en surface
+        if ring > 1.5 * pitch + 0.05 and pad.GetNetname() not in BGA_POWER:
+            continue      # 2e anneau : les signaux sortent entre deux billes, les alimentations par un via
         vx = pad.GetPosition().x + mm(pitch / 2 if dx > 0 else -pitch / 2)
         vy = pad.GetPosition().y + mm(pitch / 2 if dy > 0 else -pitch / 2)
         add_via(board, vx, vy, pad.GetNet())
@@ -257,7 +257,8 @@ def prepare():
     n, failed = ground_vias(board, fanned | {('U1', '105'), ('U9', '33')})
     print('vias de masse :', n, '| pastilles sans via :', failed)
     add_zone(board, pcbnew.In1_Cu, 'GND')
-    add_zone(board, pcbnew.In2_Cu, '3V3')
+    # Le 3V3 est route en pistes : un plan declare a l'autorouteur se ferait decouper par les signaux
+    # de la couche 3 sans qu'il s'en apercoive. Le plan 3V3 est ajoute apres coup, en renfort (finish).
     pcbnew.SaveBoard(PRE, board)
     if os.path.exists(DSN):
         os.remove(DSN)
@@ -287,6 +288,7 @@ def finish():
     apply_rules(board)
     if not pcbnew.ImportSpecctraSES(board, SES):
         sys.exit('import SES impossible')
+    add_zone(board, pcbnew.In2_Cu, '3V3')
     add_zone(board, pcbnew.F_Cu, 'GND', clearance=0.2, inset=0.0)
     add_zone(board, pcbnew.B_Cu, 'GND', clearance=0.2, inset=0.0)
     pcbnew.ZONE_FILLER(board).Fill(board.Zones())

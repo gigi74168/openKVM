@@ -71,7 +71,7 @@ EP_VIAS = [(dx, dy) for dx in (-2.4, 0.0, 2.4) for dy in (-2.4, 0.0, 2.4)]
 # ref -> (demi-cote interieur, demi-cote exterieur) en mm
 BOTTOM_RINGS = {'U1': (3.9, 5.7), 'U9': (1.45, 2.7)}
 # Face inferieure : carre laisse libre sous le centre du BGA (vias de l'eventail), demi-cote en mm
-BOTTOM_SQUARES = {'U8': 1.75}
+BOTTOM_SQUARES = {'U8': 2.45}
 
 
 def uid(*key):
