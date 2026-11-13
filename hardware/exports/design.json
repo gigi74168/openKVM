@@ -1530,7 +1530,7 @@
    "lcsc": "C25744",
    "mpn": "0402WGF1002TCE",
    "dnp": false,
-   "note": "RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8"
+   "note": "RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur la pastille TP4"
   },
   {
    "ref": "C52",
@@ -1650,25 +1650,25 @@
   },
   {
    "ref": "D3",
-   "sym": "LED",
+   "sym": "LEDR",
    "value": "LED jaune etat",
-   "fp": "LED_SMD:LED_0603_1608Metric",
+   "fp": "openkvm:LED0603-R-RD",
    "sheet": "mcu",
    "group": "Reset, boot, bouton, LED",
    "pins": {
-    "1": "GND",
-    "2": "LED_STAT_A"
+    "1": "LED_STAT_A",
+    "2": "GND"
    },
    "lcsc": "C2287",
    "mpn": "KT-0603Y",
    "dnp": false,
-   "note": "1 = cathode, 2 = anode ; pilotee par le firmware"
+   "note": "1 = ANODE, 2 = cathode (numerotation JLCPCB) ; pilotee par le firmware"
   },
   {
    "ref": "D4",
    "sym": "LED",
    "value": "LED verte alim",
-   "fp": "LED_SMD:LED_0603_1608Metric",
+   "fp": "openkvm:LED0603-RD",
    "sheet": "mcu",
    "group": "Reset, boot, bouton, LED",
    "pins": {
@@ -1713,24 +1713,94 @@
    "note": ""
   },
   {
-   "ref": "J8",
-   "sym": "HDR6",
-   "value": "DEBUG UART",
-   "fp": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+   "ref": "TP1",
+   "sym": "TP",
+   "value": "3V3",
+   "fp": "TestPoint:TestPoint_Pad_D1.0mm",
    "sheet": "mcu",
    "group": "Reset, boot, bouton, LED",
    "pins": {
-    "1": "3V3",
-    "2": "UART0_TX",
-    "3": "UART0_RX",
-    "4": "CHIP_PU",
-    "5": "RMII_TXD1_BOOT",
-    "6": "GND"
+    "1": "3V3"
    },
    "lcsc": "",
    "mpn": "",
    "dnp": true,
-   "note": "non monte : pastilles de test"
+   "note": "pastille de test, non montee"
+  },
+  {
+   "ref": "TP2",
+   "sym": "TP",
+   "value": "UART0_TX",
+   "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+   "sheet": "mcu",
+   "group": "Reset, boot, bouton, LED",
+   "pins": {
+    "1": "UART0_TX"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": true,
+   "note": "pastille de test, non montee"
+  },
+  {
+   "ref": "TP3",
+   "sym": "TP",
+   "value": "UART0_RX",
+   "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+   "sheet": "mcu",
+   "group": "Reset, boot, bouton, LED",
+   "pins": {
+    "1": "UART0_RX"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": true,
+   "note": "pastille de test, non montee"
+  },
+  {
+   "ref": "TP4",
+   "sym": "TP",
+   "value": "CHIP_PU",
+   "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+   "sheet": "mcu",
+   "group": "Reset, boot, bouton, LED",
+   "pins": {
+    "1": "CHIP_PU"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": true,
+   "note": "pastille de test, non montee"
+  },
+  {
+   "ref": "TP5",
+   "sym": "TP",
+   "value": "RMII_TXD1_BOOT",
+   "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+   "sheet": "mcu",
+   "group": "Reset, boot, bouton, LED",
+   "pins": {
+    "1": "RMII_TXD1_BOOT"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": true,
+   "note": "pastille de test, non montee"
+  },
+  {
+   "ref": "TP6",
+   "sym": "TP",
+   "value": "GND",
+   "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+   "sheet": "mcu",
+   "group": "Reset, boot, bouton, LED",
+   "pins": {
+    "1": "GND"
+   },
+   "lcsc": "",
+   "mpn": "",
+   "dnp": true,
+   "note": "pastille de test, non montee"
   },
   {
    "ref": "J3",
@@ -2418,8 +2488,8 @@
   {
    "ref": "Y2",
    "sym": "OSC4",
-   "value": "27MHz 3V3 HCMOS",
-   "fp": "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm",
+   "value": "27MHz 3V3 25ppm",
+   "fp": "openkvm:OSC-SMD_4P-L3.2-W2.5-BL",
    "sheet": "hdmi",
    "group": "Oscillateur 27 MHz",
    "pins": {
@@ -2428,10 +2498,10 @@
     "3": "OSC27_OUT",
     "4": "OSC27_VDD"
    },
-   "lcsc": "C2992365",
-   "mpn": "CO32H4-27.000-33JDTSNL",
+   "lcsc": "C390805",
+   "mpn": "O3227000153350",
    "dnp": false,
-   "note": "1 = EN, 2 = GND, 3 = OUT, 4 = VDD : a verifier sur la fiche"
+   "note": "1 = OE, 2 = GND, 3 = OUTPUT, 4 = VDD (symbole JLCPCB de C390805)"
   },
   {
    "ref": "FB5",
@@ -3085,7 +3155,7 @@
    "ref": "Q1",
    "sym": "PMOS",
    "value": "AO3401A",
-   "fp": "Package_TO_SOT_SMD:SOT-23",
+   "fp": "openkvm:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
    "sheet": "periph",
    "group": "microSD (slot SDMMC 0, UHS-I)",
    "pins": {

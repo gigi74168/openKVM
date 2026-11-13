@@ -9359,7 +9359,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "27MHz 3V3 HCMOS"
+		(property "Value" "27MHz 3V3 25ppm"
 			(at 505.46 40.3 0)
 			(effects
 				(font
@@ -9368,7 +9368,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm"
+		(property "Footprint" "openkvm:OSC-SMD_4P-L3.2-W2.5-BL"
 			(at 513.08 35.56 0)
 			(effects
 				(font
@@ -9386,7 +9386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1 = EN, 2 = GND, 3 = OUT, 4 = VDD : a verifier sur la fiche"
+		(property "Description" "1 = OE, 2 = GND, 3 = OUTPUT, 4 = VDD (symbole JLCPCB de C390805)"
 			(at 513.08 35.56 0)
 			(effects
 				(font
@@ -9395,7 +9395,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2992365"
+		(property "LCSC" "C390805"
 			(at 513.08 35.56 0)
 			(effects
 				(font
@@ -9404,7 +9404,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CO32H4-27.000-33JDTSNL"
+		(property "MPN" "O3227000153350"
 			(at 513.08 35.56 0)
 			(effects
 				(font
@@ -9434,7 +9434,7 @@
 			)
 		)
 	)
-	(text "1 = EN, 2 = GND, 3 = OUT, 4 = VDD : a verifier sur la fiche"
+	(text "1 = OE, 2 = GND, 3 = OUTPUT, 4 = VDD (symbole JLCPCB de C390805)"
 		(exclude_from_sim no)
 		(at 505.46 43.5 0)
 		(effects
@@ -9443,7 +9443,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d1822e41-5b50-5541-9a0a-b8029a7ad879")
+		(uuid "34b12e20-2363-59a2-9613-042684926244")
 	)
 	(global_label "OSC27_VDD"
 		(shape passive)

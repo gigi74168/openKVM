@@ -1326,7 +1326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "openkvm:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR"
 			(at 147.32 35.56 0)
 			(effects
 				(font

@@ -3,3 +3,6 @@ __pycache__/
 *-backups/
 *.kicad_prl
 fp-info-cache
+
+# Fichiers intermediaires du routage (DSN, SES, logs, cache des empreintes JLCPCB)
+hardware/build/

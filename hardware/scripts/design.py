@@ -15,7 +15,6 @@ FP_C = {'0402': 'Capacitor_SMD:C_0402_1005Metric',
         '0603': 'Capacitor_SMD:C_0603_1608Metric',
         '0805': 'Capacitor_SMD:C_0805_2012Metric'}
 FP_FB = 'Inductor_SMD:L_0603_1608Metric'
-FP_LED = 'LED_SMD:LED_0603_1608Metric'
 
 # Valeur -> (reference fabricant, code LCSC verifie le 2026-11-12). '' = pas de code LCSC.
 R_PARTS = {
@@ -210,7 +209,7 @@ def build():
     d.decap('VDDO_FLASH', ['100nF'], S, G)
 
     G = 'Reset, boot, bouton, LED'
-    d.R('3V3', 'CHIP_PU', '10k', S, G, note='RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur J8')
+    d.R('3V3', 'CHIP_PU', '10k', S, G, note='RC de demarrage 10k / 1 uF ; pas de bouton RESET, CHIP_PU est sur la pastille TP4')
     d.C('CHIP_PU', '1uF', S, G)
     d.R('3V3', 'RMII_TXD1_BOOT', '10k', S, G, note='GPIO35 = strap BOOT, aussi RMII TXD1')
     d.part('SW2', 'SW4', 'BOOT', 'openkvm:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5', S, G,
@@ -222,15 +221,17 @@ def build():
            note='GPIO23 : appui long = reinitialisation reseau / usine (firmware)')
     d.R('3V3', 'BTN_FN', '10k', S, G)
     d.R('LED_STAT', 'LED_STAT_A', '470R', S, G, note='LED jaune (Vf 2,4 V) depuis GPIO6 : ~1,9 mA')
-    d.part('D3', 'LED', 'LED jaune etat', FP_LED, S, G, {1: 'GND', 2: 'LED_STAT_A'},
-           'C2287', 'KT-0603Y', note='1 = cathode, 2 = anode ; pilotee par le firmware')
-    d.part('D4', 'LED', 'LED verte alim', FP_LED, S, G, {1: 'GND', 2: 'LED_PWR_A'},
+    # Empreintes de la bibliotheque JLCPCB : la jaune est numerotee a l'envers de la verte (1 = anode).
+    d.part('D3', 'LEDR', 'LED jaune etat', 'openkvm:LED0603-R-RD', S, G, {1: 'LED_STAT_A', 2: 'GND'},
+           'C2287', 'KT-0603Y', note='1 = ANODE, 2 = cathode (numerotation JLCPCB) ; pilotee par le firmware')
+    d.part('D4', 'LED', 'LED verte alim', 'openkvm:LED0603-RD', S, G, {1: 'GND', 2: 'LED_PWR_A'},
            'C12624', 'KT-0603G', note='1 = cathode, 2 = anode ; allumee des que le 5 V est present')
     d.R('3V3', 'I2C_SDA', '4.7k', S, G)
     d.R('3V3', 'I2C_SCL', '4.7k', S, G)
-    d.part('J8', 'HDR6', 'DEBUG UART', 'Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical',
-           S, G, {1: '3V3', 2: 'UART0_TX', 3: 'UART0_RX', 4: 'CHIP_PU', 5: 'RMII_TXD1_BOOT', 6: 'GND'},
-           dnp=True, note='non monte : pastilles de test')
+    # Debug : 6 pastilles de test de 1 mm sur la face inferieure (rien a souder, hors BOM)
+    for i, net in enumerate(('3V3', 'UART0_TX', 'UART0_RX', 'CHIP_PU', 'RMII_TXD1_BOOT', 'GND'), 1):
+        d.part(f'TP{i}', 'TP', net, 'TestPoint:TestPoint_Pad_D1.0mm', S, G, {1: net},
+               dnp=True, note='pastille de test, non montee')
 
     # ------------------------------------------------------------------- hdmi
     S = 'hdmi'
@@ -296,9 +297,9 @@ def build():
     d.decap('3V3', ['100nF', '100nF'], S, G)             # VDDIO1 (F4), VDDIO2 (H7)
 
     G = 'Oscillateur 27 MHz'
-    d.part('Y2', 'OSC4', '27MHz 3V3 HCMOS', 'Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm',
+    d.part('Y2', 'OSC4', '27MHz 3V3 25ppm', 'openkvm:OSC-SMD_4P-L3.2-W2.5-BL',
            S, G, {1: 'OSC27_VDD', 2: 'GND', 3: 'OSC27_OUT', 4: 'OSC27_VDD'},
-           'C2992365', 'CO32H4-27.000-33JDTSNL', note='1 = EN, 2 = GND, 3 = OUT, 4 = VDD : a verifier sur la fiche')
+           'C390805', 'O3227000153350', note='1 = OE, 2 = GND, 3 = OUTPUT, 4 = VDD (symbole JLCPCB de C390805)')
     d.FB('3V3', 'OSC27_VDD', S, G)
     d.decap('OSC27_VDD', ['100nF'], S, G)
     d.R('OSC27_OUT', 'TC_REFCLK', '22R', S, G)
@@ -352,7 +353,7 @@ def build():
     for sig in ('CMD', 'D0', 'D1', 'D2', 'D3'):
         d.R('VDDO_4', f'SD_{sig}', '10k', S, G)
     d.R('3V3', 'SD_CD', '10k', S, G, note='detection de carte, GPIO7 (domaine 3,3 V)')
-    d.part('Q1', 'PMOS', 'AO3401A', 'Package_TO_SOT_SMD:SOT-23', S, G,
+    d.part('Q1', 'PMOS', 'AO3401A', 'openkvm:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR', S, G,
            {1: 'SD_PWR_EN_N', 2: '3V3', 3: 'SD_VDD'}, 'C15127', 'AO3401A',
            note='1 = G, 2 = S, 3 = D ; coupe la carte pour quitter le mode 1,8 V')
     d.R('3V3', 'SD_PWR_EN_N', '100k', S, G, note='carte eteinte par defaut')
@@ -381,7 +382,7 @@ def symbol_pins(lcsc_lib_pins):
         'SW4': [('1', 'A', 'L'), ('2', 'A', 'L'), ('3', 'B', 'R'), ('4', 'B', 'R')],
         'SWSIDE': [('3', 'SW', 'L'), ('1', 'MNT', 'L'), ('4', 'SW', 'R'), ('2', 'MNT', 'R')],
         'PMOS': [('1', 'G', 'L'), ('2', 'S', 'R'), ('3', 'D', 'R')],
-        'HDR6': [(str(i), str(i), 'L') for i in range(1, 7)],
+        'TP': [('1', 'TP', 'L')],
         'TPD4E05U06': [('1', 'D1+', 'L'), ('2', 'D1-', 'L'), ('4', 'D2+', 'L'), ('5', 'D2-', 'L'),
                        ('3', 'GND', 'L'), ('10', 'NC', 'R'), ('9', 'NC', 'R'), ('7', 'NC', 'R'),
                        ('6', 'NC', 'R'), ('8', 'GND', 'R')],
