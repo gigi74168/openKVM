@@ -180,6 +180,8 @@ def build():
     for ref, a in BOTTOM_SQUARES.items():
         cx, cy, _ = PLACE[ref]
         pl.block('B', cx - a, cy - a, cx + a, cy + a)
+    cx, cy, _ = PLACE['U9']          # via thermique au centre du PHY
+    pl.block('B', cx - 0.5, cy - 0.5, cx + 0.5, cy + 0.5)
 
     sheet_uuid = {}
     fps = {}
